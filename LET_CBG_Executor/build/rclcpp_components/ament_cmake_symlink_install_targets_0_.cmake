@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/pengbo/rclcpp_cbg/build/rclcpp_components/component_container" "/home/pengbo/rclcpp_cbg/build/rclcpp_components/component_container_mt" "TARGETS" "component_container" "component_container_mt" "RUNTIME_DESTINATION" "lib/rclcpp_components")

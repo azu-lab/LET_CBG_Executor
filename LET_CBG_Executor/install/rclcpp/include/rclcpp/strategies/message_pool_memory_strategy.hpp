@@ -1,0 +1,1 @@
+/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/include/rclcpp/strategies/message_pool_memory_strategy.hpp

@@ -1,0 +1,50 @@
+CMake Error at /home/pengbo/ros2_foxy/install/ament_cmake_test/share/ament_cmake_test/cmake/ament_cmake_test-extras.cmake:29 (file):
+  file failed to open for writing (Permission denied):
+
+    /home/pengbo/rclcpp_cbg/build/rclcpp/CTestCustom.cmake
+Call Stack (most recent call first):
+  /home/pengbo/ros2_foxy/install/ament_cmake_test/share/ament_cmake_test/cmake/ament_cmake_testConfig.cmake:41 (include)
+  /home/pengbo/ros2_foxy/install/ament_cmake_pytest/share/ament_cmake_pytest/cmake/ament_cmake_pytest-extras.cmake:17 (find_package)
+  /home/pengbo/ros2_foxy/install/ament_cmake_pytest/share/ament_cmake_pytest/cmake/ament_cmake_pytestConfig.cmake:41 (include)
+  /home/pengbo/ros2_foxy/install/ament_cmake_ros/share/ament_cmake_ros/cmake/ament_cmake_ros-extras.cmake:19 (find_package)
+  /home/pengbo/ros2_foxy/install/ament_cmake_ros/share/ament_cmake_ros/cmake/ament_cmake_rosConfig.cmake:41 (include)
+  CMakeLists.txt:5 (find_package)
+
+
+Traceback (most recent call last):
+  File "/home/pengbo/ros2_foxy/install/ament_cmake_core/share/ament_cmake_core/cmake/package_templates/templates_2_cmake.py", line 112, in <module>
+    main()
+  File "/home/pengbo/ros2_foxy/install/ament_cmake_core/share/ament_cmake_core/cmake/package_templates/templates_2_cmake.py", line 55, in main
+    with open(args.outfile, 'w') as f:
+PermissionError: [Errno 13] Permission denied: '/home/pengbo/rclcpp_cbg/build/rclcpp/ament_cmake_package_templates/templates.cmake'
+CMake Error at /home/pengbo/ros2_foxy/install/ament_cmake_core/share/ament_cmake_core/cmake/ament_cmake_package_templates-extras.cmake:41 (message):
+  execute_process(/usr/bin/python3
+  /home/pengbo/ros2_foxy/install/ament_cmake_core/share/ament_cmake_core/cmake/package_templates/templates_2_cmake.py
+  /home/pengbo/rclcpp_cbg/build/rclcpp/ament_cmake_package_templates/templates.cmake)
+  returned error code 1
+Call Stack (most recent call first):
+  /home/pengbo/ros2_foxy/install/ament_cmake_core/share/ament_cmake_core/cmake/ament_cmake_coreConfig.cmake:41 (include)
+  /home/pengbo/ros2_foxy/install/ament_cmake_test/share/ament_cmake_test/cmake/ament_cmake_test-extras.cmake:39 (find_package)
+  /home/pengbo/ros2_foxy/install/ament_cmake_test/share/ament_cmake_test/cmake/ament_cmake_testConfig.cmake:41 (include)
+  /home/pengbo/ros2_foxy/install/ament_cmake_pytest/share/ament_cmake_pytest/cmake/ament_cmake_pytest-extras.cmake:17 (find_package)
+  /home/pengbo/ros2_foxy/install/ament_cmake_pytest/share/ament_cmake_pytest/cmake/ament_cmake_pytestConfig.cmake:41 (include)
+  /home/pengbo/ros2_foxy/install/ament_cmake_ros/share/ament_cmake_ros/cmake/ament_cmake_ros-extras.cmake:19 (find_package)
+  /home/pengbo/ros2_foxy/install/ament_cmake_ros/share/ament_cmake_ros/cmake/ament_cmake_rosConfig.cmake:41 (include)
+  CMakeLists.txt:5 (find_package)
+
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/colcon_core/executor/__init__.py", line 91, in __call__
+    rc = await self.task(*args, **kwargs)
+  File "/usr/lib/python3/dist-packages/colcon_core/task/__init__.py", line 93, in __call__
+    return await task_method(*args, **kwargs)
+  File "/usr/lib/python3/dist-packages/colcon_ros/task/ament_cmake/build.py", line 66, in build
+    if await has_target(args.build_base, 'install'):
+  File "/usr/lib/python3/dist-packages/colcon_cmake/task/cmake/__init__.py", line 57, in has_target
+    return target in await get_makefile_targets(path)
+  File "/usr/lib/python3/dist-packages/colcon_cmake/task/cmake/__init__.py", line 77, in get_makefile_targets
+    output = await check_output([
+  File "/usr/lib/python3/dist-packages/colcon_core/subprocess.py", line 109, in check_output
+    assert not rc, \
+AssertionError: Expected ['/usr/bin/cmake', '--build', '/home/pengbo/rclcpp_cbg/build/rclcpp', '--target', 'help'] to pass: make: *** No rule to make target 'help'.  Stop.
+

@@ -1,0 +1,1 @@
+/home/pengbo/rclcpp_cbg/build/rclcpp/ament_cmake_environment_hooks/local_setup.sh

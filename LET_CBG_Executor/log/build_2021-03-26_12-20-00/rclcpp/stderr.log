@@ -1,0 +1,10 @@
+[01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:[m[K In member function ‘[01m[Kvoid rclcpp::executors::SingleThreadedExecutor::executor_spin_period(uint64_t, std::string)[m[K’:
+[01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:302:4:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Klock[m[K’ in ‘[01m[Kj[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+  302 |  j.[01;31m[Klock[m[K();
+      |    [01;31m[K^~~~[m[K
+[01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:305:7:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kunlock[m[K’ in ‘[01m[Kj[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+  305 |     j.[01;31m[Kunlock[m[K();
+      |       [01;31m[K^~~~~~[m[K
+make[2]: *** [CMakeFiles/rclcpp.dir/build.make:389: CMakeFiles/rclcpp.dir/src/rclcpp/executors/single_threaded_executor.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:1129: CMakeFiles/rclcpp.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

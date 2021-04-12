@@ -1,0 +1,1 @@
+/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp_components/cmake/rclcpp_components_register_node.cmake
