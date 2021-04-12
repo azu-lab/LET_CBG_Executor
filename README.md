@@ -1,7 +1,7 @@
 
 
 ## Requirements
-- ROS kinetic (Ubuntu 20.04)
+- ROS foxy (Ubuntu 20.04)
 
 ## Build & Run
 
