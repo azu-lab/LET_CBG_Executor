@@ -1,0 +1,12 @@
+[01m[K/home/pengbo/cbg-executor/ros2_examples/rclcpp/cbg-executor_ping-pong/main.cpp:[m[K In function ‘[01m[Kvoid configure_thread(std::thread&, bool, int)[m[K’:
+[01m[K/home/pengbo/cbg-executor/ros2_examples/rclcpp/cbg-executor_ping-pong/main.cpp:142:45:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kset_real_time[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+  142 | void configure_thread(std::thread & t, [01;35m[Kbool set_real_time[m[K, int cpu_id)
+      |                                        [01;35m[K~~~~~^~~~~~~~~~~~~[m[K
+[01m[K/home/pengbo/cbg-executor/ros2_examples/rclcpp/cbg-executor_ping-pong/main.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/pengbo/cbg-executor/ros2_examples/rclcpp/cbg-executor_ping-pong/main.cpp:315:40:[m[K [01;31m[Kerror: [m[K‘[01m[Kbe_thread_duration_ms[m[K’ was not declared in this scope; did you mean ‘[01m[Krt_thread_duration_ms[m[K’?
+  315 |   std::cout << "BE thread ran for " << [01;31m[Kbe_thread_duration_ms[m[K << "ms" << std::endl;
+      |                                        [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+      |                                        [32m[Krt_thread_duration_ms[m[K
+make[2]: *** [CMakeFiles/ping-pong.dir/build.make:63: CMakeFiles/ping-pong.dir/main.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/ping-pong.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

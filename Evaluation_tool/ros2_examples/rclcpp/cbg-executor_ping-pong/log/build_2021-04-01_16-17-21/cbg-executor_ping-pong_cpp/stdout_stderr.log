@@ -1,0 +1,33 @@
+-- Found ament_cmake: 0.9.7 (/home/pengbo/ros2_foxy/install/ament_cmake/share/ament_cmake/cmake)
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found rclcpp: 2.0.1 (/home/pengbo/rclcpp_cbg/install/rclcpp/share/rclcpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_introspection_c;rosidl_typesupport_fastrtps_c
+-- Found rosidl_adapter: 1.1.0 (/home/pengbo/ros2_foxy/install/rosidl_adapter/share/rosidl_adapter/cmake)
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_introspection_cpp;rosidl_typesupport_fastrtps_cpp
+-- Found rmw_implementation_cmake: 1.0.2 (/home/pengbo/ros2_foxy/install/rmw_implementation_cmake/share/rmw_implementation_cmake/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/pengbo/cbg-executor/ros2_examples/rclcpp/cbg-executor_ping-pong/build/cbg-executor_ping-pong_cpp
+[35m[1mScanning dependencies of target ping-pong[0m
+[ 14%] [32mBuilding CXX object CMakeFiles/ping-pong.dir/exp5/main.cpp.o[0m
+[01m[K/home/pengbo/cbg-executor/ros2_examples/rclcpp/cbg-executor_ping-pong/exp5/main.cpp:[m[K In function ‘[01m[Kvoid expe_onece(int, int, char**, std::ofstream*, std::ofstream*)[m[K’:
+[01m[K/home/pengbo/cbg-executor/ros2_examples/rclcpp/cbg-executor_ping-pong/exp5/main.cpp:362:12:[m[K [01;31m[Kerror: [m[K‘[01m[KPingSubNode::SharedPtr[m[K’ {aka ‘[01m[Kclass std::shared_ptr<PingSubNode>[m[K’} has no member named ‘[01m[Ksave_statistics2[m[K’
+  362 |   ping_rt->[01;31m[Ksave_statistics2[m[K(fs2);
+      |            [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/pengbo/cbg-executor/ros2_examples/rclcpp/cbg-executor_ping-pong/exp5/main.cpp:364:12:[m[K [01;31m[Kerror: [m[K‘[01m[KPingSubNode::SharedPtr[m[K’ {aka ‘[01m[Kclass std::shared_ptr<PingSubNode>[m[K’} has no member named ‘[01m[Ksave_statistics2[m[K’
+  364 |   ping_be->[01;31m[Ksave_statistics2[m[K(fs2);
+      |            [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/pengbo/cbg-executor/ros2_examples/rclcpp/cbg-executor_ping-pong/exp5/main.cpp:366:12:[m[K [01;31m[Kerror: [m[K‘[01m[KPingSubNode::SharedPtr[m[K’ {aka ‘[01m[Kclass std::shared_ptr<PingSubNode>[m[K’} has no member named ‘[01m[Ksave_statistics[m[K’
+  366 |   ping_rt->[01;31m[Ksave_statistics[m[K(fs);
+      |            [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/pengbo/cbg-executor/ros2_examples/rclcpp/cbg-executor_ping-pong/exp5/main.cpp:368:12:[m[K [01;31m[Kerror: [m[K‘[01m[KPingSubNode::SharedPtr[m[K’ {aka ‘[01m[Kclass std::shared_ptr<PingSubNode>[m[K’} has no member named ‘[01m[Ksave_statistics[m[K’
+  368 |   ping_be->[01;31m[Ksave_statistics[m[K(fs);
+      |            [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/pengbo/cbg-executor/ros2_examples/rclcpp/cbg-executor_ping-pong/exp5/main.cpp:189:11:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Klet_period[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  189 |   int64_t [01;35m[Klet_period[m[K;
+      |           [01;35m[K^~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/ping-pong.dir/build.make:63: CMakeFiles/ping-pong.dir/exp5/main.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/ping-pong.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

@@ -1,0 +1,17 @@
+[01m[K/home/pengbo/cbg-executor/ros2_examples/rclcpp/cbg-executor_ping-pong/exp2/main.cpp:[m[K In function ‘[01m[Kvoid expe_onece(int, int, char**, std::ofstream*, std::ofstream*, size_t)[m[K’:
+[01m[K/home/pengbo/cbg-executor/ros2_examples/rclcpp/cbg-executor_ping-pong/exp2/main.cpp:176:21:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ki[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+  176 | void expe_onece([01;35m[Kint i[m[K,int argc,char * argv[],std::ofstream *fs,std::ofstream *fs2,size_t data_size){
+      |                 [01;35m[K~~~~^[m[K
+[01m[K/home/pengbo/cbg-executor/ros2_examples/rclcpp/cbg-executor_ping-pong/exp2/main.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/pengbo/cbg-executor/ros2_examples/rclcpp/cbg-executor_ping-pong/exp2/main.cpp:396:38:[m[K [01;31m[Kerror: [m[Ktoo few arguments to function ‘[01m[Kvoid expe_onece(int, int, char**, std::ofstream*, std::ofstream*, size_t)[m[K’
+  396 |     expe_onece(i,argc, argv, &fs,&fs2[01;31m[K)[m[K;
+      |                                      [01;31m[K^[m[K
+[01m[K/home/pengbo/cbg-executor/ros2_examples/rclcpp/cbg-executor_ping-pong/exp2/main.cpp:176:6:[m[K [01;36m[Knote: [m[Kdeclared here
+  176 | void [01;36m[Kexpe_onece[m[K(int i,int argc,char * argv[],std::ofstream *fs,std::ofstream *fs2,size_t data_size){
+      |      [01;36m[K^~~~~~~~~~[m[K
+[01m[K/home/pengbo/cbg-executor/ros2_examples/rclcpp/cbg-executor_ping-pong/exp2/main.cpp:377:10:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kdata_size_[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  377 |   size_t [01;35m[Kdata_size_[m[K = data_.size();
+      |          [01;35m[K^~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/ping-pong.dir/build.make:63: CMakeFiles/ping-pong.dir/exp2/main.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/ping-pong.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

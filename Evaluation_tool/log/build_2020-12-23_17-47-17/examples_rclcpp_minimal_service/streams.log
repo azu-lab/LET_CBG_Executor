@@ -1,0 +1,50 @@
+[0.060s] Invoking command in '/home/pengbo/cbg-executor/build/examples_rclcpp_minimal_service': /usr/bin/cmake /home/pengbo/cbg-executor/ros2_examples/rclcpp/services/minimal_service -DCMAKE_INSTALL_PREFIX=/home/pengbo/cbg-executor/install/examples_rclcpp_minimal_service
+[0.493s] -- The C compiler identification is GNU 9.3.0
+[0.493s] -- The CXX compiler identification is GNU 9.3.0
+[0.493s] -- Check for working C compiler: /usr/bin/cc
+[0.493s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.493s] -- Detecting C compiler ABI info
+[0.514s] -- Detecting C compiler ABI info - done
+[0.514s] -- Detecting C compile features
+[0.514s] -- Detecting C compile features - done
+[0.514s] -- Check for working CXX compiler: /usr/bin/c++
+[0.603s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.603s] -- Detecting CXX compiler ABI info
+[0.692s] -- Detecting CXX compiler ABI info - done
+[0.706s] -- Detecting CXX compile features
+[0.706s] -- Detecting CXX compile features - done
+[0.717s] CMake Error at CMakeLists.txt:13 (find_package):
+[0.717s]   By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project
+[0.717s]   has asked CMake to find a package configuration file provided by
+[0.717s]   "ament_cmake", but CMake did not find one.
+[0.717s] 
+[0.717s]   Could not find a package configuration file provided by "ament_cmake" with
+[0.717s]   any of the following names:
+[0.717s] 
+[0.718s]     ament_cmakeConfig.cmake
+[0.718s]     ament_cmake-config.cmake
+[0.718s] 
+[0.718s]   Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set
+[0.718s]   "ament_cmake_DIR" to a directory containing one of the above files.  If
+[0.718s]   "ament_cmake" provides a separate development package or SDK, be sure it
+[0.718s]   has been installed.
+[0.718s] 
+[0.718s] 
+[0.719s] -- Configuring incomplete, errors occurred!
+[0.719s] See also "/home/pengbo/cbg-executor/build/examples_rclcpp_minimal_service/CMakeFiles/CMakeOutput.log".
+[0.726s] Invoked command in '/home/pengbo/cbg-executor/build/examples_rclcpp_minimal_service' returned '1': /usr/bin/cmake /home/pengbo/cbg-executor/ros2_examples/rclcpp/services/minimal_service -DCMAKE_INSTALL_PREFIX=/home/pengbo/cbg-executor/install/examples_rclcpp_minimal_service
+[0.780s] Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/colcon_core/executor/__init__.py", line 91, in __call__
+    rc = await self.task(*args, **kwargs)
+  File "/usr/lib/python3/dist-packages/colcon_core/task/__init__.py", line 93, in __call__
+    return await task_method(*args, **kwargs)
+  File "/usr/lib/python3/dist-packages/colcon_ros/task/ament_cmake/build.py", line 66, in build
+    if await has_target(args.build_base, 'install'):
+  File "/usr/lib/python3/dist-packages/colcon_cmake/task/cmake/__init__.py", line 57, in has_target
+    return target in await get_makefile_targets(path)
+  File "/usr/lib/python3/dist-packages/colcon_cmake/task/cmake/__init__.py", line 77, in get_makefile_targets
+    output = await check_output([
+  File "/usr/lib/python3/dist-packages/colcon_core/subprocess.py", line 109, in check_output
+    assert not rc, \
+AssertionError: Expected ['/usr/bin/cmake', '--build', '/home/pengbo/cbg-executor/build/examples_rclcpp_minimal_service', '--target', 'help'] to pass: make: *** No rule to make target 'help'.  Stop.
+

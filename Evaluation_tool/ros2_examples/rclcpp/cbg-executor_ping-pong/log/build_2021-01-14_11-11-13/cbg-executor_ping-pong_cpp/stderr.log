@@ -1,0 +1,12 @@
+[01m[K/home/pengbo/cbg-executor/ros2_examples/rclcpp/cbg-executor_ping-pong/main.cpp:[m[K In lambda function:
+[01m[K/home/pengbo/cbg-executor/ros2_examples/rclcpp/cbg-executor_ping-pong/main.cpp:235:25:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Ktimespec[m[K’ to ‘[01m[Kconst timespec*[m[K’
+  235 |       multiply_timespec([01;31m[Kupdate_period[m[K, i, &wakeup_time);
+      |                         [01;31m[K^~~~~~~~~~~~~[m[K
+      |                         [01;31m[K|[m[K
+      |                         [01;31m[Ktimespec[m[K
+[01m[K/home/pengbo/cbg-executor/ros2_examples/rclcpp/cbg-executor_ping-pong/main.cpp:63:27:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[Kvoid multiply_timespec(const timespec*, uint32_t, timespec*)[m[K’
+   63 |   [01;36m[Kconst struct timespec * t[m[K, const uint32_t i,
+      |   [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+make[2]: *** [CMakeFiles/ping-pong.dir/build.make:63: CMakeFiles/ping-pong.dir/main.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/ping-pong.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2
