@@ -19,7 +19,8 @@ $colcon build --symlink-install
 ```
 ## Evaluation
 1．Set environment variables
--Open a new terminal
+
+Open a new terminal
 ```
 $sudo su
 $cd Evaluation_tool/ros2_examples/rclcpp/cbg-executor_ping-pong
