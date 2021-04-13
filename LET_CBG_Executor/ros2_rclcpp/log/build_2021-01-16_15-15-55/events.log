@@ -1,0 +1,606 @@
+[0.000000] (-) TimerEvent: {}
+[0.000331] (rclcpp) JobQueued: {'identifier': 'rclcpp', 'dependencies': OrderedDict()}
+[0.000428] (rclcpp_action) JobQueued: {'identifier': 'rclcpp_action', 'dependencies': OrderedDict([('rclcpp', '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp')])}
+[0.000567] (rclcpp_components) JobQueued: {'identifier': 'rclcpp_components', 'dependencies': OrderedDict([('rclcpp', '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp')])}
+[0.000607] (rclcpp_lifecycle) JobQueued: {'identifier': 'rclcpp_lifecycle', 'dependencies': OrderedDict([('rclcpp', '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp')])}
+[0.000638] (rclcpp) JobStarted: {'identifier': 'rclcpp'}
+[0.007275] (rclcpp) JobProgress: {'identifier': 'rclcpp', 'progress': 'cmake'}
+[0.007733] (rclcpp) JobProgress: {'identifier': 'rclcpp', 'progress': 'build'}
+[0.008217] (rclcpp) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp', '--', '-j12', '-l12'], 'cwd': '/home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'pengbo'), ('SSH_AGENT_PID', '2101'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('HOME', '/home/pengbo'), ('OLDPWD', '/home/pengbo'), ('DESKTOP_SESSION', 'ubuntu'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1915'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('LOGNAME', 'pengbo'), ('JOURNAL_STREAM', '8:57843'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'pengbo'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('WINDOWPATH', '2'), ('PATH', '/home/pengbo/gems/bin:/home/pengbo/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/pengbo-E5-D-MTS:@/tmp/.ICE-unix/2136,unix/pengbo-E5-D-MTS:/tmp/.ICE-unix/2136'), ('INVOCATION_ID', 'cd3e0ac318a8447b977c41bc9c0184d9'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/ea70d85e_10fd_4116_8e15_4c3eddad8fd5'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.114'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('GEM_HOME', '/home/pengbo/gems'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('COLCON', '1'), ('VTE_VERSION', '6003')]), 'shell': False}
+[0.065128] (rclcpp) StdoutLine: {'line': b'[  1%] Built target gmock\n'}
+[0.065393] (rclcpp) StdoutLine: {'line': b'[  3%] Built target rclcpp_test_msgs__rosidl_generator_c\n'}
+[0.067533] (rclcpp) StdoutLine: {'line': b'[  3%] Built target rclcpp_test_msgs__cpp\n'}
+[0.068326] (rclcpp) StdoutLine: {'line': b'[  4%] Built target gtest_main\n'}
+[0.068780] (rclcpp) StdoutLine: {'line': b'[  5%] Built target gmock_main\n'}
+[0.070872] (rclcpp) StdoutLine: {'line': b'[  6%] Built target gtest\n'}
+[0.080198] (rclcpp) StdoutLine: {'line': b'[  8%] Built target rclcpp_test_msgs__rosidl_typesupport_introspection_c\n'}
+[0.080836] (rclcpp) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target rclcpp\x1b[0m\n'}
+[0.081501] (rclcpp) StdoutLine: {'line': b'[  9%] Built target rclcpp_test_msgs__rosidl_typesupport_c\n'}
+[0.081732] (rclcpp) StdoutLine: {'line': b'[ 11%] Built target rclcpp_test_msgs__rosidl_typesupport_cpp\n'}
+[0.084997] (rclcpp) StdoutLine: {'line': b'[ 13%] Built target rclcpp_test_msgs__rosidl_typesupport_introspection_cpp\n'}
+[0.085843] (rclcpp) StdoutLine: {'line': b'[ 14%] Built target test_function_traits\n'}
+[0.086486] (rclcpp) StdoutLine: {'line': b'[ 16%] Built target rclcpp_test_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[0.099776] (-) TimerEvent: {}
+[0.107197] (rclcpp) StdoutLine: {'line': b'[ 18%] Built target rclcpp_test_msgs__rosidl_typesupport_fastrtps_c\n'}
+[0.125858] (rclcpp) StdoutLine: {'line': b'[ 18%] Built target rclcpp_test_msgs\n'}
+[0.138300] (rclcpp) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding CXX object CMakeFiles/rclcpp.dir/src/rclcpp/executors/single_threaded_executor.cpp.o\x1b[0m\n'}
+[0.142196] (rclcpp) StdoutLine: {'line': b'[ 18%] Built target rclcpp_test_msgs__py\n'}
+[0.166806] (rclcpp) StdoutLine: {'line': b'[ 20%] Built target rclcpp_test_msgs__python\n'}
+[0.185987] (rclcpp) StdoutLine: {'line': b'[ 21%] Built target rclcpp__rosidl_typesupport_fastrtps_c__pyext\n'}
+[0.186154] (rclcpp) StdoutLine: {'line': b'[ 22%] Built target rclcpp__rosidl_typesupport_introspection_c__pyext\n'}
+[0.190309] (rclcpp) StdoutLine: {'line': b'[ 23%] Built target rclcpp__rosidl_typesupport_c__pyext\n'}
+[0.199846] (-) TimerEvent: {}
+[0.300051] (-) TimerEvent: {}
+[0.400347] (-) TimerEvent: {}
+[0.500638] (-) TimerEvent: {}
+[0.600945] (-) TimerEvent: {}
+[0.701267] (-) TimerEvent: {}
+[0.801597] (-) TimerEvent: {}
+[0.872193] (rclcpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint record_jitter(const timespec*, const timespec*, size_t)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[0.872446] (rclcpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:106:10:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Ki\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-variable\x1b[m\x1b[K]\n'}
+[0.872544] (rclcpp) StderrLine: {'line': b'  106 |   size_t \x1b[01;35m\x1b[Ki\x1b[m\x1b[K = iteration;\n'}
+[0.872631] (rclcpp) StderrLine: {'line': b'      |          \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[0.901727] (-) TimerEvent: {}
+[1.002047] (-) TimerEvent: {}
+[1.071417] (rclcpp) StdoutLine: {'line': b'[ 24%] \x1b[32m\x1b[1mLinking CXX shared library librclcpp.so\x1b[0m\n'}
+[1.102171] (-) TimerEvent: {}
+[1.202481] (-) TimerEvent: {}
+[1.302807] (-) TimerEvent: {}
+[1.403181] (-) TimerEvent: {}
+[1.503490] (-) TimerEvent: {}
+[1.603831] (-) TimerEvent: {}
+[1.628649] (rclcpp) StdoutLine: {'line': b'[ 61%] Built target rclcpp\n'}
+[1.655434] (rclcpp) StdoutLine: {'line': b'[ 61%] \x1b[32m\x1b[1mLinking CXX executable test_expand_topic_or_service_name\x1b[0m\n'}
+[1.656771] (rclcpp) StdoutLine: {'line': b'[ 62%] \x1b[32m\x1b[1mLinking CXX executable test_intra_process_manager\x1b[0m\n'}
+[1.656930] (rclcpp) StdoutLine: {'line': b'[ 62%] \x1b[32m\x1b[1mLinking CXX executable test_ring_buffer_implementation\x1b[0m\n'}
+[1.659516] (rclcpp) StdoutLine: {'line': b'[ 62%] \x1b[32m\x1b[1mLinking CXX executable test_subscription_options\x1b[0m\n'}
+[1.660351] (rclcpp) StdoutLine: {'line': b'[ 62%] \x1b[32m\x1b[1mLinking CXX executable test_logger\x1b[0m\n'}
+[1.661077] (rclcpp) StdoutLine: {'line': b'[ 63%] \x1b[32m\x1b[1mLinking CXX executable test_node_global_args\x1b[0m\n'}
+[1.661168] (rclcpp) StdoutLine: {'line': b'[ 63%] \x1b[32m\x1b[1mLinking CXX executable test_executor\x1b[0m\n'}
+[1.661271] (rclcpp) StdoutLine: {'line': b'[ 63%] \x1b[32m\x1b[1mLinking CXX executable test_create_timer\x1b[0m\n'}
+[1.663038] (rclcpp) StdoutLine: {'line': b'[ 63%] \x1b[32m\x1b[1mLinking CXX executable test_duration\x1b[0m\n'}
+[1.663250] (rclcpp) StdoutLine: {'line': b'[ 63%] \x1b[32m\x1b[1mLinking CXX executable test_loaned_message\x1b[0m\n'}
+[1.663578] (rclcpp) StdoutLine: {'line': b'[ 63%] \x1b[32m\x1b[1mLinking CXX executable test_subscription_topic_statistics\x1b[0m\n'}
+[1.667638] (rclcpp) StdoutLine: {'line': b'[ 64%] \x1b[32m\x1b[1mLinking CXX executable test_node_interfaces__get_node_interfaces\x1b[0m\n'}
+[1.704009] (-) TimerEvent: {}
+[1.804522] (-) TimerEvent: {}
+[1.905181] (-) TimerEvent: {}
+[2.005849] (-) TimerEvent: {}
+[2.106529] (-) TimerEvent: {}
+[2.207156] (-) TimerEvent: {}
+[2.307770] (-) TimerEvent: {}
+[2.408375] (-) TimerEvent: {}
+[2.508976] (-) TimerEvent: {}
+[2.609573] (-) TimerEvent: {}
+[2.710197] (-) TimerEvent: {}
+[2.810784] (-) TimerEvent: {}
+[2.911213] (-) TimerEvent: {}
+[2.978094] (rclcpp) StdoutLine: {'line': b'[ 64%] Built target test_ring_buffer_implementation\n'}
+[2.998348] (rclcpp) StdoutLine: {'line': b'[ 65%] Built target test_expand_topic_or_service_name\n'}
+[3.009831] (rclcpp) StdoutLine: {'line': b'[ 66%] Built target test_subscription_options\n'}
+[3.011822] (-) TimerEvent: {}
+[3.012753] (rclcpp) StdoutLine: {'line': b'[ 67%] Built target test_logger\n'}
+[3.021987] (rclcpp) StdoutLine: {'line': b'[ 68%] \x1b[32m\x1b[1mLinking CXX executable test_serialized_message\x1b[0m\n'}
+[3.022540] (rclcpp) StdoutLine: {'line': b'[ 68%] Built target test_node_interfaces__get_node_interfaces\n'}
+[3.027595] (rclcpp) StdoutLine: {'line': b'[ 68%] Built target test_node_global_args\n'}
+[3.031623] (rclcpp) StdoutLine: {'line': b'[ 70%] \x1b[32m\x1b[1mLinking CXX executable test_wait_set\x1b[0m\n'}
+[3.031911] (rclcpp) StdoutLine: {'line': b'[ 70%] Built target test_executor\n'}
+[3.039605] (rclcpp) StdoutLine: {'line': b'[ 70%] \x1b[32m\x1b[1mLinking CXX executable test_subscription_traits\x1b[0m\n'}
+[3.046800] (rclcpp) StdoutLine: {'line': b'[ 70%] \x1b[32m\x1b[1mLinking CXX executable test_intra_process_buffer\x1b[0m\n'}
+[3.056281] (rclcpp) StdoutLine: {'line': b'[ 71%] \x1b[32m\x1b[1mLinking CXX executable test_node_options\x1b[0m\n'}
+[3.078344] (rclcpp) StdoutLine: {'line': b'[ 73%] \x1b[32m\x1b[1mLinking CXX executable test_time_source\x1b[0m\n'}
+[3.078708] (rclcpp) StdoutLine: {'line': b'[ 73%] \x1b[32m\x1b[1mLinking CXX executable test_find_weak_nodes\x1b[0m\n'}
+[3.111806] (-) TimerEvent: {}
+[3.131249] (rclcpp) StdoutLine: {'line': b'[ 74%] Built target test_intra_process_manager\n'}
+[3.165875] (rclcpp) StdoutLine: {'line': b'[ 74%] \x1b[32m\x1b[1mLinking CXX executable test_logging\x1b[0m\n'}
+[3.203998] (rclcpp) StdoutLine: {'line': b'[ 75%] Built target test_loaned_message\n'}
+[3.211959] (-) TimerEvent: {}
+[3.240821] (rclcpp) StdoutLine: {'line': b'[ 76%] \x1b[32m\x1b[1mLinking CXX executable test_parameter\x1b[0m\n'}
+[3.312133] (-) TimerEvent: {}
+[3.328160] (rclcpp) StdoutLine: {'line': b'[ 77%] Built target test_create_timer\n'}
+[3.366366] (rclcpp) StdoutLine: {'line': b'[ 77%] \x1b[32m\x1b[1mLinking CXX executable test_parameter_events_filter\x1b[0m\n'}
+[3.371199] (rclcpp) StdoutLine: {'line': b'[ 78%] Built target test_subscription_traits\n'}
+[3.404976] (rclcpp) StdoutLine: {'line': b'[ 78%] \x1b[32m\x1b[1mLinking CXX executable test_parameter_map\x1b[0m\n'}
+[3.412301] (-) TimerEvent: {}
+[3.454600] (rclcpp) StdoutLine: {'line': b'[ 79%] Built target test_duration\n'}
+[3.498715] (rclcpp) StdoutLine: {'line': b'[ 79%] \x1b[32m\x1b[1mLinking CXX executable test_service\x1b[0m\n'}
+[3.512467] (-) TimerEvent: {}
+[3.613112] (-) TimerEvent: {}
+[3.713756] (-) TimerEvent: {}
+[3.714192] (rclcpp) StdoutLine: {'line': b'[ 80%] Built target test_subscription_topic_statistics\n'}
+[3.752730] (rclcpp) StdoutLine: {'line': b'[ 81%] \x1b[32m\x1b[1mLinking CXX executable test_rate\x1b[0m\n'}
+[3.813949] (-) TimerEvent: {}
+[3.914605] (-) TimerEvent: {}
+[4.015248] (-) TimerEvent: {}
+[4.115929] (-) TimerEvent: {}
+[4.216488] (-) TimerEvent: {}
+[4.317044] (-) TimerEvent: {}
+[4.323342] (rclcpp) StdoutLine: {'line': b'[ 81%] Built target test_node_options\n'}
+[4.342323] (rclcpp) StdoutLine: {'line': b'[ 81%] Built target test_intra_process_buffer\n'}
+[4.362907] (rclcpp) StdoutLine: {'line': b'[ 81%] \x1b[32m\x1b[1mLinking CXX executable test_publisher\x1b[0m\n'}
+[4.377637] (rclcpp) StdoutLine: {'line': b'[ 81%] Built target test_find_weak_nodes\n'}
+[4.378774] (rclcpp) StdoutLine: {'line': b'[ 81%] \x1b[32m\x1b[1mLinking CXX executable test_publisher_subscription_count_api\x1b[0m\n'}
+[4.417211] (-) TimerEvent: {}
+[4.444774] (rclcpp) StdoutLine: {'line': b'[ 81%] \x1b[32m\x1b[1mLinking CXX executable test_externally_defined_services\x1b[0m\n'}
+[4.517341] (-) TimerEvent: {}
+[4.522367] (rclcpp) StdoutLine: {'line': b'[ 82%] Built target test_logging\n'}
+[4.552166] (rclcpp) StdoutLine: {'line': b'[ 82%] \x1b[32m\x1b[1mLinking CXX executable test_qos\x1b[0m\n'}
+[4.613709] (rclcpp) StdoutLine: {'line': b'[ 82%] Built target test_parameter\n'}
+[4.617490] (-) TimerEvent: {}
+[4.667886] (rclcpp) StdoutLine: {'line': b'[ 83%] \x1b[32m\x1b[1mLinking CXX executable test_serialized_message_allocator\x1b[0m\n'}
+[4.712024] (rclcpp) StdoutLine: {'line': b'[ 84%] Built target test_parameter_map\n'}
+[4.717637] (-) TimerEvent: {}
+[4.748281] (rclcpp) StdoutLine: {'line': b'[ 84%] Built target test_service\n'}
+[4.748555] (rclcpp) StdoutLine: {'line': b'[ 84%] \x1b[32m\x1b[1mLinking CXX executable test_parameter_client\x1b[0m\n'}
+[4.748622] (rclcpp) StdoutLine: {'line': b'[ 84%] Built target test_time_source\n'}
+[4.776249] (rclcpp) StdoutLine: {'line': b'[ 84%] Built target test_serialized_message\n'}
+[4.795546] (rclcpp) StdoutLine: {'line': b'[ 85%] \x1b[32m\x1b[1mLinking CXX executable test_time\x1b[0m\n'}
+[4.797661] (rclcpp) StdoutLine: {'line': b'[ 85%] \x1b[32m\x1b[1mLinking CXX executable test_subscription\x1b[0m\n'}
+[4.817562] (rclcpp) StdoutLine: {'line': b'[ 85%] \x1b[32m\x1b[1mLinking CXX executable test_subscription_publisher_count_api\x1b[0m\n'}
+[4.817882] (-) TimerEvent: {}
+[4.918591] (-) TimerEvent: {}
+[4.934241] (rclcpp) StdoutLine: {'line': b'[ 85%] Built target test_rate\n'}
+[4.953413] (rclcpp) StdoutLine: {'line': b'[ 85%] Built target test_wait_set\n'}
+[4.975891] (rclcpp) StdoutLine: {'line': b'[ 86%] \x1b[32m\x1b[1mLinking CXX executable test_timer\x1b[0m\n'}
+[4.997207] (rclcpp) StdoutLine: {'line': b'[ 87%] \x1b[32m\x1b[1mLinking CXX executable test_utilities\x1b[0m\n'}
+[5.018754] (-) TimerEvent: {}
+[5.076029] (rclcpp) StdoutLine: {'line': b'[ 88%] Built target test_parameter_events_filter\n'}
+[5.118921] (-) TimerEvent: {}
+[5.123678] (rclcpp) StdoutLine: {'line': b'[ 88%] \x1b[32m\x1b[1mLinking CXX executable test_client\x1b[0m\n'}
+[5.219059] (-) TimerEvent: {}
+[5.319593] (-) TimerEvent: {}
+[5.420231] (-) TimerEvent: {}
+[5.523713] (-) TimerEvent: {}
+[5.624766] (-) TimerEvent: {}
+[5.725338] (-) TimerEvent: {}
+[5.825874] (-) TimerEvent: {}
+[5.895666] (rclcpp) StdoutLine: {'line': b'[ 89%] Built target test_publisher\n'}
+[5.921445] (rclcpp) StdoutLine: {'line': b'[ 90%] Built target test_qos\n'}
+[5.926044] (-) TimerEvent: {}
+[5.932001] (rclcpp) StdoutLine: {'line': b'[ 91%] \x1b[32m\x1b[1mLinking CXX executable test_init\x1b[0m\n'}
+[5.977865] (rclcpp) StdoutLine: {'line': b'[ 92%] Built target test_publisher_subscription_count_api\n'}
+[5.981977] (rclcpp) StdoutLine: {'line': b'[ 93%] \x1b[32m\x1b[1mLinking CXX executable test_qos_event\x1b[0m\n'}
+[6.013546] (rclcpp) StdoutLine: {'line': b'[ 94%] \x1b[32m\x1b[1mLinking CXX executable test_interface_traits\x1b[0m\n'}
+[6.026196] (-) TimerEvent: {}
+[6.111828] (rclcpp) StdoutLine: {'line': b'[ 94%] Built target test_time\n'}
+[6.126337] (-) TimerEvent: {}
+[6.158735] (rclcpp) StdoutLine: {'line': b'[ 94%] \x1b[32m\x1b[1mLinking CXX executable test_multi_threaded_executor\x1b[0m\n'}
+[6.226472] (-) TimerEvent: {}
+[6.240487] (rclcpp) StdoutLine: {'line': b'[ 94%] Built target test_parameter_client\n'}
+[6.274970] (rclcpp) StdoutLine: {'line': b'[ 94%] Built target test_timer\n'}
+[6.281919] (rclcpp) StdoutLine: {'line': b'[ 95%] \x1b[32m\x1b[1mLinking CXX executable test_node\x1b[0m\n'}
+[6.291457] (rclcpp) StdoutLine: {'line': b'[ 96%] Built target test_externally_defined_services\n'}
+[6.295178] (rclcpp) StdoutLine: {'line': b'[ 96%] Built target test_utilities\n'}
+[6.319845] (rclcpp) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking CXX executable test_guard_condition\x1b[0m\n'}
+[6.326627] (-) TimerEvent: {}
+[6.359366] (rclcpp) StdoutLine: {'line': b'[ 97%] Built target test_client\n'}
+[6.426782] (-) TimerEvent: {}
+[6.527345] (-) TimerEvent: {}
+[6.534810] (rclcpp) StdoutLine: {'line': b'[ 98%] Built target test_subscription_publisher_count_api\n'}
+[6.541437] (rclcpp) StdoutLine: {'line': b'[ 99%] Built target test_subscription\n'}
+[6.627521] (-) TimerEvent: {}
+[6.688113] (rclcpp) StdoutLine: {'line': b'[ 99%] Built target test_serialized_message_allocator\n'}
+[6.727679] (-) TimerEvent: {}
+[6.828102] (-) TimerEvent: {}
+[6.882651] (rclcpp) StdoutLine: {'line': b'[ 99%] Built target test_interface_traits\n'}
+[6.884259] (rclcpp) StdoutLine: {'line': b'[ 99%] Built target test_init\n'}
+[6.928192] (-) TimerEvent: {}
+[6.965754] (rclcpp) StdoutLine: {'line': b'[ 99%] Built target test_qos_event\n'}
+[6.970141] (rclcpp) StdoutLine: {'line': b'[100%] Built target test_multi_threaded_executor\n'}
+[7.020203] (rclcpp) StdoutLine: {'line': b'[100%] Built target test_guard_condition\n'}
+[7.028259] (-) TimerEvent: {}
+[7.081155] (rclcpp) StdoutLine: {'line': b'[100%] Built target test_node\n'}
+[7.092881] (rclcpp) CommandEnded: {'returncode': 0}
+[7.128378] (-) TimerEvent: {}
+[7.228741] (-) TimerEvent: {}
+[7.272805] (rclcpp) JobProgress: {'identifier': 'rclcpp', 'progress': 'install'}
+[7.284023] (rclcpp) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp'], 'cwd': '/home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'pengbo'), ('SSH_AGENT_PID', '2101'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('HOME', '/home/pengbo'), ('OLDPWD', '/home/pengbo'), ('DESKTOP_SESSION', 'ubuntu'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1915'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('LOGNAME', 'pengbo'), ('JOURNAL_STREAM', '8:57843'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'pengbo'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('WINDOWPATH', '2'), ('PATH', '/home/pengbo/gems/bin:/home/pengbo/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/pengbo-E5-D-MTS:@/tmp/.ICE-unix/2136,unix/pengbo-E5-D-MTS:/tmp/.ICE-unix/2136'), ('INVOCATION_ID', 'cd3e0ac318a8447b977c41bc9c0184d9'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/ea70d85e_10fd_4116_8e15_4c3eddad8fd5'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.114'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('GEM_HOME', '/home/pengbo/gems'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('COLCON', '1'), ('VTE_VERSION', '6003')]), 'shell': False}
+[7.293466] (rclcpp) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[7.293687] (rclcpp) StdoutLine: {'line': b'-- Installing: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/lib/librclcpp.so\n'}
+[7.301876] (rclcpp) StdoutLine: {'line': b'-- Set runtime path of "/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/lib/librclcpp.so" to ""\n'}
+[7.302045] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/share/rclcpp/environment/library_path.sh\n'}
+[7.302163] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/share/rclcpp/environment/library_path.dsv\n'}
+[7.302753] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp/test/resources\n'}
+[7.302850] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp/test/resources/test_node\n'}
+[7.302941] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp/test/resources/test_node/test_parameters.yaml\n'}
+[7.303031] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/share/ament_index/resource_index/package_run_dependencies/rclcpp\n'}
+[7.303401] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/share/ament_index/resource_index/parent_prefix_path/rclcpp\n'}
+[7.303667] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/share/rclcpp/environment/ament_prefix_path.dsv\n'}
+[7.303760] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/share/rclcpp/environment/path.dsv\n'}
+[7.303851] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/share/rclcpp/local_setup.bash\n'}
+[7.304495] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/share/rclcpp/local_setup.sh\n'}
+[7.304594] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/share/rclcpp/local_setup.zsh\n'}
+[7.304685] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/share/rclcpp/local_setup.dsv\n'}
+[7.304774] (rclcpp) StdoutLine: {'line': b'-- Installing: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/share/rclcpp/package.dsv\n'}
+[7.304862] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/share/ament_index/resource_index/packages/rclcpp\n'}
+[7.304952] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/share/rclcpp/cmake/rclcppExport.cmake\n'}
+[7.305040] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/share/rclcpp/cmake/rclcppExport-noconfig.cmake\n'}
+[7.305226] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/share/rclcpp/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[7.305312] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/share/rclcpp/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[7.305396] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/share/rclcpp/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[7.305478] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/share/rclcpp/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[7.305568] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/share/rclcpp/cmake/rosidl_cmake-extras.cmake\n'}
+[7.305714] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/share/rclcpp/cmake/rclcppConfig.cmake\n'}
+[7.305978] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/share/rclcpp/cmake/rclcppConfig-version.cmake\n'}
+[7.306099] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/share/rclcpp/package.xml\n'}
+[7.306323] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include\n'}
+[7.306868] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp\n'}
+[7.307640] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/publisher.hpp\n'}
+[7.307837] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/visibility_control.hpp\n'}
+[7.308082] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/allocator\n'}
+[7.308312] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/allocator/allocator_deleter.hpp\n'}
+[7.308476] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/allocator/allocator_common.hpp\n'}
+[7.308640] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/graph_listener.hpp\n'}
+[7.308837] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/wait_set_policies\n'}
+[7.309059] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/wait_set_policies/dynamic_storage.hpp\n'}
+[7.309180] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/wait_set_policies/detail\n'}
+[7.309397] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/wait_set_policies/detail/storage_policy_common.hpp\n'}
+[7.309786] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/wait_set_policies/detail/synchronization_policy_common.hpp\n'}
+[7.309937] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/wait_set_policies/detail/write_preferring_read_write_lock.hpp\n'}
+[7.310088] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/wait_set_policies/static_storage.hpp\n'}
+[7.310186] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/wait_set_policies/sequential_synchronization.hpp\n'}
+[7.310346] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/wait_set_policies/thread_safe_synchronization.hpp\n'}
+[7.310464] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/memory_strategy.hpp\n'}
+[7.310614] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/parameter_value.hpp\n'}
+[7.310730] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/parameter.hpp\n'}
+[7.310889] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/duration.hpp\n'}
+[7.310991] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/experimental\n'}
+[7.311147] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/experimental/subscription_intra_process.hpp\n'}
+[7.311386] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/experimental/subscription_intra_process_base.hpp\n'}
+[7.311519] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/experimental/create_intra_process_buffer.hpp\n'}
+[7.311628] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/experimental/executable_list.hpp\n'}
+[7.311779] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/experimental/README.md\n'}
+[7.312061] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/experimental/intra_process_manager.hpp\n'}
+[7.312176] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/experimental/buffers\n'}
+[7.312655] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/experimental/buffers/intra_process_buffer.hpp\n'}
+[7.312817] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/experimental/buffers/buffer_implementation_base.hpp\n'}
+[7.312964] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/experimental/buffers/ring_buffer_implementation.hpp\n'}
+[7.313096] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/node_interfaces\n'}
+[7.313264] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/node_interfaces/node_topics.hpp\n'}
+[7.313688] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/node_interfaces/node_logging_interface.hpp\n'}
+[7.313844] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/node_interfaces/node_graph.hpp\n'}
+[7.314468] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/node_interfaces/node_graph_interface.hpp\n'}
+[7.314613] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/node_interfaces/node_waitables_interface.hpp\n'}
+[7.314748] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/node_interfaces/node_time_source_interface.hpp\n'}
+[7.314850] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/node_interfaces/node_services.hpp\n'}
+[7.314969] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/node_interfaces/node_services_interface.hpp\n'}
+[7.315105] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/node_interfaces/node_topics_interface.hpp\n'}
+[7.315238] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/node_interfaces/node_base_interface.hpp\n'}
+[7.315370] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/node_interfaces/node_clock_interface.hpp\n'}
+[7.315499] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/node_interfaces/node_timers.hpp\n'}
+[7.315623] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/node_interfaces/node_parameters.hpp\n'}
+[7.315725] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/node_interfaces/node_base.hpp\n'}
+[7.315840] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/node_interfaces/node_clock.hpp\n'}
+[7.315978] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/node_interfaces/node_timers_interface.hpp\n'}
+[7.316114] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/node_interfaces/node_logging.hpp\n'}
+[7.316311] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/node_interfaces/node_time_source.hpp\n'}
+[7.316435] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/node_interfaces/node_waitables.hpp\n'}
+[7.316565] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/node_interfaces/node_parameters_interface.hpp\n'}
+[7.316689] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/node.hpp\n'}
+[7.316862] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/any_service_callback.hpp\n'}
+[7.317571] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/exceptions\n'}
+[7.318043] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/exceptions/exceptions.hpp\n'}
+[7.318182] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/wait_set_template.hpp\n'}
+[7.318449] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/subscription_options.hpp\n'}
+[7.318746] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/node_options.hpp\n'}
+[7.318897] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/type_support_decl.hpp\n'}
+[7.319127] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/wait_result.hpp\n'}
+[7.319599] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/logger.hpp\n'}
+[7.319748] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/qos.hpp\n'}
+[7.320198] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/strategies\n'}
+[7.320487] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/strategies/message_pool_memory_strategy.hpp\n'}
+[7.320653] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/strategies/allocator_memory_strategy.hpp\n'}
+[7.321281] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/executors\n'}
+[7.321517] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/executors/static_executor_entities_collector.hpp\n'}
+[7.321671] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/executors/multi_threaded_executor.hpp\n'}
+[7.321925] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/executors/single_threaded_executor.hpp\n'}
+[7.322116] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/executors/static_single_threaded_executor.hpp\n'}
+[7.322264] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/init_options.hpp\n'}
+[7.322507] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/scope_exit.hpp\n'}
+[7.322744] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/callback_group.hpp\n'}
+[7.322880] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/any_executable.hpp\n'}
+[7.323085] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/parameter_client.hpp\n'}
+[7.323347] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/service.hpp\n'}
+[7.324100] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/macros.hpp\n'}
+[7.324748] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/loaned_message.hpp\n'}
+[7.324897] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/future_return_code.hpp\n'}
+[7.325141] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/detail\n'}
+[7.325551] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/detail/rmw_implementation_specific_payload.hpp\n'}
+[7.325689] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/detail/rmw_implementation_specific_publisher_payload.hpp\n'}
+[7.325893] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/detail/rmw_implementation_specific_subscription_payload.hpp\n'}
+[7.326066] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/detail/utilities.hpp\n'}
+[7.326674] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/detail/README.md\n'}
+[7.326822] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/detail/resolve_enable_topic_statistics.hpp\n'}
+[7.327066] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/detail/resolve_intra_process_buffer_type.hpp\n'}
+[7.327669] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/detail/resolve_use_intra_process.hpp\n'}
+[7.327820] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/timer.hpp\n'}
+[7.328068] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/serialized_message.hpp\n'}
+[7.328195] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/rate.hpp\n'}
+[7.328894] (-) TimerEvent: {}
+[7.329135] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/wait_set.hpp\n'}
+[7.329324] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/subscription_traits.hpp\n'}
+[7.329726] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/parameter_map.hpp\n'}
+[7.331020] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/topic_statistics_state.hpp\n'}
+[7.331195] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/time_source.hpp\n'}
+[7.331298] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/wait_result_kind.hpp\n'}
+[7.331393] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/serialization.hpp\n'}
+[7.331663] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/memory_strategies.hpp\n'}
+[7.331767] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/context.hpp\n'}
+[7.331868] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/function_traits.hpp\n'}
+[7.331969] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/executors.hpp\n'}
+[7.332524] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/create_publisher.hpp\n'}
+[7.332630] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/subscription_factory.hpp\n'}
+[7.332725] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/executor.hpp\n'}
+[7.332819] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/clock.hpp\n'}
+[7.332916] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/intra_process_setting.hpp\n'}
+[7.333018] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/utilities.hpp\n'}
+[7.333112] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/publisher_options.hpp\n'}
+[7.333205] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/guard_condition.hpp\n'}
+[7.333298] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/contexts\n'}
+[7.333393] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/contexts/default_context.hpp\n'}
+[7.333489] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/time.hpp\n'}
+[7.333584] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/create_timer.hpp\n'}
+[7.333685] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/intra_process_buffer_type.hpp\n'}
+[7.333787] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/publisher_factory.hpp\n'}
+[7.333882] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/subscription.hpp\n'}
+[7.333978] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/expand_topic_or_service_name.hpp\n'}
+[7.334073] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/create_service.hpp\n'}
+[7.334168] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/event.hpp\n'}
+[7.334262] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/create_subscription.hpp\n'}
+[7.334356] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/executor_options.hpp\n'}
+[7.334451] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/publisher_base.hpp\n'}
+[7.334544] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/message_memory_strategy.hpp\n'}
+[7.334638] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/subscription_wait_set_mask.hpp\n'}
+[7.334733] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/message_info.hpp\n'}
+[7.334826] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/parameter_service.hpp\n'}
+[7.334919] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/subscription_base.hpp\n'}
+[7.335013] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/exceptions.hpp\n'}
+[7.335107] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/create_client.hpp\n'}
+[7.335201] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/any_subscription_callback.hpp\n'}
+[7.335294] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/topic_statistics\n'}
+[7.335389] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/topic_statistics/subscription_topic_statistics.hpp\n'}
+[7.335484] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/waitable.hpp\n'}
+[7.335578] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/rclcpp.hpp\n'}
+[7.335670] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/parameter_events_filter.hpp\n'}
+[7.335762] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/qos_event.hpp\n'}
+[7.335855] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/node_impl.hpp\n'}
+[7.335947] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/client.hpp\n'}
+[7.336059] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include\n'}
+[7.336154] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp\n'}
+[7.336246] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/node_interfaces\n'}
+[7.336350] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/node_interfaces/get_node_services_interface.hpp\n'}
+[7.336450] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/node_interfaces/node_services_interface_traits.hpp\n'}
+[7.336543] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/node_interfaces/node_graph_interface_traits.hpp\n'}
+[7.336635] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/node_interfaces/get_node_timers_interface.hpp\n'}
+[7.336728] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/node_interfaces/get_node_time_source_interface.hpp\n'}
+[7.336827] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/node_interfaces/node_waitables_interface_traits.hpp\n'}
+[7.336922] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/node_interfaces/get_node_clock_interface.hpp\n'}
+[7.337018] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/node_interfaces/get_node_topics_interface.hpp\n'}
+[7.337118] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/node_interfaces/get_node_logging_interface.hpp\n'}
+[7.337212] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/node_interfaces/get_node_parameters_interface.hpp\n'}
+[7.337305] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/node_interfaces/node_parameters_interface_traits.hpp\n'}
+[7.337400] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/node_interfaces/node_timers_interface_traits.hpp\n'}
+[7.337494] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/node_interfaces/node_base_interface_traits.hpp\n'}
+[7.337587] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/node_interfaces/get_node_graph_interface.hpp\n'}
+[7.337681] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/node_interfaces/node_topics_interface_traits.hpp\n'}
+[7.337775] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/node_interfaces/node_logging_interface_traits.hpp\n'}
+[7.337867] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/node_interfaces/node_clock_interface_traits.hpp\n'}
+[7.337960] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/node_interfaces/get_node_base_interface.hpp\n'}
+[7.338053] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/node_interfaces/get_node_waitables_interface.hpp\n'}
+[7.338146] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/node_interfaces/node_time_source_interface_traits.hpp\n'}
+[7.338239] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/logging.hpp\n'}
+[7.338336] (rclcpp) CommandEnded: {'returncode': 0}
+[7.428981] (-) TimerEvent: {}
+[7.518198] (rclcpp) JobEnded: {'identifier': 'rclcpp', 'rc': 0}
+[7.521309] (rclcpp_action) JobStarted: {'identifier': 'rclcpp_action'}
+[7.521888] (rclcpp_components) JobStarted: {'identifier': 'rclcpp_components'}
+[7.525173] (rclcpp_lifecycle) JobStarted: {'identifier': 'rclcpp_lifecycle'}
+[7.529332] (-) TimerEvent: {}
+[7.529648] (rclcpp_action) JobProgress: {'identifier': 'rclcpp_action', 'progress': 'cmake'}
+[7.530049] (rclcpp_action) JobProgress: {'identifier': 'rclcpp_action', 'progress': 'build'}
+[7.530247] (rclcpp_action) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp_action', '--', '-j12', '-l12'], 'cwd': '/home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp_action', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'pengbo'), ('SSH_AGENT_PID', '2101'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/lib'), ('HOME', '/home/pengbo'), ('OLDPWD', '/home/pengbo'), ('DESKTOP_SESSION', 'ubuntu'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1915'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('LOGNAME', 'pengbo'), ('JOURNAL_STREAM', '8:57843'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'pengbo'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('WINDOWPATH', '2'), ('PATH', '/home/pengbo/gems/bin:/home/pengbo/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/pengbo-E5-D-MTS:@/tmp/.ICE-unix/2136,unix/pengbo-E5-D-MTS:/tmp/.ICE-unix/2136'), ('INVOCATION_ID', 'cd3e0ac318a8447b977c41bc9c0184d9'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/ea70d85e_10fd_4116_8e15_4c3eddad8fd5'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.114'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('GEM_HOME', '/home/pengbo/gems'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp_action'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp')]), 'shell': False}
+[7.532920] (rclcpp_components) JobProgress: {'identifier': 'rclcpp_components', 'progress': 'cmake'}
+[7.533312] (rclcpp_components) JobProgress: {'identifier': 'rclcpp_components', 'progress': 'build'}
+[7.533567] (rclcpp_components) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp_components', '--', '-j12', '-l12'], 'cwd': '/home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp_components', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'pengbo'), ('SSH_AGENT_PID', '2101'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/lib'), ('HOME', '/home/pengbo'), ('OLDPWD', '/home/pengbo'), ('DESKTOP_SESSION', 'ubuntu'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1915'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('LOGNAME', 'pengbo'), ('JOURNAL_STREAM', '8:57843'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'pengbo'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('WINDOWPATH', '2'), ('PATH', '/home/pengbo/gems/bin:/home/pengbo/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/pengbo-E5-D-MTS:@/tmp/.ICE-unix/2136,unix/pengbo-E5-D-MTS:/tmp/.ICE-unix/2136'), ('INVOCATION_ID', 'cd3e0ac318a8447b977c41bc9c0184d9'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/ea70d85e_10fd_4116_8e15_4c3eddad8fd5'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.114'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('GEM_HOME', '/home/pengbo/gems'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp_components'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp')]), 'shell': False}
+[7.537192] (rclcpp_lifecycle) JobProgress: {'identifier': 'rclcpp_lifecycle', 'progress': 'cmake'}
+[7.538020] (rclcpp_lifecycle) JobProgress: {'identifier': 'rclcpp_lifecycle', 'progress': 'build'}
+[7.538578] (rclcpp_lifecycle) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp_lifecycle', '--', '-j12', '-l12'], 'cwd': '/home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp_lifecycle', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'pengbo'), ('SSH_AGENT_PID', '2101'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/lib'), ('HOME', '/home/pengbo'), ('OLDPWD', '/home/pengbo'), ('DESKTOP_SESSION', 'ubuntu'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1915'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('LOGNAME', 'pengbo'), ('JOURNAL_STREAM', '8:57843'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'pengbo'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('WINDOWPATH', '2'), ('PATH', '/home/pengbo/gems/bin:/home/pengbo/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/pengbo-E5-D-MTS:@/tmp/.ICE-unix/2136,unix/pengbo-E5-D-MTS:/tmp/.ICE-unix/2136'), ('INVOCATION_ID', 'cd3e0ac318a8447b977c41bc9c0184d9'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/ea70d85e_10fd_4116_8e15_4c3eddad8fd5'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.114'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('GEM_HOME', '/home/pengbo/gems'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp_lifecycle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp')]), 'shell': False}
+[7.575464] (rclcpp_components) StdoutLine: {'line': b'[ 12%] Built target gtest_main\n'}
+[7.575731] (rclcpp_action) StdoutLine: {'line': b'[ 11%] Built target gtest_main\n'}
+[7.576749] (rclcpp_components) StdoutLine: {'line': b'[ 25%] Built target gtest\n'}
+[7.579045] (rclcpp_action) StdoutLine: {'line': b'[ 22%] Built target gtest\n'}
+[7.582050] (rclcpp_components) StdoutLine: {'line': b'[ 31%] \x1b[32m\x1b[1mLinking CXX shared library libtest_component.so\x1b[0m\n'}
+[7.582937] (rclcpp_components) StdoutLine: {'line': b'[ 37%] \x1b[32m\x1b[1mLinking CXX shared library libcomponent_manager.so\x1b[0m\n'}
+[7.583451] (rclcpp_action) StdoutLine: {'line': b'[ 27%] \x1b[32m\x1b[1mLinking CXX shared library librclcpp_action.so\x1b[0m\n'}
+[7.589560] (rclcpp_lifecycle) StdoutLine: {'line': b'[  8%] Built target gtest_main\n'}
+[7.592655] (rclcpp_lifecycle) StdoutLine: {'line': b'[ 17%] Built target gtest\n'}
+[7.605925] (rclcpp_lifecycle) StdoutLine: {'line': b'[ 21%] \x1b[32m\x1b[1mLinking CXX shared library librclcpp_lifecycle.so\x1b[0m\n'}
+[7.629479] (-) TimerEvent: {}
+[7.729930] (-) TimerEvent: {}
+[7.830360] (-) TimerEvent: {}
+[7.897175] (rclcpp_action) StdoutLine: {'line': b'[ 55%] Built target rclcpp_action\n'}
+[7.920353] (rclcpp_action) StdoutLine: {'line': b'[ 61%] \x1b[32m\x1b[1mLinking CXX executable test_types\x1b[0m\n'}
+[7.923094] (rclcpp_action) StdoutLine: {'line': b'[ 77%] \x1b[32m\x1b[1mLinking CXX executable test_server\x1b[0m\n'}
+[7.923322] (rclcpp_action) StdoutLine: {'line': b'[ 77%] \x1b[32m\x1b[1mLinking CXX executable test_client\x1b[0m\n'}
+[7.923389] (rclcpp_action) StdoutLine: {'line': b'[ 77%] \x1b[32m\x1b[1mLinking CXX executable test_traits\x1b[0m\n'}
+[7.925562] (rclcpp_components) StdoutLine: {'line': b'[ 43%] Built target test_component\n'}
+[7.930476] (-) TimerEvent: {}
+[8.009561] (rclcpp_components) StdoutLine: {'line': b'[ 50%] Built target component_manager\n'}
+[8.030641] (-) TimerEvent: {}
+[8.041957] (rclcpp_components) StdoutLine: {'line': b'[ 68%] \x1b[32m\x1b[1mLinking CXX executable component_container_mt\x1b[0m\n'}
+[8.042195] (rclcpp_components) StdoutLine: {'line': b'[ 68%] \x1b[32m\x1b[1mLinking CXX executable test_component_manager_api\x1b[0m\n'}
+[8.042256] (rclcpp_components) StdoutLine: {'line': b'[ 68%] \x1b[32m\x1b[1mLinking CXX executable component_container\x1b[0m\n'}
+[8.046128] (rclcpp_components) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking CXX executable test_component_manager\x1b[0m\n'}
+[8.081813] (rclcpp_lifecycle) StdoutLine: {'line': b'[ 39%] Built target rclcpp_lifecycle\n'}
+[8.119572] (rclcpp_action) StdoutLine: {'line': b'[ 83%] Built target test_traits\n'}
+[8.123477] (rclcpp_lifecycle) StdoutLine: {'line': b'[ 43%] \x1b[32m\x1b[1mLinking CXX executable test_register_custom_callbacks\x1b[0m\n'}
+[8.130786] (-) TimerEvent: {}
+[8.131291] (rclcpp_lifecycle) StdoutLine: {'line': b'[ 47%] \x1b[32m\x1b[1mLinking CXX executable test_state_wrapper\x1b[0m\n'}
+[8.141370] (rclcpp_lifecycle) StdoutLine: {'line': b'[ 52%] \x1b[32m\x1b[1mLinking CXX executable test_callback_exceptions\x1b[0m\n'}
+[8.148537] (rclcpp_lifecycle) StdoutLine: {'line': b'[ 56%] \x1b[32m\x1b[1mLinking CXX executable test_lifecycle_service_client\x1b[0m\n'}
+[8.148898] (rclcpp_lifecycle) StdoutLine: {'line': b'[ 60%] \x1b[32m\x1b[1mLinking CXX executable test_lifecycle_node\x1b[0m\n'}
+[8.160329] (rclcpp_lifecycle) StdoutLine: {'line': b'[ 65%] \x1b[32m\x1b[1mLinking CXX executable test_transition_wrapper\x1b[0m\n'}
+[8.170458] (rclcpp_lifecycle) StdoutLine: {'line': b'[ 69%] \x1b[32m\x1b[1mLinking CXX executable test_state_machine_info\x1b[0m\n'}
+[8.230947] (-) TimerEvent: {}
+[8.328750] (rclcpp_action) StdoutLine: {'line': b'[ 88%] Built target test_types\n'}
+[8.331053] (-) TimerEvent: {}
+[8.431619] (-) TimerEvent: {}
+[8.532257] (-) TimerEvent: {}
+[8.632894] (-) TimerEvent: {}
+[8.703645] (rclcpp_lifecycle) StdoutLine: {'line': b'[ 73%] Built target test_state_wrapper\n'}
+[8.733064] (-) TimerEvent: {}
+[8.833636] (-) TimerEvent: {}
+[8.934219] (-) TimerEvent: {}
+[9.004190] (rclcpp_lifecycle) StdoutLine: {'line': b'[ 78%] Built target test_transition_wrapper\n'}
+[9.034463] (-) TimerEvent: {}
+[9.135133] (-) TimerEvent: {}
+[9.235716] (-) TimerEvent: {}
+[9.320535] (rclcpp_components) StdoutLine: {'line': b'[ 81%] Built target component_container\n'}
+[9.335864] (-) TimerEvent: {}
+[9.377885] (rclcpp_action) StdoutLine: {'line': b'[ 94%] Built target test_client\n'}
+[9.433270] (rclcpp_components) StdoutLine: {'line': b'[ 87%] Built target test_component_manager\n'}
+[9.435928] (-) TimerEvent: {}
+[9.490633] (rclcpp_components) StdoutLine: {'line': b'[ 93%] Built target component_container_mt\n'}
+[9.536106] (-) TimerEvent: {}
+[9.537371] (rclcpp_components) StdoutLine: {'line': b'[100%] Built target test_component_manager_api\n'}
+[9.548274] (rclcpp_components) CommandEnded: {'returncode': 0}
+[9.562401] (rclcpp_lifecycle) StdoutLine: {'line': b'[ 82%] Built target test_register_custom_callbacks\n'}
+[9.573440] (rclcpp_components) JobProgress: {'identifier': 'rclcpp_components', 'progress': 'install'}
+[9.573761] (rclcpp_components) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp_components'], 'cwd': '/home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp_components', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'pengbo'), ('SSH_AGENT_PID', '2101'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/lib'), ('HOME', '/home/pengbo'), ('OLDPWD', '/home/pengbo'), ('DESKTOP_SESSION', 'ubuntu'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1915'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('LOGNAME', 'pengbo'), ('JOURNAL_STREAM', '8:57843'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'pengbo'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('WINDOWPATH', '2'), ('PATH', '/home/pengbo/gems/bin:/home/pengbo/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/pengbo-E5-D-MTS:@/tmp/.ICE-unix/2136,unix/pengbo-E5-D-MTS:/tmp/.ICE-unix/2136'), ('INVOCATION_ID', 'cd3e0ac318a8447b977c41bc9c0184d9'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/ea70d85e_10fd_4116_8e15_4c3eddad8fd5'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.114'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('GEM_HOME', '/home/pengbo/gems'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp_components'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp')]), 'shell': False}
+[9.581790] (rclcpp_components) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[9.582084] (rclcpp_components) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_components/share/rclcpp_components/node_main.cpp.in\n'}
+[9.582194] (rclcpp_components) StdoutLine: {'line': b'-- Installing: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_components/lib/libcomponent_manager.so\n'}
+[9.583877] (rclcpp_components) StdoutLine: {'line': b'-- Set runtime path of "/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_components/lib/libcomponent_manager.so" to ""\n'}
+[9.584125] (rclcpp_components) StdoutLine: {'line': b'-- Installing: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_components/lib/rclcpp_components/component_container\n'}
+[9.584694] (rclcpp_components) StdoutLine: {'line': b'-- Set runtime path of "/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_components/lib/rclcpp_components/component_container" to ""\n'}
+[9.584937] (rclcpp_components) StdoutLine: {'line': b'-- Installing: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_components/lib/rclcpp_components/component_container_mt\n'}
+[9.585495] (rclcpp_components) StdoutLine: {'line': b'-- Set runtime path of "/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_components/lib/rclcpp_components/component_container_mt" to ""\n'}
+[9.585663] (rclcpp_components) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_components/include\n'}
+[9.585821] (rclcpp_components) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_components/include/rclcpp_components\n'}
+[9.585954] (rclcpp_components) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_components/include/rclcpp_components/visibility_control.hpp\n'}
+[9.586068] (rclcpp_components) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_components/include/rclcpp_components/node_instance_wrapper.hpp\n'}
+[9.586175] (rclcpp_components) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_components/include/rclcpp_components/register_node_macro.hpp\n'}
+[9.586283] (rclcpp_components) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_components/include/rclcpp_components/component_manager.hpp\n'}
+[9.586462] (rclcpp_components) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_components/include/rclcpp_components/node_factory.hpp\n'}
+[9.586576] (rclcpp_components) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_components/include/rclcpp_components/node_factory_template.hpp\n'}
+[9.586732] (rclcpp_components) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_components/share/rclcpp_components/cmake\n'}
+[9.586982] (rclcpp_components) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_components/share/rclcpp_components/cmake/rclcpp_components_package_hook.cmake\n'}
+[9.587081] (rclcpp_components) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_components/share/rclcpp_components/cmake/rclcpp_components_register_node.cmake\n'}
+[9.587148] (rclcpp_components) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_components/share/rclcpp_components/cmake/rclcpp_components_register_nodes.cmake\n'}
+[9.587210] (rclcpp_components) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_components/share/rclcpp_components/environment/library_path.sh\n'}
+[9.587274] (rclcpp_components) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_components/share/rclcpp_components/environment/library_path.dsv\n'}
+[9.587336] (rclcpp_components) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_components/share/ament_index/resource_index/package_run_dependencies/rclcpp_components\n'}
+[9.587400] (rclcpp_components) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_components/share/ament_index/resource_index/parent_prefix_path/rclcpp_components\n'}
+[9.587461] (rclcpp_components) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_components/share/rclcpp_components/environment/ament_prefix_path.dsv\n'}
+[9.587522] (rclcpp_components) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_components/share/rclcpp_components/environment/path.dsv\n'}
+[9.587584] (rclcpp_components) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_components/share/rclcpp_components/local_setup.bash\n'}
+[9.587645] (rclcpp_components) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_components/share/rclcpp_components/local_setup.sh\n'}
+[9.587716] (rclcpp_components) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_components/share/rclcpp_components/local_setup.zsh\n'}
+[9.587811] (rclcpp_components) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_components/share/rclcpp_components/local_setup.dsv\n'}
+[9.587876] (rclcpp_components) StdoutLine: {'line': b'-- Installing: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_components/share/rclcpp_components/package.dsv\n'}
+[9.588949] (rclcpp_components) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_components/share/ament_index/resource_index/packages/rclcpp_components\n'}
+[9.589266] (rclcpp_components) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_components/share/rclcpp_components/cmake/component_managerExport.cmake\n'}
+[9.589338] (rclcpp_components) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_components/share/rclcpp_components/cmake/component_managerExport-noconfig.cmake\n'}
+[9.589407] (rclcpp_components) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_components/share/rclcpp_components/cmake/rclcpp_components-extras.cmake\n'}
+[9.589474] (rclcpp_components) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_components/share/rclcpp_components/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[9.589541] (rclcpp_components) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_components/share/rclcpp_components/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[9.589890] (rclcpp_components) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_components/share/rclcpp_components/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[9.589962] (rclcpp_components) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_components/share/rclcpp_components/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[9.590032] (rclcpp_components) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_components/share/rclcpp_components/cmake/rclcpp_componentsConfig.cmake\n'}
+[9.590097] (rclcpp_components) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_components/share/rclcpp_components/cmake/rclcpp_componentsConfig-version.cmake\n'}
+[9.590161] (rclcpp_components) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_components/share/rclcpp_components/package.xml\n'}
+[9.591774] (rclcpp_components) CommandEnded: {'returncode': 0}
+[9.607083] (rclcpp_lifecycle) StdoutLine: {'line': b'[ 86%] Built target test_lifecycle_service_client\n'}
+[9.618350] (rclcpp_lifecycle) StdoutLine: {'line': b'[ 91%] Built target test_state_machine_info\n'}
+[9.633957] (rclcpp_components) JobEnded: {'identifier': 'rclcpp_components', 'rc': 0}
+[9.636161] (-) TimerEvent: {}
+[9.659716] (rclcpp_lifecycle) StdoutLine: {'line': b'[ 95%] Built target test_lifecycle_node\n'}
+[9.675606] (rclcpp_lifecycle) StdoutLine: {'line': b'[100%] Built target test_callback_exceptions\n'}
+[9.684427] (rclcpp_lifecycle) CommandEnded: {'returncode': 0}
+[9.715380] (rclcpp_lifecycle) JobProgress: {'identifier': 'rclcpp_lifecycle', 'progress': 'install'}
+[9.715760] (rclcpp_lifecycle) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp_lifecycle'], 'cwd': '/home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp_lifecycle', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'pengbo'), ('SSH_AGENT_PID', '2101'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/lib'), ('HOME', '/home/pengbo'), ('OLDPWD', '/home/pengbo'), ('DESKTOP_SESSION', 'ubuntu'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1915'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('LOGNAME', 'pengbo'), ('JOURNAL_STREAM', '8:57843'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'pengbo'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('WINDOWPATH', '2'), ('PATH', '/home/pengbo/gems/bin:/home/pengbo/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/pengbo-E5-D-MTS:@/tmp/.ICE-unix/2136,unix/pengbo-E5-D-MTS:/tmp/.ICE-unix/2136'), ('INVOCATION_ID', 'cd3e0ac318a8447b977c41bc9c0184d9'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/ea70d85e_10fd_4116_8e15_4c3eddad8fd5'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.114'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('GEM_HOME', '/home/pengbo/gems'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp_lifecycle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp')]), 'shell': False}
+[9.724925] (rclcpp_lifecycle) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[9.725205] (rclcpp_lifecycle) StdoutLine: {'line': b'-- Installing: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_lifecycle/lib/librclcpp_lifecycle.so\n'}
+[9.726798] (rclcpp_lifecycle) StdoutLine: {'line': b'-- Set runtime path of "/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_lifecycle/lib/librclcpp_lifecycle.so" to ""\n'}
+[9.726959] (rclcpp_lifecycle) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_lifecycle/share/rclcpp_lifecycle/environment/library_path.sh\n'}
+[9.727083] (rclcpp_lifecycle) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_lifecycle/share/rclcpp_lifecycle/environment/library_path.dsv\n'}
+[9.727193] (rclcpp_lifecycle) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_lifecycle/share/ament_index/resource_index/package_run_dependencies/rclcpp_lifecycle\n'}
+[9.727316] (rclcpp_lifecycle) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_lifecycle/share/ament_index/resource_index/parent_prefix_path/rclcpp_lifecycle\n'}
+[9.727426] (rclcpp_lifecycle) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_lifecycle/share/rclcpp_lifecycle/environment/ament_prefix_path.dsv\n'}
+[9.727606] (rclcpp_lifecycle) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_lifecycle/share/rclcpp_lifecycle/environment/path.dsv\n'}
+[9.727744] (rclcpp_lifecycle) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_lifecycle/share/rclcpp_lifecycle/local_setup.bash\n'}
+[9.727844] (rclcpp_lifecycle) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_lifecycle/share/rclcpp_lifecycle/local_setup.sh\n'}
+[9.727941] (rclcpp_lifecycle) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_lifecycle/share/rclcpp_lifecycle/local_setup.zsh\n'}
+[9.728055] (rclcpp_lifecycle) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_lifecycle/share/rclcpp_lifecycle/local_setup.dsv\n'}
+[9.728230] (rclcpp_lifecycle) StdoutLine: {'line': b'-- Installing: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_lifecycle/share/rclcpp_lifecycle/package.dsv\n'}
+[9.728421] (rclcpp_lifecycle) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_lifecycle/share/ament_index/resource_index/packages/rclcpp_lifecycle\n'}
+[9.728561] (rclcpp_lifecycle) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_lifecycle/share/rclcpp_lifecycle/cmake/rclcpp_lifecycleExport.cmake\n'}
+[9.728659] (rclcpp_lifecycle) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_lifecycle/share/rclcpp_lifecycle/cmake/rclcpp_lifecycleExport-noconfig.cmake\n'}
+[9.728760] (rclcpp_lifecycle) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_lifecycle/share/rclcpp_lifecycle/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[9.728852] (rclcpp_lifecycle) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_lifecycle/share/rclcpp_lifecycle/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[9.728941] (rclcpp_lifecycle) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_lifecycle/share/rclcpp_lifecycle/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[9.729040] (rclcpp_lifecycle) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_lifecycle/share/rclcpp_lifecycle/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[9.729138] (rclcpp_lifecycle) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_lifecycle/share/rclcpp_lifecycle/cmake/rclcpp_lifecycleConfig.cmake\n'}
+[9.729234] (rclcpp_lifecycle) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_lifecycle/share/rclcpp_lifecycle/cmake/rclcpp_lifecycleConfig-version.cmake\n'}
+[9.729331] (rclcpp_lifecycle) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_lifecycle/share/rclcpp_lifecycle/package.xml\n'}
+[9.729428] (rclcpp_lifecycle) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_lifecycle/include\n'}
+[9.729529] (rclcpp_lifecycle) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_lifecycle/include/rclcpp_lifecycle\n'}
+[9.729861] (rclcpp_lifecycle) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_lifecycle/include/rclcpp_lifecycle/lifecycle_node.hpp\n'}
+[9.729963] (rclcpp_lifecycle) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_lifecycle/include/rclcpp_lifecycle/node_interfaces\n'}
+[9.730060] (rclcpp_lifecycle) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_lifecycle/include/rclcpp_lifecycle/node_interfaces/lifecycle_node_interface.hpp\n'}
+[9.730159] (rclcpp_lifecycle) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_lifecycle/include/rclcpp_lifecycle/visibility_control.h\n'}
+[9.730470] (rclcpp_lifecycle) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_lifecycle/include/rclcpp_lifecycle/lifecycle_node_impl.hpp\n'}
+[9.730571] (rclcpp_lifecycle) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_lifecycle/include/rclcpp_lifecycle/state.hpp\n'}
+[9.730672] (rclcpp_lifecycle) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_lifecycle/include/rclcpp_lifecycle/type_traits\n'}
+[9.730810] (rclcpp_lifecycle) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_lifecycle/include/rclcpp_lifecycle/type_traits/is_manageable_node.hpp\n'}
+[9.730909] (rclcpp_lifecycle) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_lifecycle/include/rclcpp_lifecycle/transition.hpp\n'}
+[9.731008] (rclcpp_lifecycle) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_lifecycle/include/rclcpp_lifecycle/lifecycle_publisher.hpp\n'}
+[9.731404] (rclcpp_lifecycle) CommandEnded: {'returncode': 0}
+[9.736326] (-) TimerEvent: {}
+[9.744444] (rclcpp_action) StdoutLine: {'line': b'[100%] Built target test_server\n'}
+[9.754230] (rclcpp_action) CommandEnded: {'returncode': 0}
+[9.780818] (rclcpp_lifecycle) JobEnded: {'identifier': 'rclcpp_lifecycle', 'rc': 0}
+[9.788864] (rclcpp_action) JobProgress: {'identifier': 'rclcpp_action', 'progress': 'install'}
+[9.789254] (rclcpp_action) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp_action'], 'cwd': '/home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp_action', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'pengbo'), ('SSH_AGENT_PID', '2101'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/lib'), ('HOME', '/home/pengbo'), ('OLDPWD', '/home/pengbo'), ('DESKTOP_SESSION', 'ubuntu'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1915'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('LOGNAME', 'pengbo'), ('JOURNAL_STREAM', '8:57843'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'pengbo'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('WINDOWPATH', '2'), ('PATH', '/home/pengbo/gems/bin:/home/pengbo/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/pengbo-E5-D-MTS:@/tmp/.ICE-unix/2136,unix/pengbo-E5-D-MTS:/tmp/.ICE-unix/2136'), ('INVOCATION_ID', 'cd3e0ac318a8447b977c41bc9c0184d9'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/ea70d85e_10fd_4116_8e15_4c3eddad8fd5'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.114'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('GEM_HOME', '/home/pengbo/gems'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp_action'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp')]), 'shell': False}
+[9.797793] (rclcpp_action) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[9.798056] (rclcpp_action) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_action/include\n'}
+[9.798143] (rclcpp_action) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_action/include/rclcpp_action\n'}
+[9.798218] (rclcpp_action) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_action/include/rclcpp_action/visibility_control.hpp\n'}
+[9.798312] (rclcpp_action) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_action/include/rclcpp_action/client_goal_handle_impl.hpp\n'}
+[9.798384] (rclcpp_action) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_action/include/rclcpp_action/client_goal_handle.hpp\n'}
+[9.798453] (rclcpp_action) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_action/include/rclcpp_action/qos.hpp\n'}
+[9.798524] (rclcpp_action) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_action/include/rclcpp_action/types.hpp\n'}
+[9.798592] (rclcpp_action) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_action/include/rclcpp_action/server_goal_handle.hpp\n'}
+[9.798661] (rclcpp_action) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_action/include/rclcpp_action/server.hpp\n'}
+[9.798729] (rclcpp_action) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_action/include/rclcpp_action/rclcpp_action.hpp\n'}
+[9.798798] (rclcpp_action) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_action/include/rclcpp_action/exceptions.hpp\n'}
+[9.798866] (rclcpp_action) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_action/include/rclcpp_action/create_client.hpp\n'}
+[9.798936] (rclcpp_action) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_action/include/rclcpp_action/create_server.hpp\n'}
+[9.799004] (rclcpp_action) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_action/include/rclcpp_action/client.hpp\n'}
+[9.799072] (rclcpp_action) StdoutLine: {'line': b'-- Installing: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_action/lib/librclcpp_action.so\n'}
+[9.799297] (rclcpp_action) StdoutLine: {'line': b'-- Set runtime path of "/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_action/lib/librclcpp_action.so" to ""\n'}
+[9.799414] (rclcpp_action) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_action/share/rclcpp_action/environment/library_path.sh\n'}
+[9.799522] (rclcpp_action) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_action/share/rclcpp_action/environment/library_path.dsv\n'}
+[9.799618] (rclcpp_action) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_action/share/ament_index/resource_index/package_run_dependencies/rclcpp_action\n'}
+[9.799719] (rclcpp_action) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_action/share/ament_index/resource_index/parent_prefix_path/rclcpp_action\n'}
+[9.799833] (rclcpp_action) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_action/share/rclcpp_action/environment/ament_prefix_path.dsv\n'}
+[9.799962] (rclcpp_action) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_action/share/rclcpp_action/environment/path.dsv\n'}
+[9.800068] (rclcpp_action) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_action/share/rclcpp_action/local_setup.bash\n'}
+[9.800147] (rclcpp_action) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_action/share/rclcpp_action/local_setup.sh\n'}
+[9.800239] (rclcpp_action) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_action/share/rclcpp_action/local_setup.zsh\n'}
+[9.800332] (rclcpp_action) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_action/share/rclcpp_action/local_setup.dsv\n'}
+[9.800460] (rclcpp_action) StdoutLine: {'line': b'-- Installing: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_action/share/rclcpp_action/package.dsv\n'}
+[9.800591] (rclcpp_action) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_action/share/ament_index/resource_index/packages/rclcpp_action\n'}
+[9.800680] (rclcpp_action) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_action/share/rclcpp_action/cmake/rclcpp_actionExport.cmake\n'}
+[9.800750] (rclcpp_action) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_action/share/rclcpp_action/cmake/rclcpp_actionExport-noconfig.cmake\n'}
+[9.800817] (rclcpp_action) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_action/share/rclcpp_action/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[9.800898] (rclcpp_action) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_action/share/rclcpp_action/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[9.800965] (rclcpp_action) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_action/share/rclcpp_action/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[9.801033] (rclcpp_action) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_action/share/rclcpp_action/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[9.801101] (rclcpp_action) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_action/share/rclcpp_action/cmake/rclcpp_actionConfig.cmake\n'}
+[9.801168] (rclcpp_action) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_action/share/rclcpp_action/cmake/rclcpp_actionConfig-version.cmake\n'}
+[9.801274] (rclcpp_action) StdoutLine: {'line': b'-- Up-to-date: /home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_action/share/rclcpp_action/package.xml\n'}
+[9.802468] (rclcpp_action) CommandEnded: {'returncode': 0}
+[9.836444] (-) TimerEvent: {}
+[9.847739] (rclcpp_action) JobEnded: {'identifier': 'rclcpp_action', 'rc': 0}
+[9.848762] (-) EventReactorShutdown: {}

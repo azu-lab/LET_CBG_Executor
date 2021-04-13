@@ -1,0 +1,303 @@
+[0.014s] Invoking command in '/home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp': /usr/bin/cmake --build /home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp -- -j12 -l12
+[0.382s] [  1%] Built target gmock_main
+[0.382s] [  3%] Built target gtest
+[0.382s] [  3%] Built target gtest_main
+[0.383s] [  4%] Built target gmock
+[0.387s] [  4%] Built target rclcpp_test_msgs__cpp
+[0.390s] [  6%] Built target rclcpp_test_msgs__rosidl_generator_c
+[0.398s] [  7%] Built target test_function_traits
+[0.413s] [ 11%] Built target rclcpp_test_msgs__rosidl_typesupport_introspection_cpp
+[0.413s] [ 11%] Built target rclcpp_test_msgs__rosidl_typesupport_cpp
+[0.414s] [ 14%] Built target rclcpp_test_msgs__rosidl_typesupport_c
+[0.414s] [ 14%] Built target rclcpp_test_msgs__rosidl_typesupport_introspection_c
+[0.416s] [ 16%] Built target rclcpp_test_msgs__rosidl_typesupport_fastrtps_cpp
+[0.433s] [35m[1mScanning dependencies of target rclcpp[0m
+[0.445s] [ 18%] Built target rclcpp_test_msgs__rosidl_typesupport_fastrtps_c
+[0.460s] [ 18%] Built target rclcpp_test_msgs
+[0.480s] [ 18%] Built target rclcpp_test_msgs__py
+[0.500s] [ 18%] [32mBuilding CXX object CMakeFiles/rclcpp.dir/src/rclcpp/executors/single_threaded_executor.cpp.o[0m
+[0.502s] [ 20%] Built target rclcpp_test_msgs__python
+[0.518s] [ 21%] Built target rclcpp__rosidl_typesupport_introspection_c__pyext
+[0.521s] [ 22%] Built target rclcpp__rosidl_typesupport_c__pyext
+[0.525s] [ 23%] Built target rclcpp__rosidl_typesupport_fastrtps_c__pyext
+[1.378s] [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:[m[K In function ‘[01m[Kint record_jitter(const timespec*, const timespec*, size_t)[m[K’:
+[1.379s] [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:108:10:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ki[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[1.379s]   108 |   size_t [01;35m[Ki[m[K = iteration;
+[1.379s]       |          [01;35m[K^[m[K
+[1.382s] [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:[m[K In member function ‘[01m[Kvoid rclcpp::executors::SingleThreadedExecutor::executor_spin_one_period(uint64_t)[m[K’:
+[1.383s] [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:187:68:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator+[m[K’ (operand types are ‘[01m[Kstd::chrono::time_point<std::chrono::_V2::steady_clock, std::chrono::duration<long int, std::ratio<1, 1000000000> > >[m[K’ and ‘[01m[Kconst uint64_t[m[K’ {aka ‘[01m[Kconst long unsigned int[m[K’})
+[1.383s]   187 |   auto sleep_time = duration_cast<std::chrono::nanoseconds>(([32m[Kstart[m[K [01;31m[K+[m[K [34m[Kperiod[m[K) - end);
+[1.383s]       |                                                              [32m[K~~~~~[m[K [01;31m[K^[m[K [34m[K~~~~~~[m[K
+[1.383s]       |                                                              [32m[K|[m[K       [34m[K|[m[K
+[1.383s]       |                                                              [32m[K|[m[K       [34m[Kconst uint64_t {aka const long unsigned int}[m[K
+[1.383s]       |                                                              [32m[Kstd::chrono::time_point<std::chrono::_V2::steady_clock, std::chrono::duration<long int, std::ratio<1, 1000000000> > >[m[K
+[1.383s] In file included from [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/include/rclcpp/clock.hpp:23[m[K,
+[1.383s]                  from [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/include/rclcpp/timer.hpp:27[m[K,
+[1.383s]                  from [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/include/rclcpp/callback_group.hpp:27[m[K,
+[1.383s]                  from [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/include/rclcpp/any_executable.hpp:20[m[K,
+[1.383s]                  from [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/include/rclcpp/memory_strategy.hpp:25[m[K,
+[1.384s]                  from [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/include/rclcpp/memory_strategies.hpp:18[m[K,
+[1.384s]                  from [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/include/rclcpp/executor_options.hpp:20[m[K,
+[1.384s]                  from [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/include/rclcpp/executor.hpp:34[m[K,
+[1.384s]                  from [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/include/rclcpp/executors/single_threaded_executor.hpp:25[m[K,
+[1.384s]                  from [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:15[m[K:
+[1.384s] [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/include/rclcpp/time.hpp:216:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::Time rclcpp::operator+(const rclcpp::Duration&, const rclcpp::Time&)[m[K’
+[1.384s]   216 | [01;36m[Koperator[m[K+(const rclcpp::Duration & lhs, const rclcpp::Time & rhs);
+[1.384s]       | [01;36m[K^~~~~~~~[m[K
+[1.384s] [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/include/rclcpp/time.hpp:216:36:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::chrono::time_point<std::chrono::_V2::steady_clock, std::chrono::duration<long int, std::ratio<1, 1000000000> > >[m[K’ to ‘[01m[Kconst rclcpp::Duration&[m[K’
+[1.384s]   216 | operator+([01;36m[Kconst rclcpp::Duration & lhs[m[K, const rclcpp::Time & rhs);
+[1.384s]       |           [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[1.384s] In file included from [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/include/rclcpp/executor.hpp:20[m[K,
+[1.384s]                  from [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/include/rclcpp/executors/single_threaded_executor.hpp:25[m[K,
+[1.385s]                  from [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:15[m[K:
+[1.385s] [01m[K/usr/include/c++/9/chrono:450:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Rep1, class _Period1, class _Rep2, class _Period2> constexpr typename std::common_type<std::chrono::duration<_Rep1, _Period1>, std::chrono::duration<_Rep2, _Period2> >::type std::chrono::operator+(const std::chrono::duration<_Rep1, _Period1>&, const std::chrono::duration<_Rep2, _Period2>&)[m[K’
+[1.385s]   450 |       [01;36m[Koperator[m[K+(const duration<_Rep1, _Period1>& __lhs,
+[1.385s]       |       [01;36m[K^~~~~~~~[m[K
+[1.385s] [01m[K/usr/include/c++/9/chrono:450:7:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.385s] [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:187:70:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::chrono::time_point<std::chrono::_V2::steady_clock, std::chrono::duration<long int, std::ratio<1, 1000000000> > >[m[K’ is not derived from ‘[01m[Kconst std::chrono::duration<_Rep1, _Period1>[m[K’
+[1.385s]   187 |   auto sleep_time = duration_cast<std::chrono::nanoseconds>((start + [01;36m[Kperiod[m[K) - end);
+[1.385s]       |                                                                      [01;36m[K^~~~~~[m[K
+[1.385s] In file included from [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/include/rclcpp/executor.hpp:20[m[K,
+[1.385s]                  from [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/include/rclcpp/executors/single_threaded_executor.hpp:25[m[K,
+[1.385s]                  from [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:15[m[K:
+[1.385s] [01m[K/usr/include/c++/9/chrono:725:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Clock, class _Dur1, class _Rep2, class _Period2> constexpr std::chrono::time_point<_Clock, typename std::common_type<_Dur1, std::chrono::duration<_Rep2, _Period2> >::type> std::chrono::operator+(const std::chrono::time_point<_Clock, _Duration1>&, const std::chrono::duration<_Rep2, _Period2>&)[m[K’
+[1.386s]   725 |       [01;36m[Koperator[m[K+(const time_point<_Clock, _Dur1>& __lhs,
+[1.386s]       |       [01;36m[K^~~~~~~~[m[K
+[1.386s] [01m[K/usr/include/c++/9/chrono:725:7:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.386s] [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:187:70:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst std::chrono::duration<_Rep2, _Period2>[m[K’ and ‘[01m[Kconst uint64_t[m[K’ {aka ‘[01m[Kconst long unsigned int[m[K’}
+[1.386s]   187 |   auto sleep_time = duration_cast<std::chrono::nanoseconds>((start + [01;36m[Kperiod[m[K) - end);
+[1.386s]       |                                                                      [01;36m[K^~~~~~[m[K
+[1.386s] In file included from [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/include/rclcpp/executor.hpp:20[m[K,
+[1.386s]                  from [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/include/rclcpp/executors/single_threaded_executor.hpp:25[m[K,
+[1.386s]                  from [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:15[m[K:
+[1.386s] [01m[K/usr/include/c++/9/chrono:738:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Rep1, class _Period1, class _Clock, class _Dur2> constexpr std::chrono::time_point<_Clock, typename std::common_type<std::chrono::duration<_Rep1, _Period1>, _Dur2>::type> std::chrono::operator+(const std::chrono::duration<_Rep1, _Period1>&, const std::chrono::time_point<_Clock, _Dur2>&)[m[K’
+[1.386s]   738 |       [01;36m[Koperator[m[K+(const duration<_Rep1, _Period1>& __lhs,
+[1.386s]       |       [01;36m[K^~~~~~~~[m[K
+[1.387s] [01m[K/usr/include/c++/9/chrono:738:7:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.387s] [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:187:70:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::chrono::time_point<std::chrono::_V2::steady_clock, std::chrono::duration<long int, std::ratio<1, 1000000000> > >[m[K’ is not derived from ‘[01m[Kconst std::chrono::duration<_Rep1, _Period1>[m[K’
+[1.387s]   187 |   auto sleep_time = duration_cast<std::chrono::nanoseconds>((start + [01;36m[Kperiod[m[K) - end);
+[1.387s]       |                                                                      [01;36m[K^~~~~~[m[K
+[1.387s] In file included from [01m[K/usr/include/c++/9/bits/stl_algobase.h:67[m[K,
+[1.387s]                  from [01m[K/usr/include/c++/9/memory:62[m[K,
+[1.387s]                  from [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/include/rclcpp/executors/single_threaded_executor.hpp:22[m[K,
+[1.387s]                  from [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:15[m[K:
+[1.387s] [01m[K/usr/include/c++/9/bits/stl_iterator.h:423:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Iterator> std::reverse_iterator<_Iterator> std::operator+(typename std::reverse_iterator<_Iterator>::difference_type, const std::reverse_iterator<_Iterator>&)[m[K’
+[1.387s]   423 |     [01;36m[Koperator[m[K+(typename reverse_iterator<_Iterator>::difference_type __n,
+[1.387s]       |     [01;36m[K^~~~~~~~[m[K
+[1.387s] [01m[K/usr/include/c++/9/bits/stl_iterator.h:423:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.387s] [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:187:70:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst std::reverse_iterator<_Iterator>[m[K’ and ‘[01m[Kconst uint64_t[m[K’ {aka ‘[01m[Kconst long unsigned int[m[K’}
+[1.388s]   187 |   auto sleep_time = duration_cast<std::chrono::nanoseconds>((start + [01;36m[Kperiod[m[K) - end);
+[1.388s]       |                                                                      [01;36m[K^~~~~~[m[K
+[1.388s] In file included from [01m[K/usr/include/c++/9/bits/stl_algobase.h:67[m[K,
+[1.388s]                  from [01m[K/usr/include/c++/9/memory:62[m[K,
+[1.388s]                  from [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/include/rclcpp/executors/single_threaded_executor.hpp:22[m[K,
+[1.388s]                  from [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:15[m[K:
+[1.388s] [01m[K/usr/include/c++/9/bits/stl_iterator.h:1219:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Iterator> std::move_iterator<_IteratorL> std::operator+(typename std::move_iterator<_IteratorL>::difference_type, const std::move_iterator<_IteratorL>&)[m[K’
+[1.388s]  1219 |     [01;36m[Koperator[m[K+(typename move_iterator<_Iterator>::difference_type __n,
+[1.388s]       |     [01;36m[K^~~~~~~~[m[K
+[1.388s] [01m[K/usr/include/c++/9/bits/stl_iterator.h:1219:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.388s] [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:187:70:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst std::move_iterator<_IteratorL>[m[K’ and ‘[01m[Kconst uint64_t[m[K’ {aka ‘[01m[Kconst long unsigned int[m[K’}
+[1.388s]   187 |   auto sleep_time = duration_cast<std::chrono::nanoseconds>((start + [01;36m[Kperiod[m[K) - end);
+[1.389s]       |                                                                      [01;36m[K^~~~~~[m[K
+[1.389s] In file included from [01m[K/usr/include/c++/9/string:55[m[K,
+[1.389s]                  from [01m[K/usr/include/c++/9/stdexcept:39[m[K,
+[1.389s]                  from [01m[K/usr/include/c++/9/array:39[m[K,
+[1.389s]                  from [01m[K/usr/include/c++/9/tuple:39[m[K,
+[1.389s]                  from [01m[K/usr/include/c++/9/bits/unique_ptr.h:37[m[K,
+[1.389s]                  from [01m[K/usr/include/c++/9/memory:80[m[K,
+[1.389s]                  from [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/include/rclcpp/executors/single_threaded_executor.hpp:22[m[K,
+[1.389s]                  from [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:15[m[K:
+[1.389s] [01m[K/usr/include/c++/9/bits/basic_string.h:6020:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)[m[K’
+[1.389s]  6020 |     [01;36m[Koperator[m[K+(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+[1.389s]       |     [01;36m[K^~~~~~~~[m[K
+[1.389s] [01m[K/usr/include/c++/9/bits/basic_string.h:6020:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.390s] [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:187:70:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::chrono::time_point<std::chrono::_V2::steady_clock, std::chrono::duration<long int, std::ratio<1, 1000000000> > >[m[K’ is not derived from ‘[01m[Kconst std::__cxx11::basic_string<_CharT, _Traits, _Alloc>[m[K’
+[1.390s]   187 |   auto sleep_time = duration_cast<std::chrono::nanoseconds>((start + [01;36m[Kperiod[m[K) - end);
+[1.390s]       |                                                                      [01;36m[K^~~~~~[m[K
+[1.390s] In file included from [01m[K/usr/include/c++/9/string:56[m[K,
+[1.390s]                  from [01m[K/usr/include/c++/9/stdexcept:39[m[K,
+[1.390s]                  from [01m[K/usr/include/c++/9/array:39[m[K,
+[1.390s]                  from [01m[K/usr/include/c++/9/tuple:39[m[K,
+[1.390s]                  from [01m[K/usr/include/c++/9/bits/unique_ptr.h:37[m[K,
+[1.390s]                  from [01m[K/usr/include/c++/9/memory:80[m[K,
+[1.390s]                  from [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/include/rclcpp/executors/single_threaded_executor.hpp:22[m[K,
+[1.390s]                  from [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:15[m[K:
+[1.390s] [01m[K/usr/include/c++/9/bits/basic_string.tcc:1158:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(const _CharT*, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)[m[K’
+[1.391s]  1158 |     [01;36m[Koperator[m[K+(const _CharT* __lhs,
+[1.391s]       |     [01;36m[K^~~~~~~~[m[K
+[1.391s] [01m[K/usr/include/c++/9/bits/basic_string.tcc:1158:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.391s] [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:187:70:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst _CharT*[m[K’ and ‘[01m[Kstd::chrono::time_point<std::chrono::_V2::steady_clock, std::chrono::duration<long int, std::ratio<1, 1000000000> > >[m[K’
+[1.391s]   187 |   auto sleep_time = duration_cast<std::chrono::nanoseconds>((start + [01;36m[Kperiod[m[K) - end);
+[1.391s]       |                                                                      [01;36m[K^~~~~~[m[K
+[1.391s] In file included from [01m[K/usr/include/c++/9/string:56[m[K,
+[1.391s]                  from [01m[K/usr/include/c++/9/stdexcept:39[m[K,
+[1.391s]                  from [01m[K/usr/include/c++/9/array:39[m[K,
+[1.391s]                  from [01m[K/usr/include/c++/9/tuple:39[m[K,
+[1.391s]                  from [01m[K/usr/include/c++/9/bits/unique_ptr.h:37[m[K,
+[1.391s]                  from [01m[K/usr/include/c++/9/memory:80[m[K,
+[1.391s]                  from [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/include/rclcpp/executors/single_threaded_executor.hpp:22[m[K,
+[1.392s]                  from [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:15[m[K:
+[1.392s] [01m[K/usr/include/c++/9/bits/basic_string.tcc:1174:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(_CharT, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)[m[K’
+[1.392s]  1174 |     [01;36m[Koperator[m[K+(_CharT __lhs, const basic_string<_CharT, _Traits, _Alloc>& __rhs)
+[1.392s]       |     [01;36m[K^~~~~~~~[m[K
+[1.392s] [01m[K/usr/include/c++/9/bits/basic_string.tcc:1174:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.392s] [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:187:70:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst std::__cxx11::basic_string<_CharT, _Traits, _Alloc>[m[K’ and ‘[01m[Kconst uint64_t[m[K’ {aka ‘[01m[Kconst long unsigned int[m[K’}
+[1.392s]   187 |   auto sleep_time = duration_cast<std::chrono::nanoseconds>((start + [01;36m[Kperiod[m[K) - end);
+[1.392s]       |                                                                      [01;36m[K^~~~~~[m[K
+[1.392s] In file included from [01m[K/usr/include/c++/9/string:55[m[K,
+[1.392s]                  from [01m[K/usr/include/c++/9/stdexcept:39[m[K,
+[1.392s]                  from [01m[K/usr/include/c++/9/array:39[m[K,
+[1.392s]                  from [01m[K/usr/include/c++/9/tuple:39[m[K,
+[1.393s]                  from [01m[K/usr/include/c++/9/bits/unique_ptr.h:37[m[K,
+[1.393s]                  from [01m[K/usr/include/c++/9/memory:80[m[K,
+[1.393s]                  from [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/include/rclcpp/executors/single_threaded_executor.hpp:22[m[K,
+[1.393s]                  from [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:15[m[K:
+[1.393s] [01m[K/usr/include/c++/9/bits/basic_string.h:6057:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, const _CharT*)[m[K’
+[1.393s]  6057 |     [01;36m[Koperator[m[K+(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+[1.393s]       |     [01;36m[K^~~~~~~~[m[K
+[1.393s] [01m[K/usr/include/c++/9/bits/basic_string.h:6057:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.393s] [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:187:70:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::chrono::time_point<std::chrono::_V2::steady_clock, std::chrono::duration<long int, std::ratio<1, 1000000000> > >[m[K’ is not derived from ‘[01m[Kconst std::__cxx11::basic_string<_CharT, _Traits, _Alloc>[m[K’
+[1.393s]   187 |   auto sleep_time = duration_cast<std::chrono::nanoseconds>((start + [01;36m[Kperiod[m[K) - end);
+[1.393s]       |                                                                      [01;36m[K^~~~~~[m[K
+[1.393s] In file included from [01m[K/usr/include/c++/9/string:55[m[K,
+[1.393s]                  from [01m[K/usr/include/c++/9/stdexcept:39[m[K,
+[1.394s]                  from [01m[K/usr/include/c++/9/array:39[m[K,
+[1.394s]                  from [01m[K/usr/include/c++/9/tuple:39[m[K,
+[1.394s]                  from [01m[K/usr/include/c++/9/bits/unique_ptr.h:37[m[K,
+[1.394s]                  from [01m[K/usr/include/c++/9/memory:80[m[K,
+[1.394s]                  from [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/include/rclcpp/executors/single_threaded_executor.hpp:22[m[K,
+[1.394s]                  from [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:15[m[K:
+[1.394s] [01m[K/usr/include/c++/9/bits/basic_string.h:6073:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, _CharT)[m[K’
+[1.394s]  6073 |     [01;36m[Koperator[m[K+(const basic_string<_CharT, _Traits, _Alloc>& __lhs, _CharT __rhs)
+[1.394s]       |     [01;36m[K^~~~~~~~[m[K
+[1.394s] [01m[K/usr/include/c++/9/bits/basic_string.h:6073:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.394s] [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:187:70:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::chrono::time_point<std::chrono::_V2::steady_clock, std::chrono::duration<long int, std::ratio<1, 1000000000> > >[m[K’ is not derived from ‘[01m[Kconst std::__cxx11::basic_string<_CharT, _Traits, _Alloc>[m[K’
+[1.394s]   187 |   auto sleep_time = duration_cast<std::chrono::nanoseconds>((start + [01;36m[Kperiod[m[K) - end);
+[1.394s]       |                                                                      [01;36m[K^~~~~~[m[K
+[1.395s] In file included from [01m[K/usr/include/c++/9/string:55[m[K,
+[1.395s]                  from [01m[K/usr/include/c++/9/stdexcept:39[m[K,
+[1.395s]                  from [01m[K/usr/include/c++/9/array:39[m[K,
+[1.395s]                  from [01m[K/usr/include/c++/9/tuple:39[m[K,
+[1.395s]                  from [01m[K/usr/include/c++/9/bits/unique_ptr.h:37[m[K,
+[1.395s]                  from [01m[K/usr/include/c++/9/memory:80[m[K,
+[1.395s]                  from [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/include/rclcpp/executors/single_threaded_executor.hpp:22[m[K,
+[1.395s]                  from [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:15[m[K:
+[1.395s] [01m[K/usr/include/c++/9/bits/basic_string.h:6085:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&&, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)[m[K’
+[1.395s]  6085 |     [01;36m[Koperator[m[K+(basic_string<_CharT, _Traits, _Alloc>&& __lhs,
+[1.395s]       |     [01;36m[K^~~~~~~~[m[K
+[1.395s] [01m[K/usr/include/c++/9/bits/basic_string.h:6085:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.395s] [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:187:70:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::chrono::time_point<std::chrono::_V2::steady_clock, std::chrono::duration<long int, std::ratio<1, 1000000000> > >[m[K’ is not derived from ‘[01m[Kstd::__cxx11::basic_string<_CharT, _Traits, _Alloc>[m[K’
+[1.396s]   187 |   auto sleep_time = duration_cast<std::chrono::nanoseconds>((start + [01;36m[Kperiod[m[K) - end);
+[1.396s]       |                                                                      [01;36m[K^~~~~~[m[K
+[1.396s] In file included from [01m[K/usr/include/c++/9/string:55[m[K,
+[1.396s]                  from [01m[K/usr/include/c++/9/stdexcept:39[m[K,
+[1.396s]                  from [01m[K/usr/include/c++/9/array:39[m[K,
+[1.396s]                  from [01m[K/usr/include/c++/9/tuple:39[m[K,
+[1.396s]                  from [01m[K/usr/include/c++/9/bits/unique_ptr.h:37[m[K,
+[1.396s]                  from [01m[K/usr/include/c++/9/memory:80[m[K,
+[1.396s]                  from [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/include/rclcpp/executors/single_threaded_executor.hpp:22[m[K,
+[1.396s]                  from [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:15[m[K:
+[1.396s] [01m[K/usr/include/c++/9/bits/basic_string.h:6091:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&&)[m[K’
+[1.396s]  6091 |     [01;36m[Koperator[m[K+(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+[1.396s]       |     [01;36m[K^~~~~~~~[m[K
+[1.397s] [01m[K/usr/include/c++/9/bits/basic_string.h:6091:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.397s] [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:187:70:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::chrono::time_point<std::chrono::_V2::steady_clock, std::chrono::duration<long int, std::ratio<1, 1000000000> > >[m[K’ is not derived from ‘[01m[Kconst std::__cxx11::basic_string<_CharT, _Traits, _Alloc>[m[K’
+[1.397s]   187 |   auto sleep_time = duration_cast<std::chrono::nanoseconds>((start + [01;36m[Kperiod[m[K) - end);
+[1.397s]       |                                                                      [01;36m[K^~~~~~[m[K
+[1.397s] In file included from [01m[K/usr/include/c++/9/string:55[m[K,
+[1.397s]                  from [01m[K/usr/include/c++/9/stdexcept:39[m[K,
+[1.397s]                  from [01m[K/usr/include/c++/9/array:39[m[K,
+[1.397s]                  from [01m[K/usr/include/c++/9/tuple:39[m[K,
+[1.397s]                  from [01m[K/usr/include/c++/9/bits/unique_ptr.h:37[m[K,
+[1.397s]                  from [01m[K/usr/include/c++/9/memory:80[m[K,
+[1.397s]                  from [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/include/rclcpp/executors/single_threaded_executor.hpp:22[m[K,
+[1.397s]                  from [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:15[m[K:
+[1.397s] [01m[K/usr/include/c++/9/bits/basic_string.h:6097:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&&, std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&&)[m[K’
+[1.398s]  6097 |     [01;36m[Koperator[m[K+(basic_string<_CharT, _Traits, _Alloc>&& __lhs,
+[1.398s]       |     [01;36m[K^~~~~~~~[m[K
+[1.398s] [01m[K/usr/include/c++/9/bits/basic_string.h:6097:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.398s] [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:187:70:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::chrono::time_point<std::chrono::_V2::steady_clock, std::chrono::duration<long int, std::ratio<1, 1000000000> > >[m[K’ is not derived from ‘[01m[Kstd::__cxx11::basic_string<_CharT, _Traits, _Alloc>[m[K’
+[1.398s]   187 |   auto sleep_time = duration_cast<std::chrono::nanoseconds>((start + [01;36m[Kperiod[m[K) - end);
+[1.398s]       |                                                                      [01;36m[K^~~~~~[m[K
+[1.398s] In file included from [01m[K/usr/include/c++/9/string:55[m[K,
+[1.398s]                  from [01m[K/usr/include/c++/9/stdexcept:39[m[K,
+[1.398s]                  from [01m[K/usr/include/c++/9/array:39[m[K,
+[1.398s]                  from [01m[K/usr/include/c++/9/tuple:39[m[K,
+[1.398s]                  from [01m[K/usr/include/c++/9/bits/unique_ptr.h:37[m[K,
+[1.398s]                  from [01m[K/usr/include/c++/9/memory:80[m[K,
+[1.398s]                  from [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/include/rclcpp/executors/single_threaded_executor.hpp:22[m[K,
+[1.399s]                  from [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:15[m[K:
+[1.399s] [01m[K/usr/include/c++/9/bits/basic_string.h:6109:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(const _CharT*, std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&&)[m[K’
+[1.399s]  6109 |     [01;36m[Koperator[m[K+(const _CharT* __lhs,
+[1.399s]       |     [01;36m[K^~~~~~~~[m[K
+[1.399s] [01m[K/usr/include/c++/9/bits/basic_string.h:6109:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.399s] [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:187:70:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst _CharT*[m[K’ and ‘[01m[Kstd::chrono::time_point<std::chrono::_V2::steady_clock, std::chrono::duration<long int, std::ratio<1, 1000000000> > >[m[K’
+[1.399s]   187 |   auto sleep_time = duration_cast<std::chrono::nanoseconds>((start + [01;36m[Kperiod[m[K) - end);
+[1.399s]       |                                                                      [01;36m[K^~~~~~[m[K
+[1.399s] In file included from [01m[K/usr/include/c++/9/string:55[m[K,
+[1.399s]                  from [01m[K/usr/include/c++/9/stdexcept:39[m[K,
+[1.399s]                  from [01m[K/usr/include/c++/9/array:39[m[K,
+[1.399s]                  from [01m[K/usr/include/c++/9/tuple:39[m[K,
+[1.399s]                  from [01m[K/usr/include/c++/9/bits/unique_ptr.h:37[m[K,
+[1.400s]                  from [01m[K/usr/include/c++/9/memory:80[m[K,
+[1.400s]                  from [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/include/rclcpp/executors/single_threaded_executor.hpp:22[m[K,
+[1.400s]                  from [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:15[m[K:
+[1.400s] [01m[K/usr/include/c++/9/bits/basic_string.h:6115:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(_CharT, std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&&)[m[K’
+[1.400s]  6115 |     [01;36m[Koperator[m[K+(_CharT __lhs,
+[1.400s]       |     [01;36m[K^~~~~~~~[m[K
+[1.400s] [01m[K/usr/include/c++/9/bits/basic_string.h:6115:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.400s] [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:187:70:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kstd::__cxx11::basic_string<_CharT, _Traits, _Alloc>[m[K’ and ‘[01m[Kconst uint64_t[m[K’ {aka ‘[01m[Kconst long unsigned int[m[K’}
+[1.400s]   187 |   auto sleep_time = duration_cast<std::chrono::nanoseconds>((start + [01;36m[Kperiod[m[K) - end);
+[1.400s]       |                                                                      [01;36m[K^~~~~~[m[K
+[1.400s] In file included from [01m[K/usr/include/c++/9/string:55[m[K,
+[1.400s]                  from [01m[K/usr/include/c++/9/stdexcept:39[m[K,
+[1.400s]                  from [01m[K/usr/include/c++/9/array:39[m[K,
+[1.401s]                  from [01m[K/usr/include/c++/9/tuple:39[m[K,
+[1.401s]                  from [01m[K/usr/include/c++/9/bits/unique_ptr.h:37[m[K,
+[1.401s]                  from [01m[K/usr/include/c++/9/memory:80[m[K,
+[1.401s]                  from [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/include/rclcpp/executors/single_threaded_executor.hpp:22[m[K,
+[1.401s]                  from [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:15[m[K:
+[1.401s] [01m[K/usr/include/c++/9/bits/basic_string.h:6121:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&&, const _CharT*)[m[K’
+[1.401s]  6121 |     [01;36m[Koperator[m[K+(basic_string<_CharT, _Traits, _Alloc>&& __lhs,
+[1.401s]       |     [01;36m[K^~~~~~~~[m[K
+[1.401s] [01m[K/usr/include/c++/9/bits/basic_string.h:6121:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.401s] [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:187:70:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::chrono::time_point<std::chrono::_V2::steady_clock, std::chrono::duration<long int, std::ratio<1, 1000000000> > >[m[K’ is not derived from ‘[01m[Kstd::__cxx11::basic_string<_CharT, _Traits, _Alloc>[m[K’
+[1.401s]   187 |   auto sleep_time = duration_cast<std::chrono::nanoseconds>((start + [01;36m[Kperiod[m[K) - end);
+[1.401s]       |                                                                      [01;36m[K^~~~~~[m[K
+[1.402s] In file included from [01m[K/usr/include/c++/9/string:55[m[K,
+[1.402s]                  from [01m[K/usr/include/c++/9/stdexcept:39[m[K,
+[1.402s]                  from [01m[K/usr/include/c++/9/array:39[m[K,
+[1.402s]                  from [01m[K/usr/include/c++/9/tuple:39[m[K,
+[1.402s]                  from [01m[K/usr/include/c++/9/bits/unique_ptr.h:37[m[K,
+[1.402s]                  from [01m[K/usr/include/c++/9/memory:80[m[K,
+[1.402s]                  from [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/include/rclcpp/executors/single_threaded_executor.hpp:22[m[K,
+[1.402s]                  from [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:15[m[K:
+[1.402s] [01m[K/usr/include/c++/9/bits/basic_string.h:6127:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&&, _CharT)[m[K’
+[1.402s]  6127 |     [01;36m[Koperator[m[K+(basic_string<_CharT, _Traits, _Alloc>&& __lhs,
+[1.402s]       |     [01;36m[K^~~~~~~~[m[K
+[1.403s] [01m[K/usr/include/c++/9/bits/basic_string.h:6127:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.403s] [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:187:70:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::chrono::time_point<std::chrono::_V2::steady_clock, std::chrono::duration<long int, std::ratio<1, 1000000000> > >[m[K’ is not derived from ‘[01m[Kstd::__cxx11::basic_string<_CharT, _Traits, _Alloc>[m[K’
+[1.403s]   187 |   auto sleep_time = duration_cast<std::chrono::nanoseconds>((start + [01;36m[Kperiod[m[K) - end);
+[1.403s]       |                                                                      [01;36m[K^~~~~~[m[K
+[1.403s] In file included from [01m[K/usr/include/c++/9/vector:68[m[K,
+[1.403s]                  from [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/include/rclcpp/executors/single_threaded_executor.hpp:23[m[K,
+[1.403s]                  from [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:15[m[K:
+[1.403s] [01m[K/usr/include/c++/9/bits/stl_bvector.h:303:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::_Bit_iterator std::operator+(std::ptrdiff_t, const std::_Bit_iterator&)[m[K’
+[1.403s]   303 |   [01;36m[Koperator[m[K+(ptrdiff_t __n, const _Bit_iterator& __x)
+[1.403s]       |   [01;36m[K^~~~~~~~[m[K
+[1.403s] [01m[K/usr/include/c++/9/bits/stl_bvector.h:303:23:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::chrono::time_point<std::chrono::_V2::steady_clock, std::chrono::duration<long int, std::ratio<1, 1000000000> > >[m[K’ to ‘[01m[Kstd::ptrdiff_t[m[K’ {aka ‘[01m[Klong int[m[K’}
+[1.403s]   303 |   operator+([01;36m[Kptrdiff_t __n[m[K, const _Bit_iterator& __x)
+[1.404s]       |             [01;36m[K~~~~~~~~~~^~~[m[K
+[1.404s] [01m[K/usr/include/c++/9/bits/stl_bvector.h:393:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::_Bit_const_iterator std::operator+(std::ptrdiff_t, const std::_Bit_const_iterator&)[m[K’
+[1.404s]   393 |   [01;36m[Koperator[m[K+(ptrdiff_t __n, const _Bit_const_iterator& __x)
+[1.404s]       |   [01;36m[K^~~~~~~~[m[K
+[1.404s] [01m[K/usr/include/c++/9/bits/stl_bvector.h:393:23:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::chrono::time_point<std::chrono::_V2::steady_clock, std::chrono::duration<long int, std::ratio<1, 1000000000> > >[m[K’ to ‘[01m[Kstd::ptrdiff_t[m[K’ {aka ‘[01m[Klong int[m[K’}
+[1.404s]   393 |   operator+([01;36m[Kptrdiff_t __n[m[K, const _Bit_const_iterator& __x)
+[1.404s]       |             [01;36m[K~~~~~~~~~~^~~[m[K
+[1.404s] [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:167:33:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kcurrent_time[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[1.404s]   167 |    struct timespec wakeup_time, [01;35m[Kcurrent_time[m[K;
+[1.404s]       |                                 [01;35m[K^~~~~~~~~~~~[m[K
+[1.533s] make[2]: *** [CMakeFiles/rclcpp.dir/build.make:389: CMakeFiles/rclcpp.dir/src/rclcpp/executors/single_threaded_executor.cpp.o] Error 1
+[1.533s] make[1]: *** [CMakeFiles/Makefile2:1129: CMakeFiles/rclcpp.dir/all] Error 2
+[1.533s] make: *** [Makefile:141: all] Error 2
+[1.535s] Invoked command in '/home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp' returned '2': /usr/bin/cmake --build /home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp -- -j12 -l12

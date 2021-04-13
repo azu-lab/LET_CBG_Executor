@@ -1,0 +1,45 @@
+[0.010s] Invoking command in '/home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp': /usr/bin/cmake --build /home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp -- -j12 -l12
+[0.059s] [  1%] Built target gtest
+[0.061s] [  3%] Built target rclcpp_test_msgs__rosidl_generator_c
+[0.061s] [  5%] Built target gtest_main
+[0.061s] [  5%] Built target gmock
+[0.063s] [  6%] Built target gmock_main
+[0.065s] [  6%] Built target rclcpp_test_msgs__cpp
+[0.074s] [  7%] Built target test_function_traits
+[0.074s] [35m[1mScanning dependencies of target rclcpp[0m
+[0.076s] [  9%] Built target rclcpp_test_msgs__rosidl_typesupport_introspection_c
+[0.077s] [ 10%] Built target rclcpp_test_msgs__rosidl_typesupport_c
+[0.079s] [ 12%] Built target rclcpp_test_msgs__rosidl_typesupport_introspection_cpp
+[0.080s] [ 14%] Built target rclcpp_test_msgs__rosidl_typesupport_cpp
+[0.083s] [ 16%] Built target rclcpp_test_msgs__rosidl_typesupport_fastrtps_cpp
+[0.103s] [ 18%] Built target rclcpp_test_msgs__rosidl_typesupport_fastrtps_c
+[0.123s] [ 18%] Built target rclcpp_test_msgs
+[0.128s] [ 18%] [32mBuilding CXX object CMakeFiles/rclcpp.dir/src/rclcpp/executors/single_threaded_executor.cpp.o[0m
+[0.145s] [ 18%] Built target rclcpp_test_msgs__py
+[0.171s] [ 20%] Built target rclcpp_test_msgs__python
+[0.190s] [ 21%] Built target rclcpp__rosidl_typesupport_fastrtps_c__pyext
+[0.192s] [ 22%] Built target rclcpp__rosidl_typesupport_introspection_c__pyext
+[0.196s] [ 23%] Built target rclcpp__rosidl_typesupport_c__pyext
+[0.839s] [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:[m[K In function ‘[01m[Kuint64_t timespec_to_uint64(const timespec*)[m[K’:
+[0.839s] [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:43:45:[m[K [01;31m[Kerror: [m[K‘[01m[KNSEC_PER_SEC[m[K’ was not declared in this scope; did you mean ‘[01m[KCLOCKS_PER_SEC[m[K’?
+[0.840s]    43 |   return static_cast<uint64_t>(t->tv_sec) * [01;31m[KNSEC_PER_SEC[m[K + static_cast<uint64_t>(t->tv_nsec);
+[0.840s]       |                                             [01;31m[K^~~~~~~~~~~~[m[K
+[0.840s]       |                                             [32m[KCLOCKS_PER_SEC[m[K
+[0.840s] [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:[m[K In function ‘[01m[Kvoid uint64_to_timespec(uint64_t, timespec*)[m[K’:
+[0.841s] [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:48:28:[m[K [01;31m[Kerror: [m[K‘[01m[KNSEC_PER_SEC[m[K’ was not declared in this scope; did you mean ‘[01m[KCLOCKS_PER_SEC[m[K’?
+[0.841s]    48 |   uint64_t nsecs = input % [01;31m[KNSEC_PER_SEC[m[K;
+[0.841s]       |                            [01;31m[K^~~~~~~~~~~~[m[K
+[0.841s]       |                            [32m[KCLOCKS_PER_SEC[m[K
+[0.842s] [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:[m[K In function ‘[01m[Kvoid normalize_timespec(timespec*)[m[K’:
+[0.842s] [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:63:24:[m[K [01;31m[Kerror: [m[K‘[01m[KNSEC_PER_SEC[m[K’ was not declared in this scope; did you mean ‘[01m[KCLOCKS_PER_SEC[m[K’?
+[0.842s]    63 |   while (t->tv_nsec >= [01;31m[KNSEC_PER_SEC[m[K) {
+[0.842s]       |                        [01;31m[K^~~~~~~~~~~~[m[K
+[0.842s]       |                        [32m[KCLOCKS_PER_SEC[m[K
+[0.844s] [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:[m[K In function ‘[01m[Kint record_jitter(const timespec*, const timespec*, size_t)[m[K’:
+[0.844s] [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:102:10:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ki[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[0.844s]   102 |   size_t [01;35m[Ki[m[K = iteration;
+[0.844s]       |          [01;35m[K^[m[K
+[0.987s] make[2]: *** [CMakeFiles/rclcpp.dir/build.make:389: CMakeFiles/rclcpp.dir/src/rclcpp/executors/single_threaded_executor.cpp.o] Error 1
+[0.987s] make[1]: *** [CMakeFiles/Makefile2:1129: CMakeFiles/rclcpp.dir/all] Error 2
+[0.988s] make: *** [Makefile:141: all] Error 2
+[0.990s] Invoked command in '/home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp' returned '2': /usr/bin/cmake --build /home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp -- -j12 -l12

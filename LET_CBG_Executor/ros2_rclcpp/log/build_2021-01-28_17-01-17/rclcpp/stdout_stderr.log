@@ -1,0 +1,38 @@
+[  1%] Built target gtest
+[  2%] Built target gmock_main
+[  3%] Built target gtest_main
+[  3%] Built target rclcpp_test_msgs__cpp
+[  5%] Built target rclcpp_test_msgs__rosidl_generator_c
+[  6%] Built target gmock
+[35m[1mScanning dependencies of target rclcpp[0m
+[  7%] Built target test_function_traits
+[  9%] Built target rclcpp_test_msgs__rosidl_typesupport_cpp
+[ 11%] Built target rclcpp_test_msgs__rosidl_typesupport_introspection_cpp
+[ 12%] Built target rclcpp_test_msgs__rosidl_typesupport_c
+[ 14%] Built target rclcpp_test_msgs__rosidl_typesupport_introspection_c
+[ 16%] Built target rclcpp_test_msgs__rosidl_typesupport_fastrtps_cpp
+[ 18%] Built target rclcpp_test_msgs__rosidl_typesupport_fastrtps_c
+[ 18%] Built target rclcpp_test_msgs
+[ 18%] Built target rclcpp_test_msgs__py
+[ 18%] [32mBuilding CXX object CMakeFiles/rclcpp.dir/src/rclcpp/executors/single_threaded_executor.cpp.o[0m
+[ 20%] Built target rclcpp_test_msgs__python
+[ 21%] Built target rclcpp__rosidl_typesupport_fastrtps_c__pyext
+[ 22%] Built target rclcpp__rosidl_typesupport_c__pyext
+[ 23%] Built target rclcpp__rosidl_typesupport_introspection_c__pyext
+[01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:[m[K In member function ‘[01m[Kvoid rclcpp::executors::SingleThreadedExecutor::executor_spin_one_period(uint64_t)[m[K’:
+[01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:216:78:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kduration_cast<std::chrono::nanoseconds>(std::chrono::time_point<std::chrono::_V2::steady_clock, std::chrono::duration<long int, std::ratio<1, 1000000000> > >&)[m[K’
+  216 |    std::cout << "start_time" << duration_cast<std::chrono::nanoseconds>(start[01;31m[K)[m[K.count<< "ns" << std::endl;
+      |                                                                              [01;31m[K^[m[K
+In file included from [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/include/rclcpp/executor.hpp:20[m[K,
+                 from [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/include/rclcpp/executors/single_threaded_executor.hpp:25[m[K,
+                 from [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:15[m[K:
+[01m[K/usr/include/c++/9/chrono:191:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _ToDur, class _Rep, class _Period> constexpr std::chrono::__enable_if_is_duration<_ToDur> std::chrono::duration_cast(const std::chrono::duration<_Rep, _Period>&)[m[K’
+  191 |       [01;36m[Kduration_cast[m[K(const duration<_Rep, _Period>& __d)
+      |       [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/9/chrono:191:7:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:216:78:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::chrono::time_point<std::chrono::_V2::steady_clock, std::chrono::duration<long int, std::ratio<1, 1000000000> > >[m[K’ is not derived from ‘[01m[Kconst std::chrono::duration<_Rep, _Period>[m[K’
+  216 |    std::cout << "start_time" << duration_cast<std::chrono::nanoseconds>(start[01;36m[K)[m[K.count<< "ns" << std::endl;
+      |                                                                              [01;36m[K^[m[K
+make[2]: *** [CMakeFiles/rclcpp.dir/build.make:389: CMakeFiles/rclcpp.dir/src/rclcpp/executors/single_threaded_executor.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:1129: CMakeFiles/rclcpp.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

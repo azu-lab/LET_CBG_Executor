@@ -1,0 +1,43 @@
+[  1%] Built target gtest
+[  3%] Built target rclcpp_test_msgs__rosidl_generator_c
+[  5%] Built target gtest_main
+[  5%] Built target gmock
+[  6%] Built target gmock_main
+[  6%] Built target rclcpp_test_msgs__cpp
+[  7%] Built target test_function_traits
+[35m[1mScanning dependencies of target rclcpp[0m
+[  9%] Built target rclcpp_test_msgs__rosidl_typesupport_introspection_c
+[ 10%] Built target rclcpp_test_msgs__rosidl_typesupport_c
+[ 12%] Built target rclcpp_test_msgs__rosidl_typesupport_introspection_cpp
+[ 14%] Built target rclcpp_test_msgs__rosidl_typesupport_cpp
+[ 16%] Built target rclcpp_test_msgs__rosidl_typesupport_fastrtps_cpp
+[ 18%] Built target rclcpp_test_msgs__rosidl_typesupport_fastrtps_c
+[ 18%] Built target rclcpp_test_msgs
+[ 18%] [32mBuilding CXX object CMakeFiles/rclcpp.dir/src/rclcpp/executors/single_threaded_executor.cpp.o[0m
+[ 18%] Built target rclcpp_test_msgs__py
+[ 20%] Built target rclcpp_test_msgs__python
+[ 21%] Built target rclcpp__rosidl_typesupport_fastrtps_c__pyext
+[ 22%] Built target rclcpp__rosidl_typesupport_introspection_c__pyext
+[ 23%] Built target rclcpp__rosidl_typesupport_c__pyext
+[01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:[m[K In function ‘[01m[Kuint64_t timespec_to_uint64(const timespec*)[m[K’:
+[01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:43:45:[m[K [01;31m[Kerror: [m[K‘[01m[KNSEC_PER_SEC[m[K’ was not declared in this scope; did you mean ‘[01m[KCLOCKS_PER_SEC[m[K’?
+   43 |   return static_cast<uint64_t>(t->tv_sec) * [01;31m[KNSEC_PER_SEC[m[K + static_cast<uint64_t>(t->tv_nsec);
+      |                                             [01;31m[K^~~~~~~~~~~~[m[K
+      |                                             [32m[KCLOCKS_PER_SEC[m[K
+[01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:[m[K In function ‘[01m[Kvoid uint64_to_timespec(uint64_t, timespec*)[m[K’:
+[01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:48:28:[m[K [01;31m[Kerror: [m[K‘[01m[KNSEC_PER_SEC[m[K’ was not declared in this scope; did you mean ‘[01m[KCLOCKS_PER_SEC[m[K’?
+   48 |   uint64_t nsecs = input % [01;31m[KNSEC_PER_SEC[m[K;
+      |                            [01;31m[K^~~~~~~~~~~~[m[K
+      |                            [32m[KCLOCKS_PER_SEC[m[K
+[01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:[m[K In function ‘[01m[Kvoid normalize_timespec(timespec*)[m[K’:
+[01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:63:24:[m[K [01;31m[Kerror: [m[K‘[01m[KNSEC_PER_SEC[m[K’ was not declared in this scope; did you mean ‘[01m[KCLOCKS_PER_SEC[m[K’?
+   63 |   while (t->tv_nsec >= [01;31m[KNSEC_PER_SEC[m[K) {
+      |                        [01;31m[K^~~~~~~~~~~~[m[K
+      |                        [32m[KCLOCKS_PER_SEC[m[K
+[01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:[m[K In function ‘[01m[Kint record_jitter(const timespec*, const timespec*, size_t)[m[K’:
+[01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:102:10:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ki[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  102 |   size_t [01;35m[Ki[m[K = iteration;
+      |          [01;35m[K^[m[K
+make[2]: *** [CMakeFiles/rclcpp.dir/build.make:389: CMakeFiles/rclcpp.dir/src/rclcpp/executors/single_threaded_executor.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:1129: CMakeFiles/rclcpp.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

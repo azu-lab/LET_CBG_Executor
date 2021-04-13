@@ -1,0 +1,14 @@
+[01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:[m[K In function ‘[01m[Kint record_jitter(const timespec*, const timespec*, size_t)[m[K’:
+[01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:105:10:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ki[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  105 |   size_t [01;35m[Ki[m[K = iteration;
+      |          [01;35m[K^[m[K
+[01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:[m[K In member function ‘[01m[Kvoid rclcpp::executors::SingleThreadedExecutor::executor_spin_one_period(uint64_t)[m[K’:
+[01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:184:8:[m[K [01;31m[Kerror: [m[Kconflicting declaration ‘[01m[Kauto current_time[m[K’
+  184 |   auto [01;31m[Kcurrent_time[m[K = std::chrono::steady_clock::now();
+      |        [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:169:32:[m[K [01;36m[Knote: [m[Kprevious declaration as ‘[01m[Ktimespec current_time[m[K’
+  169 |   struct timespec wakeup_time, [01;36m[Kcurrent_time[m[K;
+      |                                [01;36m[K^~~~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/rclcpp.dir/build.make:389: CMakeFiles/rclcpp.dir/src/rclcpp/executors/single_threaded_executor.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:1129: CMakeFiles/rclcpp.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

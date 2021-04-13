@@ -1,0 +1,36 @@
+[  0%] Built target rclcpp_test_msgs__cpp
+[  1%] Built target gmock_main
+[  2%] Built target gtest_main
+[  3%] Built target gtest
+[  4%] Built target gmock
+[  6%] Built target rclcpp_test_msgs__rosidl_generator_c
+[  8%] Built target rclcpp_test_msgs__rosidl_typesupport_cpp
+[ 10%] Built target rclcpp_test_msgs__rosidl_typesupport_introspection_cpp
+[35m[1mScanning dependencies of target rclcpp[0m
+[ 11%] Built target test_function_traits
+[ 13%] Built target rclcpp_test_msgs__rosidl_typesupport_fastrtps_cpp
+[ 15%] Built target rclcpp_test_msgs__rosidl_typesupport_introspection_c
+[ 16%] Built target rclcpp_test_msgs__rosidl_typesupport_c
+[ 18%] Built target rclcpp_test_msgs__rosidl_typesupport_fastrtps_c
+[ 18%] Built target rclcpp_test_msgs
+[ 18%] [32mBuilding CXX object CMakeFiles/rclcpp.dir/src/rclcpp/executors/single_threaded_executor.cpp.o[0m
+[ 18%] Built target rclcpp_test_msgs__py
+[ 20%] Built target rclcpp_test_msgs__python
+[ 21%] Built target rclcpp__rosidl_typesupport_fastrtps_c__pyext
+[ 22%] Built target rclcpp__rosidl_typesupport_c__pyext
+[ 23%] Built target rclcpp__rosidl_typesupport_introspection_c__pyext
+[01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:[m[K In member function ‘[01m[Kvoid rclcpp::executors::SingleThreadedExecutor::executor_spin_one_period(uint64_t)[m[K’:
+[01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:183:33:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kcurrent_time[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  183 |    struct timespec wakeup_time, [01;35m[Kcurrent_time[m[K;
+      |                                 [01;35m[K^~~~~~~~~~~~[m[K
+[01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:[m[K In member function ‘[01m[Kvoid rclcpp::executors::SingleThreadedExecutor::executor_spin_period(uint64_t)[m[K’:
+[01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:237:45:[m[K [01;31m[Kerror: [m[K‘[01m[Ktheoretical_time[m[K’ was not declared in this scope
+  237 |       multiply_timespec(&update_period, i, &[01;31m[Ktheoretical_time[m[K);
+      |                                             [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:[m[K In member function ‘[01m[Kstd::vector<long int, std::allocator<long int> > rclcpp::executors::SingleThreadedExecutor::spin(uint64_t)[m[K’:
+[01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:285:32:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kcurrent_time[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  285 |   struct timespec wakeup_time, [01;35m[Kcurrent_time[m[K;
+      |                                [01;35m[K^~~~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/rclcpp.dir/build.make:389: CMakeFiles/rclcpp.dir/src/rclcpp/executors/single_threaded_executor.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:1129: CMakeFiles/rclcpp.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

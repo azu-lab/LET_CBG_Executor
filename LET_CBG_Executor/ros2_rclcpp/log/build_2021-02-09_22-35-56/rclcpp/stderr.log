@@ -1,0 +1,10 @@
+[01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:[m[K In member function ‘[01m[Kvoid rclcpp::executors::SingleThreadedExecutor::executor_spin_one_period(uint64_t, std::string)[m[K’:
+[01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:233:22:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Ksleep_time2[m[K’ set but not used [[01;35m[K-Wunused-but-set-variable[m[K]
+  233 |      struct timespec [01;35m[Ksleep_time2[m[K;
+      |                      [01;35m[K^~~~~~~~~~~[m[K
+[01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:273:48:[m[K [01;35m[Kwarning: [m[K‘[01m[Krest_time.timespec::tv_sec[m[K’ may be used uninitialized in this function [[01;35m[K-Wmaybe-uninitialized[m[K]
+  273 |        std::cout << "rest_time--" << rest_time.[01;35m[Ktv_sec[m[K<< "ns" << std::endl;
+      |                                                [01;35m[K^~~~~~[m[K
+[01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:274:47:[m[K [01;35m[Kwarning: [m[K‘[01m[Krest_time.timespec::tv_nsec[m[K’ may be used uninitialized in this function [[01;35m[K-Wmaybe-uninitialized[m[K]
+  274 |       std::cout << "rest_time--" << rest_time.[01;35m[Ktv_nsec[m[K<< "ns" << std::endl;
+      |                                               [01;35m[K^~~~~~~[m[K

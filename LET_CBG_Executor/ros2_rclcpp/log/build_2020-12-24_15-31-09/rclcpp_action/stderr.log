@@ -1,0 +1,23 @@
+[01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp_action/test/test_client.cpp:[m[K In member function ‘[01m[Kvoid TestClient::dual_spin_until_future_complete(std::shared_future<_Res>&)[m[K’:
+[01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp_action/test/test_client.cpp:238:33:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::executors::SingleThreadedExecutor::spin_some()[m[K’
+  238 |       server_executor.spin_some([01;31m[K)[m[K;
+      |                                 [01;31m[K^[m[K
+In file included from [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/executors.hpp:22[m[K,
+                 from [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp_action/test/test_client.cpp:26[m[K:
+[01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/executors/single_threaded_executor.hpp:69:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvirtual void rclcpp::executors::SingleThreadedExecutor::spin_some(std::chrono::nanoseconds)[m[K’
+   69 |   [01;36m[Kspin_some[m[K(std::chrono::nanoseconds max_duration);
+      |   [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/executors/single_threaded_executor.hpp:69:3:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp_action/test/test_client.cpp:239:33:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::executors::SingleThreadedExecutor::spin_some()[m[K’
+  239 |       client_executor.spin_some([01;31m[K)[m[K;
+      |                                 [01;31m[K^[m[K
+In file included from [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/executors.hpp:22[m[K,
+                 from [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp_action/test/test_client.cpp:26[m[K:
+[01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/executors/single_threaded_executor.hpp:69:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvirtual void rclcpp::executors::SingleThreadedExecutor::spin_some(std::chrono::nanoseconds)[m[K’
+   69 |   [01;36m[Kspin_some[m[K(std::chrono::nanoseconds max_duration);
+      |   [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/executors/single_threaded_executor.hpp:69:3:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+make[2]: *** [CMakeFiles/test_client.dir/build.make:63: CMakeFiles/test_client.dir/test/test_client.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:109: CMakeFiles/test_client.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+make: *** [Makefile:141: all] Error 2

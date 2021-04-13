@@ -1,0 +1,26 @@
+In file included from [01m[K/home/pengbo/ros2_foxy/install/gtest_vendor/src/gtest_vendor/include/gtest/gtest.h:60[m[K,
+                 from [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/test/test_executor.cpp:15[m[K:
+[01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/test/test_executor.cpp:[m[K In member function ‘[01m[Kvirtual void TestExecutors_addTemporaryNode_Test::TestBody()[m[K’:
+[01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/test/test_executor.cpp:68:38:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::executors::SingleThreadedExecutor::spin_some()[m[K’
+   68 |   EXPECT_NO_THROW(executor.spin_some([01;31m[K)[m[K);
+      |                                      [01;31m[K^[m[K
+[01m[K/home/pengbo/ros2_foxy/install/gtest_vendor/src/gtest_vendor/include/gtest/internal/gtest-internal.h:1301:44:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[KGTEST_SUPPRESS_UNREACHABLE_CODE_WARNING_BELOW_[m[K’
+ 1301 |   if (::testing::internal::AlwaysTrue()) { [01;36m[Kstatement[m[K; }
+      |                                            [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/pengbo/ros2_foxy/install/gtest_vendor/src/gtest_vendor/include/gtest/gtest.h:1923:3:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KGTEST_TEST_NO_THROW_[m[K’
+ 1923 |   [01;36m[KGTEST_TEST_NO_THROW_[m[K(statement, GTEST_NONFATAL_FAILURE_)
+      |   [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/test/test_executor.cpp:68:3:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KEXPECT_NO_THROW[m[K’
+   68 |   [01;36m[KEXPECT_NO_THROW[m[K(executor.spin_some());
+      |   [01;36m[K^~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/include/rclcpp/executors.hpp:22[m[K,
+                 from [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/include/rclcpp/rclcpp.hpp:146[m[K,
+                 from [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/test/test_executor.cpp:27[m[K:
+[01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/include/rclcpp/executors/single_threaded_executor.hpp:69:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvirtual void rclcpp::executors::SingleThreadedExecutor::spin_some(std::chrono::nanoseconds)[m[K’
+   69 |   [01;36m[Kspin_some[m[K(std::chrono::nanoseconds max_duration);
+      |   [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/include/rclcpp/executors/single_threaded_executor.hpp:69:3:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+make[2]: *** [CMakeFiles/test_executor.dir/build.make:63: CMakeFiles/test_executor.dir/test/test_executor.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:694: CMakeFiles/test_executor.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+make: *** [Makefile:141: all] Error 2

@@ -1,0 +1,40 @@
+[0.014s] Invoking command in '/home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp': /usr/bin/cmake --build /home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp -- -j12 -l12
+[0.062s] [  0%] Built target rclcpp_test_msgs__cpp
+[0.063s] [  1%] Built target gtest
+[0.064s] [  2%] Built target gmock_main
+[0.065s] [  4%] Built target gtest_main
+[0.065s] [  4%] Built target gmock
+[0.068s] [  6%] Built target rclcpp_test_msgs__rosidl_generator_c
+[0.078s] [  8%] Built target rclcpp_test_msgs__rosidl_typesupport_cpp
+[0.078s] [ 10%] Built target rclcpp_test_msgs__rosidl_typesupport_fastrtps_cpp
+[0.078s] [ 12%] Built target rclcpp_test_msgs__rosidl_typesupport_introspection_cpp
+[0.079s] [ 13%] Built target test_function_traits
+[0.080s] [35m[1mScanning dependencies of target rclcpp[0m
+[0.082s] [ 15%] Built target rclcpp_test_msgs__rosidl_typesupport_introspection_c
+[0.083s] [ 16%] Built target rclcpp_test_msgs__rosidl_typesupport_c
+[0.096s] [ 18%] Built target rclcpp_test_msgs__rosidl_typesupport_fastrtps_c
+[0.113s] [ 18%] Built target rclcpp_test_msgs
+[0.128s] [ 18%] Built target rclcpp_test_msgs__py
+[0.141s] [ 18%] [32mBuilding CXX object CMakeFiles/rclcpp.dir/src/rclcpp/executors/single_threaded_executor.cpp.o[0m
+[0.152s] [ 20%] Built target rclcpp_test_msgs__python
+[0.174s] [ 21%] Built target rclcpp__rosidl_typesupport_c__pyext
+[0.175s] [ 22%] Built target rclcpp__rosidl_typesupport_fastrtps_c__pyext
+[0.175s] [ 23%] Built target rclcpp__rosidl_typesupport_introspection_c__pyext
+[0.860s] [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:[m[K In function ‘[01m[Kint record_jitter(const timespec*, const timespec*, size_t)[m[K’:
+[0.860s] [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:108:10:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ki[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[0.861s]   108 |   size_t [01;35m[Ki[m[K = iteration;
+[0.861s]       |          [01;35m[K^[m[K
+[0.865s] [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:[m[K In member function ‘[01m[Kvoid rclcpp::executors::SingleThreadedExecutor::executor_spin_one_period(uint64_t)[m[K’:
+[0.865s] [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:188:76:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kwakeup_time[m[K’
+[0.865s]   188 |       subtract_timespecs(&start_time_period,&end_time_period,&execute_time)
+[0.865s]       |                                                                            [01;31m[K^[m[K
+[0.865s]       |                                                                            [32m[K;[m[K
+[0.865s]   189 |       [32m[Kwakeup_time[m[K=start_time_period;
+[0.865s]       |       [32m[K~~~~~~~~~~~[m[K                                                           
+[0.866s] [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:167:33:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kcurrent_time[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[0.866s]   167 |    struct timespec wakeup_time, [01;35m[Kcurrent_time[m[K;
+[0.866s]       |                                 [01;35m[K^~~~~~~~~~~~[m[K
+[1.000s] make[2]: *** [CMakeFiles/rclcpp.dir/build.make:389: CMakeFiles/rclcpp.dir/src/rclcpp/executors/single_threaded_executor.cpp.o] Error 1
+[1.000s] make[1]: *** [CMakeFiles/Makefile2:1129: CMakeFiles/rclcpp.dir/all] Error 2
+[1.001s] make: *** [Makefile:141: all] Error 2
+[1.003s] Invoked command in '/home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp' returned '2': /usr/bin/cmake --build /home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp -- -j12 -l12

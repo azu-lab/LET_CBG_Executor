@@ -1,0 +1,18 @@
+[01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:[m[K In member function ‘[01m[Kvoid rclcpp::executors::SingleThreadedExecutor::executor_spin_one_period(uint64_t)[m[K’:
+[01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:191:63:[m[K [01;31m[Kerror: [m[K‘[01m[Kexecute_time[m[K’ was not declared in this scope; did you mean ‘[01m[Kexecute_timer[m[K’?
+  191 |       subtract_timespecs(&start_time_period,&end_time_period,&[01;31m[Kexecute_time[m[K);
+      |                                                               [01;31m[K^~~~~~~~~~~~[m[K
+      |                                                               [32m[Kexecute_timer[m[K
+[01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:168:33:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kcurrent_time[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  168 |    struct timespec wakeup_time, [01;35m[Kcurrent_time[m[K;
+      |                                 [01;35m[K^~~~~~~~~~~~[m[K
+[01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:[m[K In member function ‘[01m[Kvoid rclcpp::executors::SingleThreadedExecutor::spin(uint64_t)[m[K’:
+[01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:270:53:[m[K [01;31m[Kerror: [m[K‘[01m[Ki[m[K’ was not declared in this scope
+  270 |       record_jitter(&wakeup_time, &end_time_period, [01;31m[Ki[m[K);
+      |                                                     [01;31m[K^[m[K
+[01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:255:32:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kcurrent_time[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  255 |   struct timespec wakeup_time, [01;35m[Kcurrent_time[m[K;
+      |                                [01;35m[K^~~~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/rclcpp.dir/build.make:389: CMakeFiles/rclcpp.dir/src/rclcpp/executors/single_threaded_executor.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:1129: CMakeFiles/rclcpp.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

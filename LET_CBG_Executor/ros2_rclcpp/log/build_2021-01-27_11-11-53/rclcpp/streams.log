@@ -1,0 +1,46 @@
+[0.013s] Invoking command in '/home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp': /usr/bin/cmake --build /home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp -- -j12 -l12
+[0.058s] [  1%] Built target gtest_main
+[0.062s] [  2%] Built target gtest
+[0.062s] [  3%] Built target gmock_main
+[0.063s] [  3%] Built target rclcpp_test_msgs__cpp
+[0.067s] [  5%] Built target gmock
+[0.067s] [  6%] Built target rclcpp_test_msgs__rosidl_generator_c
+[0.078s] [  8%] Built target rclcpp_test_msgs__rosidl_typesupport_cpp
+[0.078s] [  9%] Built target test_function_traits
+[0.079s] [ 11%] Built target rclcpp_test_msgs__rosidl_typesupport_introspection_cpp
+[0.079s] [35m[1mScanning dependencies of target rclcpp[0m
+[0.081s] [ 13%] Built target rclcpp_test_msgs__rosidl_typesupport_fastrtps_cpp
+[0.084s] [ 14%] Built target rclcpp_test_msgs__rosidl_typesupport_c
+[0.085s] [ 16%] Built target rclcpp_test_msgs__rosidl_typesupport_introspection_c
+[0.104s] [ 18%] Built target rclcpp_test_msgs__rosidl_typesupport_fastrtps_c
+[0.120s] [ 18%] Built target rclcpp_test_msgs
+[0.139s] [ 18%] Built target rclcpp_test_msgs__py
+[0.152s] [ 18%] [32mBuilding CXX object CMakeFiles/rclcpp.dir/src/rclcpp/executors/single_threaded_executor.cpp.o[0m
+[0.165s] [ 20%] Built target rclcpp_test_msgs__python
+[0.182s] [ 21%] Built target rclcpp__rosidl_typesupport_fastrtps_c__pyext
+[0.187s] [ 22%] Built target rclcpp__rosidl_typesupport_introspection_c__pyext
+[0.190s] [ 23%] Built target rclcpp__rosidl_typesupport_c__pyext
+[0.894s] [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:[m[K In member function ‘[01m[Kvoid rclcpp::executors::SingleThreadedExecutor::executor_spin_one_period(uint64_t)[m[K’:
+[0.894s] [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:175:33:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kcurrent_time[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[0.894s]   175 |    struct timespec wakeup_time, [01;35m[Kcurrent_time[m[K;
+[0.894s]       |                                 [01;35m[K^~~~~~~~~~~~[m[K
+[0.894s] [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:[m[K In member function ‘[01m[Kstd::vector<long int, std::allocator<long int> > rclcpp::executors::SingleThreadedExecutor::spin(uint64_t)[m[K’:
+[0.894s] [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:279:25:[m[K [01;31m[Kerror: [m[Kinvalid conversion from ‘[01m[Kuint64_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} to ‘[01m[Kconst timespec*[m[K’ [[01;31m[K-fpermissive[m[K]
+[0.894s]   279 |       multiply_timespec([01;31m[Kperiod[m[K, i, &theoretical_time);
+[0.895s]       |                         [01;31m[K^~~~~~[m[K
+[0.895s]       |                         [01;31m[K|[m[K
+[0.895s]       |                         [01;31m[Kuint64_t {aka long unsigned int}[m[K
+[0.895s] [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:64:27:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[Kvoid multiply_timespec(const timespec*, uint32_t, timespec*)[m[K’
+[0.895s]    64 |   [01;36m[Kconst struct timespec * t[m[K, const uint32_t i,
+[0.895s]       |   [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+[0.896s] [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:280:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kadd_timespecs[m[K’ was not declared in this scope; did you mean ‘[01m[Ktimespec[m[K’?
+[0.896s]   280 |       [01;31m[Kadd_timespecs[m[K(start_time, &theoretical_time, &theoretical_time);
+[0.896s]       |       [01;31m[K^~~~~~~~~~~~~[m[K
+[0.896s]       |       [32m[Ktimespec[m[K
+[0.897s] [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:269:32:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kcurrent_time[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[0.897s]   269 |   struct timespec wakeup_time, [01;35m[Kcurrent_time[m[K;
+[0.897s]       |                                [01;35m[K^~~~~~~~~~~~[m[K
+[1.036s] make[2]: *** [CMakeFiles/rclcpp.dir/build.make:389: CMakeFiles/rclcpp.dir/src/rclcpp/executors/single_threaded_executor.cpp.o] Error 1
+[1.036s] make[1]: *** [CMakeFiles/Makefile2:1129: CMakeFiles/rclcpp.dir/all] Error 2
+[1.036s] make: *** [Makefile:141: all] Error 2
+[1.039s] Invoked command in '/home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp' returned '2': /usr/bin/cmake --build /home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp -- -j12 -l12

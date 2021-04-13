@@ -1,0 +1,338 @@
+[0.100s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.100s] DEBUG:colcon:Parsed command line arguments: Namespace(ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f86b43efb50>>, merge_install=False, metas=['./colcon.meta'], packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=12, paths=None, symlink_install=False, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f86b43efb50>, verb_name='build', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f86b43fd100>)
+[0.103s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.103s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.103s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.103s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.103s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.103s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.103s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/pengbo/rclcpp_cbg/ros2_rclcpp'
+[0.103s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.103s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.103s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.103s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.104s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.104s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.104s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.104s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.104s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.114s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.114s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.114s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.114s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.114s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.114s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.114s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.114s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.114s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.114s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.114s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.115s] Level 1:colcon.colcon_core.package_identification:_identify(rclcpp) by extensions ['ignore', 'ignore_ament_install']
+[0.115s] Level 1:colcon.colcon_core.package_identification:_identify(rclcpp) by extension 'ignore'
+[0.115s] Level 1:colcon.colcon_core.package_identification:_identify(rclcpp) by extension 'ignore_ament_install'
+[0.115s] Level 1:colcon.colcon_core.package_identification:_identify(rclcpp) by extensions ['colcon_pkg']
+[0.115s] Level 1:colcon.colcon_core.package_identification:_identify(rclcpp) by extension 'colcon_pkg'
+[0.115s] Level 1:colcon.colcon_core.package_identification:_identify(rclcpp) by extensions ['colcon_meta']
+[0.115s] Level 1:colcon.colcon_core.package_identification:_identify(rclcpp) by extension 'colcon_meta'
+[0.115s] Level 1:colcon.colcon_core.package_identification:_identify(rclcpp) by extensions ['ros']
+[0.115s] Level 1:colcon.colcon_core.package_identification:_identify(rclcpp) by extension 'ros'
+[0.117s] DEBUG:colcon.colcon_core.package_identification:Package 'rclcpp' with type 'ros.ament_cmake' and name 'rclcpp'
+[0.117s] Level 1:colcon.colcon_core.package_identification:_identify(rclcpp_action) by extensions ['ignore', 'ignore_ament_install']
+[0.117s] Level 1:colcon.colcon_core.package_identification:_identify(rclcpp_action) by extension 'ignore'
+[0.117s] Level 1:colcon.colcon_core.package_identification:_identify(rclcpp_action) by extension 'ignore_ament_install'
+[0.118s] Level 1:colcon.colcon_core.package_identification:_identify(rclcpp_action) by extensions ['colcon_pkg']
+[0.118s] Level 1:colcon.colcon_core.package_identification:_identify(rclcpp_action) by extension 'colcon_pkg'
+[0.118s] Level 1:colcon.colcon_core.package_identification:_identify(rclcpp_action) by extensions ['colcon_meta']
+[0.118s] Level 1:colcon.colcon_core.package_identification:_identify(rclcpp_action) by extension 'colcon_meta'
+[0.118s] Level 1:colcon.colcon_core.package_identification:_identify(rclcpp_action) by extensions ['ros']
+[0.118s] Level 1:colcon.colcon_core.package_identification:_identify(rclcpp_action) by extension 'ros'
+[0.118s] DEBUG:colcon.colcon_core.package_identification:Package 'rclcpp_action' with type 'ros.ament_cmake' and name 'rclcpp_action'
+[0.118s] Level 1:colcon.colcon_core.package_identification:_identify(rclcpp_components) by extensions ['ignore', 'ignore_ament_install']
+[0.118s] Level 1:colcon.colcon_core.package_identification:_identify(rclcpp_components) by extension 'ignore'
+[0.118s] Level 1:colcon.colcon_core.package_identification:_identify(rclcpp_components) by extension 'ignore_ament_install'
+[0.119s] Level 1:colcon.colcon_core.package_identification:_identify(rclcpp_components) by extensions ['colcon_pkg']
+[0.119s] Level 1:colcon.colcon_core.package_identification:_identify(rclcpp_components) by extension 'colcon_pkg'
+[0.119s] Level 1:colcon.colcon_core.package_identification:_identify(rclcpp_components) by extensions ['colcon_meta']
+[0.119s] Level 1:colcon.colcon_core.package_identification:_identify(rclcpp_components) by extension 'colcon_meta'
+[0.119s] Level 1:colcon.colcon_core.package_identification:_identify(rclcpp_components) by extensions ['ros']
+[0.119s] Level 1:colcon.colcon_core.package_identification:_identify(rclcpp_components) by extension 'ros'
+[0.119s] DEBUG:colcon.colcon_core.package_identification:Package 'rclcpp_components' with type 'ros.ament_cmake' and name 'rclcpp_components'
+[0.119s] Level 1:colcon.colcon_core.package_identification:_identify(rclcpp_lifecycle) by extensions ['ignore', 'ignore_ament_install']
+[0.119s] Level 1:colcon.colcon_core.package_identification:_identify(rclcpp_lifecycle) by extension 'ignore'
+[0.119s] Level 1:colcon.colcon_core.package_identification:_identify(rclcpp_lifecycle) by extension 'ignore_ament_install'
+[0.119s] Level 1:colcon.colcon_core.package_identification:_identify(rclcpp_lifecycle) by extensions ['colcon_pkg']
+[0.119s] Level 1:colcon.colcon_core.package_identification:_identify(rclcpp_lifecycle) by extension 'colcon_pkg'
+[0.119s] Level 1:colcon.colcon_core.package_identification:_identify(rclcpp_lifecycle) by extensions ['colcon_meta']
+[0.119s] Level 1:colcon.colcon_core.package_identification:_identify(rclcpp_lifecycle) by extension 'colcon_meta'
+[0.119s] Level 1:colcon.colcon_core.package_identification:_identify(rclcpp_lifecycle) by extensions ['ros']
+[0.119s] Level 1:colcon.colcon_core.package_identification:_identify(rclcpp_lifecycle) by extension 'ros'
+[0.120s] DEBUG:colcon.colcon_core.package_identification:Package 'rclcpp_lifecycle' with type 'ros.ament_cmake' and name 'rclcpp_lifecycle'
+[0.120s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.120s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.120s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.120s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.120s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.134s] Level 5:colcon.colcon_core.verb:set package 'rclcpp' build argument 'cmake_args' from command line to 'None'
+[0.134s] Level 5:colcon.colcon_core.verb:set package 'rclcpp' build argument 'cmake_target' from command line to 'None'
+[0.134s] Level 5:colcon.colcon_core.verb:set package 'rclcpp' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.134s] Level 5:colcon.colcon_core.verb:set package 'rclcpp' build argument 'cmake_clean_cache' from command line to 'False'
+[0.134s] Level 5:colcon.colcon_core.verb:set package 'rclcpp' build argument 'cmake_clean_first' from command line to 'False'
+[0.134s] Level 5:colcon.colcon_core.verb:set package 'rclcpp' build argument 'cmake_force_configure' from command line to 'False'
+[0.134s] Level 5:colcon.colcon_core.verb:set package 'rclcpp' build argument 'ament_cmake_args' from command line to 'None'
+[0.134s] Level 5:colcon.colcon_core.verb:set package 'rclcpp' build argument 'catkin_cmake_args' from command line to 'None'
+[0.134s] Level 5:colcon.colcon_core.verb:set package 'rclcpp' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.134s] DEBUG:colcon.colcon_core.verb:Building package 'rclcpp' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp', 'merge_install': False, 'path': '/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp', 'symlink_install': False, 'test_result_base': None}
+[0.136s] Level 5:colcon.colcon_core.verb:set package 'rclcpp_action' build argument 'cmake_args' from command line to 'None'
+[0.136s] Level 5:colcon.colcon_core.verb:set package 'rclcpp_action' build argument 'cmake_target' from command line to 'None'
+[0.136s] Level 5:colcon.colcon_core.verb:set package 'rclcpp_action' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.136s] Level 5:colcon.colcon_core.verb:set package 'rclcpp_action' build argument 'cmake_clean_cache' from command line to 'False'
+[0.136s] Level 5:colcon.colcon_core.verb:set package 'rclcpp_action' build argument 'cmake_clean_first' from command line to 'False'
+[0.136s] Level 5:colcon.colcon_core.verb:set package 'rclcpp_action' build argument 'cmake_force_configure' from command line to 'False'
+[0.136s] Level 5:colcon.colcon_core.verb:set package 'rclcpp_action' build argument 'ament_cmake_args' from command line to 'None'
+[0.136s] Level 5:colcon.colcon_core.verb:set package 'rclcpp_action' build argument 'catkin_cmake_args' from command line to 'None'
+[0.136s] Level 5:colcon.colcon_core.verb:set package 'rclcpp_action' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.136s] DEBUG:colcon.colcon_core.verb:Building package 'rclcpp_action' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp_action', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_action', 'merge_install': False, 'path': '/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp_action', 'symlink_install': False, 'test_result_base': None}
+[0.137s] Level 5:colcon.colcon_core.verb:set package 'rclcpp_components' build argument 'cmake_args' from command line to 'None'
+[0.137s] Level 5:colcon.colcon_core.verb:set package 'rclcpp_components' build argument 'cmake_target' from command line to 'None'
+[0.137s] Level 5:colcon.colcon_core.verb:set package 'rclcpp_components' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.137s] Level 5:colcon.colcon_core.verb:set package 'rclcpp_components' build argument 'cmake_clean_cache' from command line to 'False'
+[0.138s] Level 5:colcon.colcon_core.verb:set package 'rclcpp_components' build argument 'cmake_clean_first' from command line to 'False'
+[0.138s] Level 5:colcon.colcon_core.verb:set package 'rclcpp_components' build argument 'cmake_force_configure' from command line to 'False'
+[0.138s] Level 5:colcon.colcon_core.verb:set package 'rclcpp_components' build argument 'ament_cmake_args' from command line to 'None'
+[0.138s] Level 5:colcon.colcon_core.verb:set package 'rclcpp_components' build argument 'catkin_cmake_args' from command line to 'None'
+[0.138s] Level 5:colcon.colcon_core.verb:set package 'rclcpp_components' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.138s] DEBUG:colcon.colcon_core.verb:Building package 'rclcpp_components' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp_components', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_components', 'merge_install': False, 'path': '/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp_components', 'symlink_install': False, 'test_result_base': None}
+[0.139s] Level 5:colcon.colcon_core.verb:set package 'rclcpp_lifecycle' build argument 'cmake_args' from command line to 'None'
+[0.139s] Level 5:colcon.colcon_core.verb:set package 'rclcpp_lifecycle' build argument 'cmake_target' from command line to 'None'
+[0.139s] Level 5:colcon.colcon_core.verb:set package 'rclcpp_lifecycle' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.139s] Level 5:colcon.colcon_core.verb:set package 'rclcpp_lifecycle' build argument 'cmake_clean_cache' from command line to 'False'
+[0.139s] Level 5:colcon.colcon_core.verb:set package 'rclcpp_lifecycle' build argument 'cmake_clean_first' from command line to 'False'
+[0.139s] Level 5:colcon.colcon_core.verb:set package 'rclcpp_lifecycle' build argument 'cmake_force_configure' from command line to 'False'
+[0.139s] Level 5:colcon.colcon_core.verb:set package 'rclcpp_lifecycle' build argument 'ament_cmake_args' from command line to 'None'
+[0.139s] Level 5:colcon.colcon_core.verb:set package 'rclcpp_lifecycle' build argument 'catkin_cmake_args' from command line to 'None'
+[0.139s] Level 5:colcon.colcon_core.verb:set package 'rclcpp_lifecycle' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.139s] DEBUG:colcon.colcon_core.verb:Building package 'rclcpp_lifecycle' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp_lifecycle', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_lifecycle', 'merge_install': False, 'path': '/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp_lifecycle', 'symlink_install': False, 'test_result_base': None}
+[0.140s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.141s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.141s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp' with build type 'ament_cmake'
+[0.141s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp'
+[0.144s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.144s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.144s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.153s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp': /usr/bin/cmake --build /home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp -- -j12 -l12
+[22.656s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp' returned '0': /usr/bin/cmake --build /home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp -- -j12 -l12
+[22.848s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp': /usr/bin/cmake --install /home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp
+[22.879s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rclcpp)
+[22.886s] Level 1:colcon.colcon_core.environment:checking '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp' for CMake module files
+[22.888s] Level 1:colcon.colcon_core.environment:checking '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp' for CMake config files
+[22.888s] Level 1:colcon.colcon_core.shell:create_environment_hook('rclcpp', 'cmake_prefix_path')
+[22.889s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/share/rclcpp/hook/cmake_prefix_path.ps1'
+[22.890s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/share/rclcpp/hook/cmake_prefix_path.dsv'
+[22.891s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/share/rclcpp/hook/cmake_prefix_path.sh'
+[22.892s] Level 1:colcon.colcon_core.environment:checking '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/lib'
+[22.892s] Level 1:colcon.colcon_core.shell:create_environment_hook('rclcpp', 'ld_library_path_lib')
+[22.892s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/share/rclcpp/hook/ld_library_path_lib.ps1'
+[22.893s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/share/rclcpp/hook/ld_library_path_lib.dsv'
+[22.893s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/share/rclcpp/hook/ld_library_path_lib.sh'
+[22.894s] Level 1:colcon.colcon_core.environment:checking '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/bin'
+[22.894s] Level 1:colcon.colcon_core.environment:checking '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/lib/pkgconfig/rclcpp.pc'
+[22.894s] Level 1:colcon.colcon_core.environment:checking '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/lib/python3.8/site-packages'
+[22.895s] INFO:colcon.colcon_core.shell:Creating package script '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/share/rclcpp/package.ps1'
+[22.896s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/share/rclcpp/package.dsv'
+[22.897s] INFO:colcon.colcon_core.shell:Creating package script '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/share/rclcpp/package.sh'
+[22.897s] INFO:colcon.colcon_core.shell:Creating package script '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/share/rclcpp/package.bash'
+[22.898s] INFO:colcon.colcon_core.shell:Creating package script '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/share/rclcpp/package.zsh'
+[22.899s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/share/colcon-core/packages/rclcpp)
+[22.903s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp' returned '0': /usr/bin/cmake --install /home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp
+[23.052s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rclcpp)
+[23.055s] Level 1:colcon.colcon_core.environment:checking '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp' for CMake module files
+[23.056s] Level 1:colcon.colcon_core.environment:checking '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp' for CMake config files
+[23.056s] Level 1:colcon.colcon_core.shell:create_environment_hook('rclcpp', 'cmake_prefix_path')
+[23.056s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/share/rclcpp/hook/cmake_prefix_path.ps1'
+[23.056s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/share/rclcpp/hook/cmake_prefix_path.dsv'
+[23.057s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/share/rclcpp/hook/cmake_prefix_path.sh'
+[23.057s] Level 1:colcon.colcon_core.environment:checking '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/lib'
+[23.057s] Level 1:colcon.colcon_core.shell:create_environment_hook('rclcpp', 'ld_library_path_lib')
+[23.057s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/share/rclcpp/hook/ld_library_path_lib.ps1'
+[23.057s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/share/rclcpp/hook/ld_library_path_lib.dsv'
+[23.058s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/share/rclcpp/hook/ld_library_path_lib.sh'
+[23.058s] Level 1:colcon.colcon_core.environment:checking '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/bin'
+[23.058s] Level 1:colcon.colcon_core.environment:checking '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/lib/pkgconfig/rclcpp.pc'
+[23.058s] Level 1:colcon.colcon_core.environment:checking '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/lib/python3.8/site-packages'
+[23.058s] INFO:colcon.colcon_core.shell:Creating package script '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/share/rclcpp/package.ps1'
+[23.059s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/share/rclcpp/package.dsv'
+[23.059s] INFO:colcon.colcon_core.shell:Creating package script '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/share/rclcpp/package.sh'
+[23.060s] INFO:colcon.colcon_core.shell:Creating package script '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/share/rclcpp/package.bash'
+[23.060s] INFO:colcon.colcon_core.shell:Creating package script '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/share/rclcpp/package.zsh'
+[23.060s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/share/colcon-core/packages/rclcpp)
+[23.060s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp_action' with build type 'ament_cmake'
+[23.061s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp_action'
+[23.061s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[23.061s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[23.064s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp_components' with build type 'ament_cmake'
+[23.064s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp_components'
+[23.064s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[23.064s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[23.069s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp_lifecycle' with build type 'ament_cmake'
+[23.069s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp_lifecycle'
+[23.069s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[23.069s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[23.077s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp_action': AMENT_PREFIX_PATH=/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp CMAKE_PREFIX_PATH=/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp LD_LIBRARY_PATH=/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/lib /usr/bin/cmake --build /home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp_action -- -j12 -l12
+[23.081s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp_components': AMENT_PREFIX_PATH=/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp CMAKE_PREFIX_PATH=/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp LD_LIBRARY_PATH=/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/lib /usr/bin/cmake --build /home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp_components -- -j12 -l12
+[23.085s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp_lifecycle': AMENT_PREFIX_PATH=/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp CMAKE_PREFIX_PATH=/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp LD_LIBRARY_PATH=/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/lib /usr/bin/cmake --build /home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp_lifecycle -- -j12 -l12
+[32.145s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp_components' returned '0': AMENT_PREFIX_PATH=/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp CMAKE_PREFIX_PATH=/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp LD_LIBRARY_PATH=/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/lib /usr/bin/cmake --build /home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp_components -- -j12 -l12
+[32.175s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp_components': AMENT_PREFIX_PATH=/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp CMAKE_PREFIX_PATH=/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp LD_LIBRARY_PATH=/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/lib /usr/bin/cmake --install /home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp_components
+[32.192s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rclcpp_components)
+[32.193s] Level 1:colcon.colcon_core.environment:checking '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_components' for CMake module files
+[32.195s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp_components' returned '0': AMENT_PREFIX_PATH=/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp CMAKE_PREFIX_PATH=/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp LD_LIBRARY_PATH=/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/lib /usr/bin/cmake --install /home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp_components
+[32.195s] Level 1:colcon.colcon_core.environment:checking '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_components' for CMake config files
+[32.195s] Level 1:colcon.colcon_core.shell:create_environment_hook('rclcpp_components', 'cmake_prefix_path')
+[32.196s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_components/share/rclcpp_components/hook/cmake_prefix_path.ps1'
+[32.197s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_components/share/rclcpp_components/hook/cmake_prefix_path.dsv'
+[32.197s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_components/share/rclcpp_components/hook/cmake_prefix_path.sh'
+[32.197s] Level 1:colcon.colcon_core.environment:checking '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_components/lib'
+[32.197s] Level 1:colcon.colcon_core.shell:create_environment_hook('rclcpp_components', 'ld_library_path_lib')
+[32.198s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_components/share/rclcpp_components/hook/ld_library_path_lib.ps1'
+[32.198s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_components/share/rclcpp_components/hook/ld_library_path_lib.dsv'
+[32.199s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_components/share/rclcpp_components/hook/ld_library_path_lib.sh'
+[32.199s] Level 1:colcon.colcon_core.environment:checking '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_components/bin'
+[32.199s] Level 1:colcon.colcon_core.environment:checking '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_components/lib/pkgconfig/rclcpp_components.pc'
+[32.199s] Level 1:colcon.colcon_core.environment:checking '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_components/lib/python3.8/site-packages'
+[32.200s] INFO:colcon.colcon_core.shell:Creating package script '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_components/share/rclcpp_components/package.ps1'
+[32.200s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_components/share/rclcpp_components/package.dsv'
+[32.201s] INFO:colcon.colcon_core.shell:Creating package script '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_components/share/rclcpp_components/package.sh'
+[32.201s] INFO:colcon.colcon_core.shell:Creating package script '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_components/share/rclcpp_components/package.bash'
+[32.202s] INFO:colcon.colcon_core.shell:Creating package script '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_components/share/rclcpp_components/package.zsh'
+[32.202s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_components/share/colcon-core/packages/rclcpp_components)
+[32.225s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rclcpp_components)
+[32.227s] Level 1:colcon.colcon_core.environment:checking '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_components' for CMake module files
+[32.228s] Level 1:colcon.colcon_core.environment:checking '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_components' for CMake config files
+[32.228s] Level 1:colcon.colcon_core.shell:create_environment_hook('rclcpp_components', 'cmake_prefix_path')
+[32.229s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_components/share/rclcpp_components/hook/cmake_prefix_path.ps1'
+[32.229s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_components/share/rclcpp_components/hook/cmake_prefix_path.dsv'
+[32.230s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_components/share/rclcpp_components/hook/cmake_prefix_path.sh'
+[32.230s] Level 1:colcon.colcon_core.environment:checking '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_components/lib'
+[32.231s] Level 1:colcon.colcon_core.shell:create_environment_hook('rclcpp_components', 'ld_library_path_lib')
+[32.231s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_components/share/rclcpp_components/hook/ld_library_path_lib.ps1'
+[32.232s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_components/share/rclcpp_components/hook/ld_library_path_lib.dsv'
+[32.232s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_components/share/rclcpp_components/hook/ld_library_path_lib.sh'
+[32.232s] Level 1:colcon.colcon_core.environment:checking '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_components/bin'
+[32.232s] Level 1:colcon.colcon_core.environment:checking '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_components/lib/pkgconfig/rclcpp_components.pc'
+[32.232s] Level 1:colcon.colcon_core.environment:checking '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_components/lib/python3.8/site-packages'
+[32.233s] INFO:colcon.colcon_core.shell:Creating package script '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_components/share/rclcpp_components/package.ps1'
+[32.234s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_components/share/rclcpp_components/package.dsv'
+[32.235s] INFO:colcon.colcon_core.shell:Creating package script '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_components/share/rclcpp_components/package.sh'
+[32.235s] INFO:colcon.colcon_core.shell:Creating package script '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_components/share/rclcpp_components/package.bash'
+[32.236s] INFO:colcon.colcon_core.shell:Creating package script '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_components/share/rclcpp_components/package.zsh'
+[32.236s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_components/share/colcon-core/packages/rclcpp_components)
+[33.489s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp_action' returned '0': AMENT_PREFIX_PATH=/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp CMAKE_PREFIX_PATH=/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp LD_LIBRARY_PATH=/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/lib /usr/bin/cmake --build /home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp_action -- -j12 -l12
+[33.519s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp_action': AMENT_PREFIX_PATH=/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp CMAKE_PREFIX_PATH=/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp LD_LIBRARY_PATH=/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/lib /usr/bin/cmake --install /home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp_action
+[33.532s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rclcpp_action)
+[33.533s] Level 1:colcon.colcon_core.environment:checking '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_action' for CMake module files
+[33.533s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp_action' returned '0': AMENT_PREFIX_PATH=/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp CMAKE_PREFIX_PATH=/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp LD_LIBRARY_PATH=/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/lib /usr/bin/cmake --install /home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp_action
+[33.534s] Level 1:colcon.colcon_core.environment:checking '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_action' for CMake config files
+[33.534s] Level 1:colcon.colcon_core.shell:create_environment_hook('rclcpp_action', 'cmake_prefix_path')
+[33.535s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_action/share/rclcpp_action/hook/cmake_prefix_path.ps1'
+[33.535s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_action/share/rclcpp_action/hook/cmake_prefix_path.dsv'
+[33.536s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_action/share/rclcpp_action/hook/cmake_prefix_path.sh'
+[33.536s] Level 1:colcon.colcon_core.environment:checking '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_action/lib'
+[33.536s] Level 1:colcon.colcon_core.shell:create_environment_hook('rclcpp_action', 'ld_library_path_lib')
+[33.537s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_action/share/rclcpp_action/hook/ld_library_path_lib.ps1'
+[33.537s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_action/share/rclcpp_action/hook/ld_library_path_lib.dsv'
+[33.537s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_action/share/rclcpp_action/hook/ld_library_path_lib.sh'
+[33.538s] Level 1:colcon.colcon_core.environment:checking '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_action/bin'
+[33.538s] Level 1:colcon.colcon_core.environment:checking '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_action/lib/pkgconfig/rclcpp_action.pc'
+[33.538s] Level 1:colcon.colcon_core.environment:checking '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_action/lib/python3.8/site-packages'
+[33.538s] INFO:colcon.colcon_core.shell:Creating package script '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_action/share/rclcpp_action/package.ps1'
+[33.539s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_action/share/rclcpp_action/package.dsv'
+[33.539s] INFO:colcon.colcon_core.shell:Creating package script '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_action/share/rclcpp_action/package.sh'
+[33.539s] INFO:colcon.colcon_core.shell:Creating package script '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_action/share/rclcpp_action/package.bash'
+[33.540s] INFO:colcon.colcon_core.shell:Creating package script '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_action/share/rclcpp_action/package.zsh'
+[33.540s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_action/share/colcon-core/packages/rclcpp_action)
+[33.572s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rclcpp_action)
+[33.574s] Level 1:colcon.colcon_core.environment:checking '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_action' for CMake module files
+[33.575s] Level 1:colcon.colcon_core.environment:checking '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_action' for CMake config files
+[33.575s] Level 1:colcon.colcon_core.shell:create_environment_hook('rclcpp_action', 'cmake_prefix_path')
+[33.576s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_action/share/rclcpp_action/hook/cmake_prefix_path.ps1'
+[33.576s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_action/share/rclcpp_action/hook/cmake_prefix_path.dsv'
+[33.576s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_action/share/rclcpp_action/hook/cmake_prefix_path.sh'
+[33.577s] Level 1:colcon.colcon_core.environment:checking '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_action/lib'
+[33.577s] Level 1:colcon.colcon_core.shell:create_environment_hook('rclcpp_action', 'ld_library_path_lib')
+[33.577s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_action/share/rclcpp_action/hook/ld_library_path_lib.ps1'
+[33.578s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_action/share/rclcpp_action/hook/ld_library_path_lib.dsv'
+[33.578s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_action/share/rclcpp_action/hook/ld_library_path_lib.sh'
+[33.578s] Level 1:colcon.colcon_core.environment:checking '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_action/bin'
+[33.578s] Level 1:colcon.colcon_core.environment:checking '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_action/lib/pkgconfig/rclcpp_action.pc'
+[33.579s] Level 1:colcon.colcon_core.environment:checking '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_action/lib/python3.8/site-packages'
+[33.579s] INFO:colcon.colcon_core.shell:Creating package script '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_action/share/rclcpp_action/package.ps1'
+[33.580s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_action/share/rclcpp_action/package.dsv'
+[33.581s] INFO:colcon.colcon_core.shell:Creating package script '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_action/share/rclcpp_action/package.sh'
+[33.581s] INFO:colcon.colcon_core.shell:Creating package script '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_action/share/rclcpp_action/package.bash'
+[33.581s] INFO:colcon.colcon_core.shell:Creating package script '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_action/share/rclcpp_action/package.zsh'
+[33.582s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_action/share/colcon-core/packages/rclcpp_action)
+[34.666s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp_lifecycle' returned '0': AMENT_PREFIX_PATH=/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp CMAKE_PREFIX_PATH=/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp LD_LIBRARY_PATH=/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/lib /usr/bin/cmake --build /home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp_lifecycle -- -j12 -l12
+[34.701s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp_lifecycle': AMENT_PREFIX_PATH=/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp CMAKE_PREFIX_PATH=/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp LD_LIBRARY_PATH=/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/lib /usr/bin/cmake --install /home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp_lifecycle
+[34.716s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rclcpp_lifecycle)
+[34.717s] Level 1:colcon.colcon_core.environment:checking '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_lifecycle' for CMake module files
+[34.718s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp_lifecycle' returned '0': AMENT_PREFIX_PATH=/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp CMAKE_PREFIX_PATH=/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp LD_LIBRARY_PATH=/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/lib /usr/bin/cmake --install /home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp_lifecycle
+[34.718s] Level 1:colcon.colcon_core.environment:checking '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_lifecycle' for CMake config files
+[34.718s] Level 1:colcon.colcon_core.shell:create_environment_hook('rclcpp_lifecycle', 'cmake_prefix_path')
+[34.719s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_lifecycle/share/rclcpp_lifecycle/hook/cmake_prefix_path.ps1'
+[34.719s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_lifecycle/share/rclcpp_lifecycle/hook/cmake_prefix_path.dsv'
+[34.720s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_lifecycle/share/rclcpp_lifecycle/hook/cmake_prefix_path.sh'
+[34.720s] Level 1:colcon.colcon_core.environment:checking '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_lifecycle/lib'
+[34.720s] Level 1:colcon.colcon_core.shell:create_environment_hook('rclcpp_lifecycle', 'ld_library_path_lib')
+[34.721s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_lifecycle/share/rclcpp_lifecycle/hook/ld_library_path_lib.ps1'
+[34.721s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_lifecycle/share/rclcpp_lifecycle/hook/ld_library_path_lib.dsv'
+[34.721s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_lifecycle/share/rclcpp_lifecycle/hook/ld_library_path_lib.sh'
+[34.722s] Level 1:colcon.colcon_core.environment:checking '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_lifecycle/bin'
+[34.722s] Level 1:colcon.colcon_core.environment:checking '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_lifecycle/lib/pkgconfig/rclcpp_lifecycle.pc'
+[34.722s] Level 1:colcon.colcon_core.environment:checking '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_lifecycle/lib/python3.8/site-packages'
+[34.722s] INFO:colcon.colcon_core.shell:Creating package script '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_lifecycle/share/rclcpp_lifecycle/package.ps1'
+[34.723s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_lifecycle/share/rclcpp_lifecycle/package.dsv'
+[34.723s] INFO:colcon.colcon_core.shell:Creating package script '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_lifecycle/share/rclcpp_lifecycle/package.sh'
+[34.724s] INFO:colcon.colcon_core.shell:Creating package script '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_lifecycle/share/rclcpp_lifecycle/package.bash'
+[34.724s] INFO:colcon.colcon_core.shell:Creating package script '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_lifecycle/share/rclcpp_lifecycle/package.zsh'
+[34.724s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_lifecycle/share/colcon-core/packages/rclcpp_lifecycle)
+[34.757s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rclcpp_lifecycle)
+[34.759s] Level 1:colcon.colcon_core.environment:checking '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_lifecycle' for CMake module files
+[34.759s] Level 1:colcon.colcon_core.environment:checking '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_lifecycle' for CMake config files
+[34.759s] Level 1:colcon.colcon_core.shell:create_environment_hook('rclcpp_lifecycle', 'cmake_prefix_path')
+[34.760s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_lifecycle/share/rclcpp_lifecycle/hook/cmake_prefix_path.ps1'
+[34.761s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_lifecycle/share/rclcpp_lifecycle/hook/cmake_prefix_path.dsv'
+[34.761s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_lifecycle/share/rclcpp_lifecycle/hook/cmake_prefix_path.sh'
+[34.762s] Level 1:colcon.colcon_core.environment:checking '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_lifecycle/lib'
+[34.762s] Level 1:colcon.colcon_core.shell:create_environment_hook('rclcpp_lifecycle', 'ld_library_path_lib')
+[34.762s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_lifecycle/share/rclcpp_lifecycle/hook/ld_library_path_lib.ps1'
+[34.763s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_lifecycle/share/rclcpp_lifecycle/hook/ld_library_path_lib.dsv'
+[34.763s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_lifecycle/share/rclcpp_lifecycle/hook/ld_library_path_lib.sh'
+[34.763s] Level 1:colcon.colcon_core.environment:checking '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_lifecycle/bin'
+[34.764s] Level 1:colcon.colcon_core.environment:checking '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_lifecycle/lib/pkgconfig/rclcpp_lifecycle.pc'
+[34.764s] Level 1:colcon.colcon_core.environment:checking '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_lifecycle/lib/python3.8/site-packages'
+[34.764s] INFO:colcon.colcon_core.shell:Creating package script '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_lifecycle/share/rclcpp_lifecycle/package.ps1'
+[34.765s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_lifecycle/share/rclcpp_lifecycle/package.dsv'
+[34.765s] INFO:colcon.colcon_core.shell:Creating package script '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_lifecycle/share/rclcpp_lifecycle/package.sh'
+[34.766s] INFO:colcon.colcon_core.shell:Creating package script '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_lifecycle/share/rclcpp_lifecycle/package.bash'
+[34.766s] INFO:colcon.colcon_core.shell:Creating package script '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_lifecycle/share/rclcpp_lifecycle/package.zsh'
+[34.766s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp_lifecycle/share/colcon-core/packages/rclcpp_lifecycle)
+[34.767s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[34.767s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[34.767s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[34.767s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[34.774s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[34.774s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[34.774s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[34.789s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[34.789s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/local_setup.ps1'
+[34.790s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/_local_setup_util_ps1.py'
+[34.791s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/setup.ps1'
+[34.793s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/local_setup.sh'
+[34.794s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/_local_setup_util_sh.py'
+[34.794s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/setup.sh'
+[34.796s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/local_setup.bash'
+[34.797s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/setup.bash'
+[34.799s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/local_setup.zsh'
+[34.799s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/setup.zsh'

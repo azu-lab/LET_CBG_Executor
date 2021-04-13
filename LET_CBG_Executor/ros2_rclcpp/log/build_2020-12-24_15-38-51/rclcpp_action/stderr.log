@@ -1,0 +1,24 @@
+[01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp_action/test/test_client.cpp:[m[K In member function ‘[01m[Kvoid TestClient::dual_spin_until_future_complete(std::shared_future<_Res>&)[m[K’:
+[01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp_action/test/test_client.cpp:238:33:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kint[m[K’ to ‘[01m[Kstd::chrono::nanoseconds[m[K’ {aka ‘[01m[Kstd::chrono::duration<long int, std::ratio<1, 1000000000> >[m[K’}
+  238 |       server_executor.spin_some([01;31m[K1000[m[K);
+      |                                 [01;31m[K^~~~[m[K
+      |                                 [01;31m[K|[m[K
+      |                                 [01;31m[Kint[m[K
+In file included from [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/executors.hpp:22[m[K,
+                 from [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp_action/test/test_client.cpp:26[m[K:
+[01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/executors/single_threaded_executor.hpp:69:38:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[Kvirtual void rclcpp::executors::SingleThreadedExecutor::spin_some(std::chrono::nanoseconds)[m[K’
+   69 |   spin_some([01;36m[Kstd::chrono::nanoseconds max_duration[m[K);
+      |             [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~[m[K
+[01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp_action/test/test_client.cpp:239:33:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kint[m[K’ to ‘[01m[Kstd::chrono::nanoseconds[m[K’ {aka ‘[01m[Kstd::chrono::duration<long int, std::ratio<1, 1000000000> >[m[K’}
+  239 |       client_executor.spin_some([01;31m[K1000[m[K);
+      |                                 [01;31m[K^~~~[m[K
+      |                                 [01;31m[K|[m[K
+      |                                 [01;31m[Kint[m[K
+In file included from [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/executors.hpp:22[m[K,
+                 from [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp_action/test/test_client.cpp:26[m[K:
+[01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/install/rclcpp/include/rclcpp/executors/single_threaded_executor.hpp:69:38:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[Kvirtual void rclcpp::executors::SingleThreadedExecutor::spin_some(std::chrono::nanoseconds)[m[K’
+   69 |   spin_some([01;36m[Kstd::chrono::nanoseconds max_duration[m[K);
+      |             [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/test_client.dir/build.make:63: CMakeFiles/test_client.dir/test/test_client.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:109: CMakeFiles/test_client.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

@@ -1,0 +1,55 @@
+[0.009s] Invoking command in '/home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp': /usr/bin/cmake --build /home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp -- -j12 -l12
+[0.059s] [  1%] Built target gtest
+[0.064s] [  1%] Built target rclcpp_test_msgs__cpp
+[0.064s] [  2%] Built target gtest_main
+[0.064s] [  3%] Built target gmock
+[0.067s] [  6%] Built target gmock_main
+[0.067s] [  6%] Built target rclcpp_test_msgs__rosidl_generator_c
+[0.078s] [  8%] Built target rclcpp_test_msgs__rosidl_typesupport_cpp
+[0.078s] [35m[1mScanning dependencies of target rclcpp[0m
+[0.079s] [ 10%] Built target rclcpp_test_msgs__rosidl_typesupport_introspection_cpp
+[0.081s] [ 11%] Built target rclcpp_test_msgs__rosidl_typesupport_c
+[0.083s] [ 13%] Built target rclcpp_test_msgs__rosidl_typesupport_introspection_c
+[0.083s] [ 14%] Built target test_function_traits
+[0.087s] [ 16%] Built target rclcpp_test_msgs__rosidl_typesupport_fastrtps_cpp
+[0.105s] [ 18%] Built target rclcpp_test_msgs__rosidl_typesupport_fastrtps_c
+[0.124s] [ 18%] Built target rclcpp_test_msgs
+[0.136s] [ 18%] [32mBuilding CXX object CMakeFiles/rclcpp.dir/src/rclcpp/executors/single_threaded_executor.cpp.o[0m
+[0.139s] [ 18%] Built target rclcpp_test_msgs__py
+[0.161s] [ 20%] Built target rclcpp_test_msgs__python
+[0.180s] [ 21%] Built target rclcpp__rosidl_typesupport_c__pyext
+[0.181s] [ 22%] Built target rclcpp__rosidl_typesupport_fastrtps_c__pyext
+[0.182s] [ 23%] Built target rclcpp__rosidl_typesupport_introspection_c__pyext
+[0.871s] [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:[m[K In member function ‘[01m[Kvoid rclcpp::executors::SingleThreadedExecutor::executor_spin_one_period(uint64_t)[m[K’:
+[0.871s] [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:254:17:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Ktimespec[m[K’ to ‘[01m[Kconst timespec*[m[K’
+[0.871s]   254 |   add_timespecs([01;31m[Kstart_time_period[m[K,update_period,&theoretical_end_time);
+[0.871s]       |                 [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[0.871s]       |                 [01;31m[K|[m[K
+[0.871s]       |                 [01;31m[Ktimespec[m[K
+[0.871s] [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:82:27:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[Kvoid add_timespecs(const timespec*, const timespec*, timespec*)[m[K’
+[0.871s]    82 |   [01;36m[Kconst struct timespec * t1[m[K,
+[0.871s]       |   [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[0.871s] [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:264:47:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Ksleep_for(int64_t&)[m[K’
+[0.871s]   264 |        std::this_thread::sleep_for(sleep_time1[01;31m[K)[m[K;
+[0.872s]       |                                               [01;31m[K^[m[K
+[0.872s] In file included from [01m[K/usr/include/c++/9/future:39[m[K,
+[0.872s]                  from [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/include/rclcpp/client.hpp:19[m[K,
+[0.872s]                  from [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/include/rclcpp/callback_group.hpp:23[m[K,
+[0.872s]                  from [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/include/rclcpp/any_executable.hpp:20[m[K,
+[0.872s]                  from [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/include/rclcpp/memory_strategy.hpp:25[m[K,
+[0.872s]                  from [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/include/rclcpp/memory_strategies.hpp:18[m[K,
+[0.872s]                  from [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/include/rclcpp/executor_options.hpp:20[m[K,
+[0.872s]                  from [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/include/rclcpp/executor.hpp:34[m[K,
+[0.872s]                  from [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/include/rclcpp/executors/single_threaded_executor.hpp:25[m[K,
+[0.872s]                  from [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:15[m[K:
+[0.872s] [01m[K/usr/include/c++/9/thread:366:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Rep, class _Period> void std::this_thread::sleep_for(const std::chrono::duration<_Rep1, _Period1>&)[m[K’
+[0.873s]   366 |       [01;36m[Ksleep_for[m[K(const chrono::duration<_Rep, _Period>& __rtime)
+[0.873s]       |       [01;36m[K^~~~~~~~~[m[K
+[0.873s] [01m[K/usr/include/c++/9/thread:366:7:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[0.873s] [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:264:47:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst std::chrono::duration<_Rep1, _Period1>[m[K’ and ‘[01m[Kint64_t[m[K’ {aka ‘[01m[Klong int[m[K’}
+[0.873s]   264 |        std::this_thread::sleep_for(sleep_time1[01;36m[K)[m[K;
+[0.873s]       |                                               [01;36m[K^[m[K
+[1.010s] make[2]: *** [CMakeFiles/rclcpp.dir/build.make:389: CMakeFiles/rclcpp.dir/src/rclcpp/executors/single_threaded_executor.cpp.o] Error 1
+[1.011s] make[1]: *** [CMakeFiles/Makefile2:1129: CMakeFiles/rclcpp.dir/all] Error 2
+[1.011s] make: *** [Makefile:141: all] Error 2
+[1.013s] Invoked command in '/home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp' returned '2': /usr/bin/cmake --build /home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp -- -j12 -l12

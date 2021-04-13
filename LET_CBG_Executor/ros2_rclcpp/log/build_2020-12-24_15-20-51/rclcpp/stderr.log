@@ -1,0 +1,32 @@
+CMake Error at CMakeLists.txt:5 (find_package):
+  By not providing "Findament_cmake_ros.cmake" in CMAKE_MODULE_PATH this
+  project has asked CMake to find a package configuration file provided by
+  "ament_cmake_ros", but CMake did not find one.
+
+  Could not find a package configuration file provided by "ament_cmake_ros"
+  with any of the following names:
+
+    ament_cmake_rosConfig.cmake
+    ament_cmake_ros-config.cmake
+
+  Add the installation prefix of "ament_cmake_ros" to CMAKE_PREFIX_PATH or
+  set "ament_cmake_ros_DIR" to a directory containing one of the above files.
+  If "ament_cmake_ros" provides a separate development package or SDK, be
+  sure it has been installed.
+
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/colcon_core/executor/__init__.py", line 91, in __call__
+    rc = await self.task(*args, **kwargs)
+  File "/usr/lib/python3/dist-packages/colcon_core/task/__init__.py", line 93, in __call__
+    return await task_method(*args, **kwargs)
+  File "/usr/lib/python3/dist-packages/colcon_ros/task/ament_cmake/build.py", line 66, in build
+    if await has_target(args.build_base, 'install'):
+  File "/usr/lib/python3/dist-packages/colcon_cmake/task/cmake/__init__.py", line 57, in has_target
+    return target in await get_makefile_targets(path)
+  File "/usr/lib/python3/dist-packages/colcon_cmake/task/cmake/__init__.py", line 77, in get_makefile_targets
+    output = await check_output([
+  File "/usr/lib/python3/dist-packages/colcon_core/subprocess.py", line 109, in check_output
+    assert not rc, \
+AssertionError: Expected ['/usr/bin/cmake', '--build', '/home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp', '--target', 'help'] to pass: make: *** No rule to make target 'help'.  Stop.
+

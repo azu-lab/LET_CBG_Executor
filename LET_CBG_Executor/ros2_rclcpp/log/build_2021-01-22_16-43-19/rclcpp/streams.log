@@ -1,0 +1,87 @@
+[0.009s] Invoking command in '/home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp': /usr/bin/cmake --build /home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp -- -j12 -l12
+[0.067s] [  1%] Built target gmock
+[0.068s] [  2%] Built target gtest_main
+[0.068s] [  2%] Built target rclcpp_test_msgs__cpp
+[0.069s] [  3%] Built target gtest
+[0.072s] [  6%] Built target gmock_main
+[0.072s] [  6%] Built target rclcpp_test_msgs__rosidl_generator_c
+[0.079s] [35m[1mScanning dependencies of target rclcpp[0m
+[0.084s] [  8%] Built target rclcpp_test_msgs__rosidl_typesupport_cpp
+[0.085s] [ 10%] Built target rclcpp_test_msgs__rosidl_typesupport_introspection_cpp
+[0.085s] [ 11%] Built target test_function_traits
+[0.086s] [ 13%] Built target rclcpp_test_msgs__rosidl_typesupport_fastrtps_cpp
+[0.086s] [ 15%] Built target rclcpp_test_msgs__rosidl_typesupport_c
+[0.086s] [ 16%] Built target rclcpp_test_msgs__rosidl_typesupport_introspection_c
+[0.107s] [ 18%] Built target rclcpp_test_msgs__rosidl_typesupport_fastrtps_c
+[0.121s] [ 18%] Built target rclcpp_test_msgs
+[0.138s] [ 18%] Built target rclcpp_test_msgs__py
+[0.139s] [ 18%] [32mBuilding CXX object CMakeFiles/rclcpp.dir/src/rclcpp/executors/single_threaded_executor.cpp.o[0m
+[0.160s] [ 20%] Built target rclcpp_test_msgs__python
+[0.180s] [ 21%] Built target rclcpp__rosidl_typesupport_fastrtps_c__pyext
+[0.181s] [ 22%] Built target rclcpp__rosidl_typesupport_c__pyext
+[0.186s] [ 23%] Built target rclcpp__rosidl_typesupport_introspection_c__pyext
+[0.862s] [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:[m[K In function ‘[01m[Kvoid execute_ready_executables()[m[K’:
+[0.862s] [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:36:26:[m[K [01;31m[Kerror: [m[K‘[01m[Kwait_set_[m[K’ was not declared in this scope; did you mean ‘[01m[Krcl_wait_set_t[m[K’?
+[0.862s]    36 |   for (size_t i = 0; i < [01;31m[Kwait_set_[m[K.size_of_subscriptions; ++i) {
+[0.863s]       |                          [01;31m[K^~~~~~~~~[m[K
+[0.863s]       |                          [32m[Krcl_wait_set_t[m[K
+[0.864s] [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:37:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kentities_collector_[m[K’ was not declared in this scope
+[0.864s]    37 |     if (i < [01;31m[Kentities_collector_[m[K->get_number_of_subscriptions()) {
+[0.864s]       |             [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[0.866s] [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:39:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kexecute_subscription[m[K’ was not declared in this scope; did you mean ‘[01m[Krmw_create_subscription[m[K’?
+[0.866s]    39 |         [01;31m[Kexecute_subscription[m[K(entities_collector_->get_subscription(i));
+[0.866s]       |         [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[0.866s]       |         [32m[Krmw_create_subscription[m[K
+[0.867s] [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:44:26:[m[K [01;31m[Kerror: [m[K‘[01m[Kwait_set_[m[K’ was not declared in this scope; did you mean ‘[01m[Krcl_wait_set_t[m[K’?
+[0.867s]    44 |   for (size_t i = 0; i < [01;31m[Kwait_set_[m[K.size_of_timers; ++i) {
+[0.867s]       |                          [01;31m[K^~~~~~~~~[m[K
+[0.867s]       |                          [32m[Krcl_wait_set_t[m[K
+[0.869s] [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:45:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kentities_collector_[m[K’ was not declared in this scope
+[0.869s]    45 |     if (i < [01;31m[Kentities_collector_[m[K->get_number_of_timers()) {
+[0.869s]       |             [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[0.870s] [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:47:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kexecute_timer[m[K’ was not declared in this scope
+[0.870s]    47 |         [01;31m[Kexecute_timer[m[K(entities_collector_->get_timer(i));
+[0.870s]       |         [01;31m[K^~~~~~~~~~~~~[m[K
+[0.871s] [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:52:26:[m[K [01;31m[Kerror: [m[K‘[01m[Kwait_set_[m[K’ was not declared in this scope; did you mean ‘[01m[Krcl_wait_set_t[m[K’?
+[0.871s]    52 |   for (size_t i = 0; i < [01;31m[Kwait_set_[m[K.size_of_services; ++i) {
+[0.871s]       |                          [01;31m[K^~~~~~~~~[m[K
+[0.871s]       |                          [32m[Krcl_wait_set_t[m[K
+[0.873s] [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:53:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kentities_collector_[m[K’ was not declared in this scope
+[0.873s]    53 |     if (i < [01;31m[Kentities_collector_[m[K->get_number_of_services()) {
+[0.873s]       |             [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[0.874s] [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:55:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kexecute_service[m[K’ was not declared in this scope
+[0.874s]    55 |         [01;31m[Kexecute_service[m[K(entities_collector_->get_service(i));
+[0.874s]       |         [01;31m[K^~~~~~~~~~~~~~~[m[K
+[0.875s] [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:60:26:[m[K [01;31m[Kerror: [m[K‘[01m[Kwait_set_[m[K’ was not declared in this scope; did you mean ‘[01m[Krcl_wait_set_t[m[K’?
+[0.875s]    60 |   for (size_t i = 0; i < [01;31m[Kwait_set_[m[K.size_of_clients; ++i) {
+[0.875s]       |                          [01;31m[K^~~~~~~~~[m[K
+[0.875s]       |                          [32m[Krcl_wait_set_t[m[K
+[0.877s] [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:61:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kentities_collector_[m[K’ was not declared in this scope
+[0.877s]    61 |     if (i < [01;31m[Kentities_collector_[m[K->get_number_of_clients()) {
+[0.877s]       |             [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[0.878s] [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:63:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kexecute_client[m[K’ was not declared in this scope
+[0.878s]    63 |         [01;31m[Kexecute_client[m[K(entities_collector_->get_client(i));
+[0.878s]       |         [01;31m[K^~~~~~~~~~~~~~[m[K
+[0.880s] [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:68:26:[m[K [01;31m[Kerror: [m[K‘[01m[Kentities_collector_[m[K’ was not declared in this scope
+[0.880s]    68 |   for (size_t i = 0; i < [01;31m[Kentities_collector_[m[K->get_number_of_waitables(); ++i) {
+[0.880s]       |                          [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[0.881s] [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:69:57:[m[K [01;31m[Kerror: [m[K‘[01m[Kwait_set_[m[K’ was not declared in this scope; did you mean ‘[01m[Krcl_wait_set_t[m[K’?
+[0.881s]    69 |     if (entities_collector_->get_waitable(i)->is_ready(&[01;31m[Kwait_set_[m[K)) {
+[0.881s]       |                                                         [01;31m[K^~~~~~~~~[m[K
+[0.881s]       |                                                         [32m[Krcl_wait_set_t[m[K
+[0.883s] [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:[m[K In function ‘[01m[Kint record_jitter(const timespec*, const timespec*, size_t)[m[K’:
+[0.883s] [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:152:10:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ki[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[0.883s]   152 |   size_t [01;35m[Ki[m[K = iteration;
+[0.883s]       |          [01;35m[K^[m[K
+[0.887s] [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:[m[K In member function ‘[01m[Kvirtual void rclcpp::executors::SingleThreadedExecutor::spin_some(std::chrono::nanoseconds)[m[K’:
+[0.887s] [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:199:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kentities_collector_[m[K’ was not declared in this scope
+[0.887s]   199 |       [01;31m[Kentities_collector_[m[K->refresh_wait_set();
+[0.887s]       |       [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[0.891s] [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:[m[K In member function ‘[01m[Kvoid rclcpp::executors::SingleThreadedExecutor::executor_spin_one_period(uint64_t)[m[K’:
+[0.891s] [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:213:33:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kcurrent_time[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[0.891s]   213 |    struct timespec wakeup_time, [01;35m[Kcurrent_time[m[K;
+[0.891s]       |                                 [01;35m[K^~~~~~~~~~~~[m[K
+[1.029s] make[2]: *** [CMakeFiles/rclcpp.dir/build.make:389: CMakeFiles/rclcpp.dir/src/rclcpp/executors/single_threaded_executor.cpp.o] Error 1
+[1.029s] make[1]: *** [CMakeFiles/Makefile2:1129: CMakeFiles/rclcpp.dir/all] Error 2
+[1.029s] make: *** [Makefile:141: all] Error 2
+[1.032s] Invoked command in '/home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp' returned '2': /usr/bin/cmake --build /home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp -- -j12 -l12

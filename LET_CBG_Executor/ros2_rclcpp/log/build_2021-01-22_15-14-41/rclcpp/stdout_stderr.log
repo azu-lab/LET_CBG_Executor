@@ -1,0 +1,40 @@
+[  1%] Built target gmock
+[  3%] Built target gmock_main
+[  3%] Built target gtest_main
+[  3%] Built target rclcpp_test_msgs__cpp
+[  4%] Built target gtest
+[  6%] Built target rclcpp_test_msgs__rosidl_generator_c
+[  7%] Built target test_function_traits
+[35m[1mScanning dependencies of target rclcpp[0m
+[  9%] Built target rclcpp_test_msgs__rosidl_typesupport_cpp
+[ 10%] Built target rclcpp_test_msgs__rosidl_typesupport_c
+[ 12%] Built target rclcpp_test_msgs__rosidl_typesupport_introspection_cpp
+[ 14%] Built target rclcpp_test_msgs__rosidl_typesupport_fastrtps_cpp
+[ 16%] Built target rclcpp_test_msgs__rosidl_typesupport_introspection_c
+[ 18%] Built target rclcpp_test_msgs__rosidl_typesupport_fastrtps_c
+[ 18%] Built target rclcpp_test_msgs
+[ 18%] Built target rclcpp_test_msgs__py
+[ 18%] [32mBuilding CXX object CMakeFiles/rclcpp.dir/src/rclcpp/executors/single_threaded_executor.cpp.o[0m
+[ 20%] Built target rclcpp_test_msgs__python
+[ 21%] Built target rclcpp__rosidl_typesupport_c__pyext
+[ 22%] Built target rclcpp__rosidl_typesupport_fastrtps_c__pyext
+[ 23%] Built target rclcpp__rosidl_typesupport_introspection_c__pyext
+[01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:[m[K In function ‘[01m[Kint record_jitter(const timespec*, const timespec*, size_t)[m[K’:
+[01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:108:10:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ki[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  108 |   size_t [01;35m[Ki[m[K = iteration;
+      |          [01;35m[K^[m[K
+[01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:[m[K In member function ‘[01m[Kvoid rclcpp::executors::SingleThreadedExecutor::executor_spin_one_period(uint64_t)[m[K’:
+[01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:188:26:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Ktimespec[m[K’ to ‘[01m[Kconst timespec*[m[K’
+  188 |       subtract_timespecs([01;31m[Kstart_time_period[m[K,end_time_period,&execute_time)
+      |                          [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+      |                          [01;31m[K|[m[K
+      |                          [01;31m[Ktimespec[m[K
+[01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:89:27:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[Kbool subtract_timespecs(const timespec*, const timespec*, timespec*)[m[K’
+   89 |   [01;36m[Kconst struct timespec * t1[m[K,
+      |   [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:167:33:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kcurrent_time[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  167 |    struct timespec wakeup_time, [01;35m[Kcurrent_time[m[K;
+      |                                 [01;35m[K^~~~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/rclcpp.dir/build.make:389: CMakeFiles/rclcpp.dir/src/rclcpp/executors/single_threaded_executor.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:1129: CMakeFiles/rclcpp.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

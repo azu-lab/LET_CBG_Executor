@@ -1,0 +1,16 @@
+[01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp_action/test/test_client.cpp:[m[K In member function ‘[01m[Kvoid TestClient::dual_spin_until_future_complete(std::shared_future<_Res>&)[m[K’:
+[01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp_action/test/test_client.cpp:238:57:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+  238 |       server_executor.spin_some(std::chrono::nanoseconds[01;31m[K>[m[K(1000).count());
+      |                                                         [01;31m[K^[m[K
+[01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp_action/test/test_client.cpp:238:65:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kcount[m[K’ in ‘[01m[K1000[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+  238 |       server_executor.spin_some(std::chrono::nanoseconds>(1000).[01;31m[Kcount[m[K());
+      |                                                                 [01;31m[K^~~~~[m[K
+[01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp_action/test/test_client.cpp:239:57:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+  239 |       client_executor.spin_some(std::chrono::nanoseconds[01;31m[K>[m[K(1000).count());
+      |                                                         [01;31m[K^[m[K
+[01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp_action/test/test_client.cpp:239:65:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kcount[m[K’ in ‘[01m[K1000[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+  239 |       client_executor.spin_some(std::chrono::nanoseconds>(1000).[01;31m[Kcount[m[K());
+      |                                                                 [01;31m[K^~~~~[m[K
+make[2]: *** [CMakeFiles/test_client.dir/build.make:63: CMakeFiles/test_client.dir/test/test_client.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:109: CMakeFiles/test_client.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

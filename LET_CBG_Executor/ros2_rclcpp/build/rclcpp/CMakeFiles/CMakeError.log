@@ -1,0 +1,464 @@
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_2cb5c/fast && /usr/bin/make -f CMakeFiles/cmTC_2cb5c.dir/build.make CMakeFiles/cmTC_2cb5c.dir/build
+make[1]: Entering directory '/home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2cb5c.dir/src.c.o
+/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_2cb5c.dir/src.c.o   -c /home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_2cb5c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2cb5c.dir/link.txt --verbose=1
+/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    CMakeFiles/cmTC_2cb5c.dir/src.c.o  -o cmTC_2cb5c 
+/usr/bin/ld: CMakeFiles/cmTC_2cb5c.dir/src.c.o: in function `main':
+src.c:(.text+0x46): undefined reference to `pthread_create'
+/usr/bin/ld: src.c:(.text+0x52): undefined reference to `pthread_detach'
+/usr/bin/ld: src.c:(.text+0x63): undefined reference to `pthread_join'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_2cb5c.dir/build.make:87: cmTC_2cb5c] Error 1
+make[1]: Leaving directory '/home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_2cb5c/fast] Error 2
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_4d4e0/fast && /usr/bin/make -f CMakeFiles/cmTC_4d4e0.dir/build.make CMakeFiles/cmTC_4d4e0.dir/build
+make[1]: Entering directory '/home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_4d4e0.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_4d4e0.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_4d4e0
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4d4e0.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_4d4e0.dir/CheckFunctionExists.c.o  -o cmTC_4d4e0  -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_4d4e0.dir/build.make:87: cmTC_4d4e0] Error 1
+make[1]: Leaving directory '/home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_4d4e0/fast] Error 2
+
+
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_99947/fast && /usr/bin/make -f CMakeFiles/cmTC_99947.dir/build.make CMakeFiles/cmTC_99947.dir/build
+make[1]: Entering directory '/home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_99947.dir/src.c.o
+/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_99947.dir/src.c.o   -c /home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_99947
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_99947.dir/link.txt --verbose=1
+/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    CMakeFiles/cmTC_99947.dir/src.c.o  -o cmTC_99947 
+/usr/bin/ld: CMakeFiles/cmTC_99947.dir/src.c.o: in function `main':
+src.c:(.text+0x46): undefined reference to `pthread_create'
+/usr/bin/ld: src.c:(.text+0x52): undefined reference to `pthread_detach'
+/usr/bin/ld: src.c:(.text+0x63): undefined reference to `pthread_join'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_99947.dir/build.make:87: cmTC_99947] Error 1
+make[1]: Leaving directory '/home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_99947/fast] Error 2
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_ebb71/fast && /usr/bin/make -f CMakeFiles/cmTC_ebb71.dir/build.make CMakeFiles/cmTC_ebb71.dir/build
+make[1]: Entering directory '/home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ebb71.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_ebb71.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_ebb71
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ebb71.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_ebb71.dir/CheckFunctionExists.c.o  -o cmTC_ebb71  -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_ebb71.dir/build.make:87: cmTC_ebb71] Error 1
+make[1]: Leaving directory '/home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_ebb71/fast] Error 2
+
+
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_e8719/fast && /usr/bin/make -f CMakeFiles/cmTC_e8719.dir/build.make CMakeFiles/cmTC_e8719.dir/build
+make[1]: Entering directory '/home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e8719.dir/src.c.o
+/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_e8719.dir/src.c.o   -c /home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_e8719
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e8719.dir/link.txt --verbose=1
+/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    CMakeFiles/cmTC_e8719.dir/src.c.o  -o cmTC_e8719 
+/usr/bin/ld: CMakeFiles/cmTC_e8719.dir/src.c.o: in function `main':
+src.c:(.text+0x46): undefined reference to `pthread_create'
+/usr/bin/ld: src.c:(.text+0x52): undefined reference to `pthread_detach'
+/usr/bin/ld: src.c:(.text+0x63): undefined reference to `pthread_join'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_e8719.dir/build.make:87: cmTC_e8719] Error 1
+make[1]: Leaving directory '/home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_e8719/fast] Error 2
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_26fa4/fast && /usr/bin/make -f CMakeFiles/cmTC_26fa4.dir/build.make CMakeFiles/cmTC_26fa4.dir/build
+make[1]: Entering directory '/home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_26fa4.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_26fa4.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_26fa4
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_26fa4.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_26fa4.dir/CheckFunctionExists.c.o  -o cmTC_26fa4  -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_26fa4.dir/build.make:87: cmTC_26fa4] Error 1
+make[1]: Leaving directory '/home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_26fa4/fast] Error 2
+
+
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_71123/fast && /usr/bin/make -f CMakeFiles/cmTC_71123.dir/build.make CMakeFiles/cmTC_71123.dir/build
+make[1]: Entering directory '/home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_71123.dir/src.c.o
+/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_71123.dir/src.c.o   -c /home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_71123
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_71123.dir/link.txt --verbose=1
+/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    CMakeFiles/cmTC_71123.dir/src.c.o  -o cmTC_71123 
+/usr/bin/ld: CMakeFiles/cmTC_71123.dir/src.c.o: in function `main':
+src.c:(.text+0x46): undefined reference to `pthread_create'
+/usr/bin/ld: src.c:(.text+0x52): undefined reference to `pthread_detach'
+/usr/bin/ld: src.c:(.text+0x63): undefined reference to `pthread_join'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_71123.dir/build.make:87: cmTC_71123] Error 1
+make[1]: Leaving directory '/home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_71123/fast] Error 2
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_d2556/fast && /usr/bin/make -f CMakeFiles/cmTC_d2556.dir/build.make CMakeFiles/cmTC_d2556.dir/build
+make[1]: Entering directory '/home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d2556.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_d2556.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_d2556
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d2556.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_d2556.dir/CheckFunctionExists.c.o  -o cmTC_d2556  -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_d2556.dir/build.make:87: cmTC_d2556] Error 1
+make[1]: Leaving directory '/home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_d2556/fast] Error 2
+
+
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_bb1c9/fast && /usr/bin/make -f CMakeFiles/cmTC_bb1c9.dir/build.make CMakeFiles/cmTC_bb1c9.dir/build
+make[1]: Entering directory '/home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_bb1c9.dir/src.c.o
+/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_bb1c9.dir/src.c.o   -c /home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_bb1c9
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bb1c9.dir/link.txt --verbose=1
+/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    CMakeFiles/cmTC_bb1c9.dir/src.c.o  -o cmTC_bb1c9 
+/usr/bin/ld: CMakeFiles/cmTC_bb1c9.dir/src.c.o: in function `main':
+src.c:(.text+0x46): undefined reference to `pthread_create'
+/usr/bin/ld: src.c:(.text+0x52): undefined reference to `pthread_detach'
+/usr/bin/ld: src.c:(.text+0x63): undefined reference to `pthread_join'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_bb1c9.dir/build.make:87: cmTC_bb1c9] Error 1
+make[1]: Leaving directory '/home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_bb1c9/fast] Error 2
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_baadd/fast && /usr/bin/make -f CMakeFiles/cmTC_baadd.dir/build.make CMakeFiles/cmTC_baadd.dir/build
+make[1]: Entering directory '/home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_baadd.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_baadd.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_baadd
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_baadd.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_baadd.dir/CheckFunctionExists.c.o  -o cmTC_baadd  -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_baadd.dir/build.make:87: cmTC_baadd] Error 1
+make[1]: Leaving directory '/home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_baadd/fast] Error 2
+
+
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_c171b/fast && /usr/bin/make -f CMakeFiles/cmTC_c171b.dir/build.make CMakeFiles/cmTC_c171b.dir/build
+make[1]: Entering directory '/home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c171b.dir/src.c.o
+/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_c171b.dir/src.c.o   -c /home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_c171b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c171b.dir/link.txt --verbose=1
+/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    CMakeFiles/cmTC_c171b.dir/src.c.o  -o cmTC_c171b 
+/usr/bin/ld: CMakeFiles/cmTC_c171b.dir/src.c.o: in function `main':
+src.c:(.text+0x46): undefined reference to `pthread_create'
+/usr/bin/ld: src.c:(.text+0x52): undefined reference to `pthread_detach'
+/usr/bin/ld: src.c:(.text+0x63): undefined reference to `pthread_join'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_c171b.dir/build.make:87: cmTC_c171b] Error 1
+make[1]: Leaving directory '/home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_c171b/fast] Error 2
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_86abd/fast && /usr/bin/make -f CMakeFiles/cmTC_86abd.dir/build.make CMakeFiles/cmTC_86abd.dir/build
+make[1]: Entering directory '/home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_86abd.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_86abd.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_86abd
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_86abd.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_86abd.dir/CheckFunctionExists.c.o  -o cmTC_86abd  -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_86abd.dir/build.make:87: cmTC_86abd] Error 1
+make[1]: Leaving directory '/home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_86abd/fast] Error 2
+
+
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_39e4f/fast && /usr/bin/make -f CMakeFiles/cmTC_39e4f.dir/build.make CMakeFiles/cmTC_39e4f.dir/build
+make[1]: Entering directory '/home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_39e4f.dir/src.c.o
+/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_39e4f.dir/src.c.o   -c /home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_39e4f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_39e4f.dir/link.txt --verbose=1
+/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    CMakeFiles/cmTC_39e4f.dir/src.c.o  -o cmTC_39e4f 
+/usr/bin/ld: CMakeFiles/cmTC_39e4f.dir/src.c.o: in function `main':
+src.c:(.text+0x46): undefined reference to `pthread_create'
+/usr/bin/ld: src.c:(.text+0x52): undefined reference to `pthread_detach'
+/usr/bin/ld: src.c:(.text+0x63): undefined reference to `pthread_join'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_39e4f.dir/build.make:87: cmTC_39e4f] Error 1
+make[1]: Leaving directory '/home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_39e4f/fast] Error 2
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_3de18/fast && /usr/bin/make -f CMakeFiles/cmTC_3de18.dir/build.make CMakeFiles/cmTC_3de18.dir/build
+make[1]: Entering directory '/home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3de18.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_3de18.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_3de18
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3de18.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_3de18.dir/CheckFunctionExists.c.o  -o cmTC_3de18  -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_3de18.dir/build.make:87: cmTC_3de18] Error 1
+make[1]: Leaving directory '/home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_3de18/fast] Error 2
+
+
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_15999/fast && /usr/bin/make -f CMakeFiles/cmTC_15999.dir/build.make CMakeFiles/cmTC_15999.dir/build
+make[1]: Entering directory '/home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_15999.dir/src.c.o
+/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_15999.dir/src.c.o   -c /home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_15999
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_15999.dir/link.txt --verbose=1
+/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    CMakeFiles/cmTC_15999.dir/src.c.o  -o cmTC_15999 
+/usr/bin/ld: CMakeFiles/cmTC_15999.dir/src.c.o: in function `main':
+src.c:(.text+0x46): undefined reference to `pthread_create'
+/usr/bin/ld: src.c:(.text+0x52): undefined reference to `pthread_detach'
+/usr/bin/ld: src.c:(.text+0x63): undefined reference to `pthread_join'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_15999.dir/build.make:87: cmTC_15999] Error 1
+make[1]: Leaving directory '/home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_15999/fast] Error 2
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_1c276/fast && /usr/bin/make -f CMakeFiles/cmTC_1c276.dir/build.make CMakeFiles/cmTC_1c276.dir/build
+make[1]: Entering directory '/home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_1c276.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_1c276.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_1c276
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1c276.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_1c276.dir/CheckFunctionExists.c.o  -o cmTC_1c276  -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_1c276.dir/build.make:87: cmTC_1c276] Error 1
+make[1]: Leaving directory '/home/pengbo/rclcpp_cbg/ros2_rclcpp/build/rclcpp/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_1c276/fast] Error 2
+
+
+

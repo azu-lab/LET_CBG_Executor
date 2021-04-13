@@ -1,0 +1,21 @@
+In file included from [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/include/rclcpp/executors.hpp:22[m[K,
+                 from [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors.cpp:15[m[K:
+[01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/include/rclcpp/executors/single_threaded_executor.hpp:80:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kvoid rclcpp::executors::SingleThreadedExecutor::spin()[m[K’ cannot be overloaded with ‘[01m[Kvoid rclcpp::executors::SingleThreadedExecutor::spin()[m[K’
+   80 |   [01;31m[Kspin[m[K() override;
+      |   [01;31m[K^~~~[m[K
+[01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/include/rclcpp/executors/single_threaded_executor.hpp:66:3:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[Kvoid rclcpp::executors::SingleThreadedExecutor::spin()[m[K’
+   66 |   [01;36m[Kspin[m[K() override;
+      |   [01;36m[K^~~~[m[K
+In file included from [01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/src/rclcpp/executors/single_threaded_executor.cpp:15[m[K:
+[01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/include/rclcpp/executors/single_threaded_executor.hpp:80:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kvoid rclcpp::executors::SingleThreadedExecutor::spin()[m[K’ cannot be overloaded with ‘[01m[Kvoid rclcpp::executors::SingleThreadedExecutor::spin()[m[K’
+   80 |   [01;31m[Kspin[m[K() override;
+      |   [01;31m[K^~~~[m[K
+[01m[K/home/pengbo/rclcpp_cbg/ros2_rclcpp/rclcpp/include/rclcpp/executors/single_threaded_executor.hpp:66:3:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[Kvoid rclcpp::executors::SingleThreadedExecutor::spin()[m[K’
+   66 |   [01;36m[Kspin[m[K() override;
+      |   [01;36m[K^~~~[m[K
+make[2]: *** [CMakeFiles/rclcpp.dir/build.make:389: CMakeFiles/rclcpp.dir/src/rclcpp/executors/single_threaded_executor.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+make[2]: *** [CMakeFiles/rclcpp.dir/build.make:350: CMakeFiles/rclcpp.dir/src/rclcpp/executors.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:1129: CMakeFiles/rclcpp.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+make: *** [Makefile:141: all] Error 2
