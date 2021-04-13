@@ -1,0 +1,9 @@
+[35m[1mScanning dependencies of target ping-pong[0m
+[ 16%] [32mBuilding CXX object CMakeFiles/ping-pong.dir/exp1/main.cpp.o[0m
+[ 33%] [32m[1mLinking CXX executable ping-pong[0m
+/usr/bin/ld: CMakeFiles/ping-pong.dir/src/linux_memory_process_measurement.cpp.o: in function `LinuxMemoryProcessMeasurement::getPhysicalMemoryCurrentlyUsedByCurrentProcess()':
+linux_memory_process_measurement.cpp:(.text+0x75c): undefined reference to `split(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, char)'
+collect2: error: ld returned 1 exit status
+make[2]: *** [CMakeFiles/ping-pong.dir/build.make:191: ping-pong] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/ping-pong.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

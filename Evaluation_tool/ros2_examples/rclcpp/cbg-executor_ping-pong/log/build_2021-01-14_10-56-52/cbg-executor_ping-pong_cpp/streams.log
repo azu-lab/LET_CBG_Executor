@@ -1,0 +1,14 @@
+[0.010s] Invoking command in '/home/pengbo/cbg-executor/ros2_examples/rclcpp/cbg-executor_ping-pong/build/cbg-executor_ping-pong_cpp': /usr/bin/cmake --build /home/pengbo/cbg-executor/ros2_examples/rclcpp/cbg-executor_ping-pong/build/cbg-executor_ping-pong_cpp -- -j12 -l12
+[0.052s] [35m[1mScanning dependencies of target ping-pong[0m
+[0.084s] [ 25%] [32mBuilding CXX object CMakeFiles/ping-pong.dir/main.cpp.o[0m
+[1.034s] [01m[K/home/pengbo/cbg-executor/ros2_examples/rclcpp/cbg-executor_ping-pong/main.cpp:[m[K In function ‘[01m[Kint record_jitter(const timespec*, const timespec*, size_t)[m[K’:
+[1.035s] [01m[K/home/pengbo/cbg-executor/ros2_examples/rclcpp/cbg-executor_ping-pong/main.cpp:116:24:[m[K [01;35m[Kwarning: [m[KISO C++ forbids variable length array ‘[01m[Klatency_samples[m[K’ [[01;35m[K-Wvla[m[K]
+[1.035s]   116 |   std::vector<int64_t> [01;35m[Klatency_samples[m[K[i] = parity * timespec_to_uint64(&jitter);
+[1.035s]       |                        [01;35m[K^~~~~~~~~~~~~~~[m[K
+[1.035s] [01m[K/home/pengbo/cbg-executor/ros2_examples/rclcpp/cbg-executor_ping-pong/main.cpp:116:52:[m[K [01;31m[Kerror: [m[Karray must be initialized with a brace-enclosed initializer
+[1.035s]   116 |   std::vector<int64_t> latency_samples[i] = [01;31m[Kparity * timespec_to_uint64(&jitter)[m[K;
+[1.035s]       |                                             [01;31m[K~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.353s] make[2]: *** [CMakeFiles/ping-pong.dir/build.make:63: CMakeFiles/ping-pong.dir/main.cpp.o] Error 1
+[1.353s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/ping-pong.dir/all] Error 2
+[1.353s] make: *** [Makefile:141: all] Error 2
+[1.355s] Invoked command in '/home/pengbo/cbg-executor/ros2_examples/rclcpp/cbg-executor_ping-pong/build/cbg-executor_ping-pong_cpp' returned '2': /usr/bin/cmake --build /home/pengbo/cbg-executor/ros2_examples/rclcpp/cbg-executor_ping-pong/build/cbg-executor_ping-pong_cpp -- -j12 -l12

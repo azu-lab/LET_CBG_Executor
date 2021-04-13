@@ -1,0 +1,17 @@
+[0.013s] Invoking command in '/home/pengbo/cbg-executor/ros2_examples/rclcpp/cbg-executor_ping-pong/build/cbg-executor_ping-pong_cpp': /usr/bin/cmake --build /home/pengbo/cbg-executor/ros2_examples/rclcpp/cbg-executor_ping-pong/build/cbg-executor_ping-pong_cpp -- -j12 -l12
+[0.048s] [35m[1mScanning dependencies of target ping-pong[0m
+[0.074s] [ 25%] [32mBuilding CXX object CMakeFiles/ping-pong.dir/src/PingSubNode.cpp.o[0m
+[1.032s] [01m[K/home/pengbo/cbg-executor/ros2_examples/rclcpp/cbg-executor_ping-pong/src/PingSubNode.cpp:[m[K In member function ‘[01m[Kvoid PingSubNode::print_jitter()[m[K’:
+[1.032s] [01m[K/home/pengbo/cbg-executor/ros2_examples/rclcpp/cbg-executor_ping-pong/src/PingSubNode.cpp:74:26:[m[K [01;31m[Kerror: [m[K‘[01m[Kios_base[m[K’ has not been declared
+[1.032s]    74 |   file.open("jitter.txt",[01;31m[Kios_base[m[K::out);
+[1.032s]       |                          [01;31m[K^~~~~~~~[m[K
+[1.037s] [01m[K/home/pengbo/cbg-executor/ros2_examples/rclcpp/cbg-executor_ping-pong/src/PingSubNode.cpp:98:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kfp[m[K’ was not declared in this scope
+[1.037s]    98 |         [01;31m[Kfp[m[K<<jitters[x];
+[1.037s]       |         [01;31m[K^~[m[K
+[1.038s] [01m[K/home/pengbo/cbg-executor/ros2_examples/rclcpp/cbg-executor_ping-pong/src/PingSubNode.cpp:101:8:[m[K [01;31m[Kerror: [m[K‘[01m[Kfp[m[K’ was not declared in this scope
+[1.038s]   101 |        [01;31m[Kfp[m[K.close();
+[1.038s]       |        [01;31m[K^~[m[K
+[2.088s] make[2]: *** [CMakeFiles/ping-pong.dir/build.make:76: CMakeFiles/ping-pong.dir/src/PingSubNode.cpp.o] Error 1
+[2.088s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/ping-pong.dir/all] Error 2
+[2.088s] make: *** [Makefile:141: all] Error 2
+[2.090s] Invoked command in '/home/pengbo/cbg-executor/ros2_examples/rclcpp/cbg-executor_ping-pong/build/cbg-executor_ping-pong_cpp' returned '2': /usr/bin/cmake --build /home/pengbo/cbg-executor/ros2_examples/rclcpp/cbg-executor_ping-pong/build/cbg-executor_ping-pong_cpp -- -j12 -l12

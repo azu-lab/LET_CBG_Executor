@@ -1,0 +1,26 @@
+[01m[K/home/pengbo/cbg-executor/ros2_examples/rclcpp/cbg-executor_ping-pong/src/PingSubNode.cpp:[m[K In member function ‘[01m[Kvoid PingSubNode::print_jitter()[m[K’:
+[01m[K/home/pengbo/cbg-executor/ros2_examples/rclcpp/cbg-executor_ping-pong/src/PingSubNode.cpp:69:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kfstream[m[K’ was not declared in this scope; did you mean ‘[01m[Kstd::fstream[m[K’?
+   69 |   [01;31m[Kfstream[m[K file;
+      |   [01;31m[K^~~~~~~[m[K
+      |   [32m[Kstd::fstream[m[K
+In file included from [01m[K/usr/include/c++/9/memory:72[m[K,
+                 from [01m[K/home/pengbo/cbg-executor/ros2_examples/rclcpp/cbg-executor_ping-pong/include/PingSubNode.hpp:18[m[K,
+                 from [01m[K/home/pengbo/cbg-executor/ros2_examples/rclcpp/cbg-executor_ping-pong/src/PingSubNode.cpp:15[m[K:
+[01m[K/usr/include/c++/9/iosfwd:168:33:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::fstream[m[K’ declared here
+  168 |   typedef basic_fstream<char>   [01;36m[Kfstream[m[K;
+      |                                 [01;36m[K^~~~~~~[m[K
+[01m[K/home/pengbo/cbg-executor/ros2_examples/rclcpp/cbg-executor_ping-pong/src/PingSubNode.cpp:71:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kfile[m[K’ was not declared in this scope
+   71 |   [01;31m[Kfile[m[K.open("jitter.txt",ios_base::out);
+      |   [01;31m[K^~~~[m[K
+[01m[K/home/pengbo/cbg-executor/ros2_examples/rclcpp/cbg-executor_ping-pong/src/PingSubNode.cpp:71:26:[m[K [01;31m[Kerror: [m[K‘[01m[Kios_base[m[K’ has not been declared
+   71 |   file.open("jitter.txt",[01;31m[Kios_base[m[K::out);
+      |                          [01;31m[K^~~~~~~~[m[K
+[01m[K/home/pengbo/cbg-executor/ros2_examples/rclcpp/cbg-executor_ping-pong/src/PingSubNode.cpp:95:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kfp[m[K’ was not declared in this scope
+   95 |         [01;31m[Kfp[m[K<<jitters[x];
+      |         [01;31m[K^~[m[K
+[01m[K/home/pengbo/cbg-executor/ros2_examples/rclcpp/cbg-executor_ping-pong/src/PingSubNode.cpp:98:8:[m[K [01;31m[Kerror: [m[K‘[01m[Kfp[m[K’ was not declared in this scope
+   98 |        [01;31m[Kfp[m[K.close();
+      |        [01;31m[K^~[m[K
+make[2]: *** [CMakeFiles/ping-pong.dir/build.make:76: CMakeFiles/ping-pong.dir/src/PingSubNode.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/ping-pong.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

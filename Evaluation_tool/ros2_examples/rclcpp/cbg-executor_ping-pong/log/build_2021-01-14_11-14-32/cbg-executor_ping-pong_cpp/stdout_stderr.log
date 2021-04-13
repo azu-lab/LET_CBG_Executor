@@ -1,0 +1,41 @@
+[35m[1mScanning dependencies of target ping-pong[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/ping-pong.dir/main.cpp.o[0m
+[01m[K/home/pengbo/cbg-executor/ros2_examples/rclcpp/cbg-executor_ping-pong/main.cpp:[m[K In lambda function:
+[01m[K/home/pengbo/cbg-executor/ros2_examples/rclcpp/cbg-executor_ping-pong/main.cpp:231:29:[m[K [01;31m[Kerror: [m[Kuninitialized const ‘[01m[Kupdate_period[m[K’ [[01;31m[K-fpermissive[m[K]
+  231 |       const struct timespec [01;31m[Kupdate_period[m[K;
+      |                             [01;31m[K^~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/sched.h:32[m[K,
+                 from [01m[K/usr/include/pthread.h:22[m[K,
+                 from [01m[K/usr/include/x86_64-linux-gnu/c++/9/bits/gthr-default.h:35[m[K,
+                 from [01m[K/usr/include/x86_64-linux-gnu/c++/9/bits/gthr.h:148[m[K,
+                 from [01m[K/usr/include/c++/9/ext/atomicity.h:35[m[K,
+                 from [01m[K/usr/include/c++/9/bits/basic_string.h:39[m[K,
+                 from [01m[K/usr/include/c++/9/string:55[m[K,
+                 from [01m[K/usr/include/c++/9/stdexcept:39[m[K,
+                 from [01m[K/usr/include/c++/9/array:39[m[K,
+                 from [01m[K/usr/include/c++/9/tuple:39[m[K,
+                 from [01m[K/usr/include/c++/9/functional:54[m[K,
+                 from [01m[K/home/pengbo/cbg-executor/ros2_examples/rclcpp/cbg-executor_ping-pong/main.cpp:1[m[K:
+[01m[K/usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:10:8:[m[K [01;36m[Knote: [m[K‘[01m[Kconst struct timespec[m[K’ has no user-provided default constructor
+   10 | struct [01;36m[Ktimespec[m[K
+      |        [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:12:12:[m[K [01;36m[Knote: [m[Kand the implicitly-defined constructor does not initialize ‘[01m[K__time_t timespec::tv_sec[m[K’
+   12 |   __time_t [01;36m[Ktv_sec[m[K;  /* Seconds.  */
+      |            [01;36m[K^~~~~~[m[K
+[01m[K/home/pengbo/cbg-executor/ros2_examples/rclcpp/cbg-executor_ping-pong/main.cpp:232:28:[m[K [01;31m[Kerror: [m[Kassignment of member ‘[01m[Ktimespec::tv_sec[m[K’ in read-only object
+  232 |       [01;31m[Kupdate_period.tv_sec = 0[m[K;
+      |       [01;31m[K~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[01m[K/home/pengbo/cbg-executor/ros2_examples/rclcpp/cbg-executor_ping-pong/main.cpp:233:29:[m[K [01;31m[Kerror: [m[Kassignment of member ‘[01m[Ktimespec::tv_nsec[m[K’ in read-only object
+  233 |       [01;31m[Kupdate_period.tv_nsec = 1000000[m[K;
+      |       [01;31m[K~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~[m[K
+[01m[K/home/pengbo/cbg-executor/ros2_examples/rclcpp/cbg-executor_ping-pong/main.cpp:235:25:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kconst timespec[m[K’ to ‘[01m[Kconst timespec*[m[K’
+  235 |       multiply_timespec([01;31m[Kupdate_period[m[K, i, &wakeup_time);
+      |                         [01;31m[K^~~~~~~~~~~~~[m[K
+      |                         [01;31m[K|[m[K
+      |                         [01;31m[Kconst timespec[m[K
+[01m[K/home/pengbo/cbg-executor/ros2_examples/rclcpp/cbg-executor_ping-pong/main.cpp:63:27:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[Kvoid multiply_timespec(const timespec*, uint32_t, timespec*)[m[K’
+   63 |   [01;36m[Kconst struct timespec * t[m[K, const uint32_t i,
+      |   [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+make[2]: *** [CMakeFiles/ping-pong.dir/build.make:63: CMakeFiles/ping-pong.dir/main.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/ping-pong.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2
