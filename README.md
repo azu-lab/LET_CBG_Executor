@@ -39,7 +39,7 @@ Start the executable by
 ```
 $ros2 run cbg-executor_ping-pong_cpp ping-pong args...
 ```
-where args... are five or six arguments as follows:
+where args... are ten or eleven arguments as follows:
 ```
 [type] [rt_ping_period_us] [be_ping_period_us] [rt_busyloop_us] [be_busyloop_us] [cpu_id]
 
